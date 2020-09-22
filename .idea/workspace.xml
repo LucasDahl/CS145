@@ -1,19 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="" />
+    <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assignments/src/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/src/AnimalEncounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BabySleepTemp/src/viewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS141/AssignmentFive/src/squareDraw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS141/AssignmentFour/src/RiceLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS141/AssignmentThree/src/dataTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS141/HelloWorld/src/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS141/assignmentOne/src/DisplayData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI log in/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI log in/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI log in/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI log in/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI log in/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI log in/out/production/GUI log in/GUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI log in/src/GUI.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
   <component name="ProjectId" id="1hpUJkuzdbQ5alj9lHQVxH7GwIi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="AnimalEncounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AnimalEncounter" />
+      <module name="Assignments" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AnimalEncounter" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -24,6 +67,56 @@
       <option name="presentableId" value="Default" />
       <updated>1600707457981</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <created>1600707724686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600707724686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1600707724572">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707724572" />
+    <state width="1878" height="148" key="GridCell.Tab.0.bottom" timestamp="1600800035239">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="148" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600800035239" />
+    <state width="1878" height="148" key="GridCell.Tab.0.center" timestamp="1600800035237">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="148" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600800035237" />
+    <state width="1878" height="148" key="GridCell.Tab.0.left" timestamp="1600800035237">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="148" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600800035236" />
+    <state width="1878" height="148" key="GridCell.Tab.0.right" timestamp="1600800035238">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="148" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600800035238" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1600707733686">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707733686" />
+    <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707705164" />
+    <state x="2582" y="425" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600707560601">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2582" y="425" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707560601" />
+    <state x="2264" y="172" key="new project wizard" timestamp="1600707577978">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2264" y="172" key="new project wizard/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707577978" />
   </component>
 </project>
