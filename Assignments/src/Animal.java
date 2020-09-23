@@ -76,7 +76,7 @@ public class Animal {
         String describe = "";
 
         describe = describe + name;
-        describe = describe + " is at (";
+        describe = describe + " is at location (";
         describe = describe + xCoor;
         describe = describe + ", ";
         describe = describe + yCoor;
@@ -104,12 +104,29 @@ public class Animal {
     public void move() {
 
         // Properties
-        Random randomNum = new Random();
-        int min = - 3, max = 3;
+        Random randomNum = new Random(), direction = new Random();
+        int min = -2, max = 2;
 
         // Move the animal
-        xCoor = randomNum.nextInt(max - min) + min;
-        yCoor = randomNum.nextInt(max - min) + min;
+        if(direction.nextBoolean()) {
+            xCoor += randomNum.nextInt(max - min) + min;
+            yCoor += randomNum.nextInt(max - min) + min;
+        } else {
+
+            // Set the max and min to 3 instead of 2
+            min = -3;
+            max = 3;
+
+            // The animal will move up, down, left, or right but not both
+            if(direction.nextBoolean()) {
+                xCoor += randomNum.nextInt(max - min) + min;
+            } else {
+                yCoor += randomNum.nextInt(max - min) + min;
+            }
+
+        }
+
+
 
         // Put the animal back on the grid if they went off
         // but put them on the other side.
