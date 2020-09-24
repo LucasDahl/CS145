@@ -10,7 +10,7 @@ public class EmployeeExamples {
         team[1] = new Lawyer();
         team[1].setName("Dale");
 
-        team[2] = new Employee();
+        team[2] = new TrialLawyer();
         team[2].setName("Cara");
 
         for(int i = 0; i < team.length; i++) {
