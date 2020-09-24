@@ -1,4 +1,3 @@
-
 import java.util.Random;
 /**
  *
@@ -42,6 +41,20 @@ public class Animal {
         xCoor = x;
         yCoor = y;
 
+        // Check the x coordinate
+        if(xCoor > 25) {
+            xCoor = 24;
+        } else if (xCoor < -25) {
+            xCoor = -24;
+        }
+
+        // Check the y coordinate
+        if(yCoor > 25) {
+            yCoor = 24;
+        } else if (yCoor < -25) {
+            yCoor = -24;
+        }
+
     }
 
     // **************************** Methods ***************************
@@ -51,7 +64,9 @@ public class Animal {
      * @return the name of the animal.
      */
     public String getName() {
+
         return name;
+
     }
 
     /**
@@ -59,7 +74,9 @@ public class Animal {
      * @return the x coordinate of the animal.
      */
     public int getX() {
+
         return xCoor;
+
     }
 
     /**
@@ -67,13 +84,14 @@ public class Animal {
      * @return the y coordinate of the animal.
      */
     public int getY() {
+
         return yCoor;
     }
 
    @Override // Java Doc annotation, replaces manual java doc.
     public String toString() {
 
-        String describe = "";
+        String describe = "The ";
 
         describe = describe + name;
         describe = describe + " is at location (";
@@ -101,6 +119,10 @@ public class Animal {
 
     }
 
+    /**
+     * This method will move the animals randomly in
+     * different directions.
+     */
     public void move() {
 
         // Properties
@@ -109,8 +131,10 @@ public class Animal {
 
         // Move the animal
         if(direction.nextBoolean()) {
+
             xCoor += randomNum.nextInt(max - min) + min;
             yCoor += randomNum.nextInt(max - min) + min;
+
         } else {
 
             // Set the max and min to 3 instead of 2
@@ -125,8 +149,6 @@ public class Animal {
             }
 
         }
-
-
 
         // Put the animal back on the grid if they went off
         // but put them on the other side.
@@ -144,8 +166,5 @@ public class Animal {
         } else if (yCoor < -25) {
             yCoor = yCoor + 50;
         }
-
-
     }
-
 }

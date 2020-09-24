@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="Finished the first assignment which was review.">
+      <change afterPath="$PROJECT_DIR$/Notes/src/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notes/src/EmployeeExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notes/src/Lawyer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BabySleepTemp/src/viewController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS141/AssignmentFive/src/squareDraw.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS141/AssignmentFour/src/RiceLoop.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS141/AssignmentThree/src/dataTypes.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS141/HelloWorld/src/Hello.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS141/assignmentOne/src/DisplayData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/src/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/src/AnimalEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/src/AnimalEncounter.java" afterDir="false" />
@@ -44,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EmployeeExamples">
     <configuration name="AnimalEncounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnimalEncounter" />
       <module name="Assignments" />
@@ -52,8 +56,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmployeeExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EmployeeExamples" />
+      <module name="Notes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmployeeExamples" />
         <item itemvalue="Application.AnimalEncounter" />
       </list>
     </recent_temporary>
@@ -81,43 +93,53 @@
       <option name="project" value="LOCAL" />
       <updated>1600800382455</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed and error in the first assignment that would record the same fight twice.">
+      <created>1600892737780</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600892737780</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Finished the first assignment which was review." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the first assignment which was review." />
+    <MESSAGE value="Fixed and error in the first assignment that would record the same fight twice." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed and error in the first assignment that would record the same fight twice." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1600800382258">
-      <screen x="1920" y="25" width="1920" height="1055" />
+    <state x="596" y="156" key="CommitChangelistDialog2" timestamp="1600892737595">
+      <screen x="0" y="25" width="1920" height="1175" />
     </state>
     <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600800382258" />
-    <state width="1878" height="207" key="GridCell.Tab.0.bottom" timestamp="1600892642206">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600811961217" />
-    <state width="1878" height="207" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1600892642206" />
-    <state width="1878" height="207" key="GridCell.Tab.0.center" timestamp="1600892642205">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600811961214" />
-    <state width="1878" height="207" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1600892642205" />
-    <state width="1878" height="207" key="GridCell.Tab.0.left" timestamp="1600892642205">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600811961213" />
-    <state width="1878" height="207" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1600892642205" />
-    <state width="1878" height="207" key="GridCell.Tab.0.right" timestamp="1600892642206">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600811961215" />
-    <state width="1878" height="207" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1600892642206" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1600800403685">
+    <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
+    <state width="1878" height="241" key="GridCell.Tab.0.bottom" timestamp="1600975294162">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
+    <state width="1878" height="241" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600975294162" />
+    <state width="1878" height="275" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1600919692897" />
+    <state width="1878" height="241" key="GridCell.Tab.0.center" timestamp="1600975294161">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="241" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600975294161" />
+    <state width="1878" height="275" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1600919692896" />
+    <state width="1878" height="241" key="GridCell.Tab.0.left" timestamp="1600975294160">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="241" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600975294160" />
+    <state width="1878" height="275" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1600919692895" />
+    <state width="1878" height="241" key="GridCell.Tab.0.right" timestamp="1600975294162">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="241" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600975294162" />
+    <state width="1878" height="275" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1600919692896" />
+    <state x="560" y="319" key="Vcs.Push.Dialog.v2" timestamp="1600892765137">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
     <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600800403685" />
+    <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892765137" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
@@ -126,9 +148,14 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2582" y="425" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707560601" />
-    <state x="2264" y="172" key="new project wizard" timestamp="1600707577978">
-      <screen x="1920" y="25" width="1920" height="1055" />
+    <state x="344" y="189" key="new project wizard" timestamp="1600919903927">
+      <screen x="0" y="25" width="1920" height="1175" />
     </state>
     <state x="2264" y="172" key="new project wizard/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707577978" />
+    <state x="344" y="189" key="new project wizard/0.25.1920.1175@0.25.1920.1175" timestamp="1600919903927" />
+    <state x="2546" y="255" key="run.anything.popup" timestamp="1600966533745">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2546" y="255" key="run.anything.popup/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600966533745" />
   </component>
 </project>

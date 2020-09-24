@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  *This program uses the Animal class to create 5 animal objects.
  * A while loop will keep the animals moving until at least 15
@@ -45,10 +43,6 @@ public class AnimalEncounter {
         // Loop until there has been 15 fights.
         while(fights < 15) {
 
-            // Loop properties
-            String lastFightAnimalOne = "", lastFightAnimalTwo = "";
-
-
             // Move all the animals
             for(int i = 0; i < animalArray.length; i++) {
                 animalArray[i].move();
@@ -57,25 +51,15 @@ public class AnimalEncounter {
             // Check to see if any of the animals are touching
             for(int i = 0; i < animalArray.length; i++) {
 
-                for(int j = 0; j < animalArray.length; j++) {
+                for(int j = i + 1; j < animalArray.length; j++) {
 
-                    if(animalArray[i] != animalArray[j]) {
+                    // See if the animals are touching
+                    if(animalArray[i].touching(animalArray[j])) {
 
-                        if(animalArray[i].getX() == animalArray[j].getX() && animalArray[i].getY() == animalArray[j].getY()) {
+                        System.out.println("FIGHT");
+                        System.out.println("There is a fight between " + animalArray[i].getName() + " and " + animalArray[j].getName() + "." );
+                        fights++;
 
-                            // Make sure we do not record the same fight in a different order.
-                            if(!lastFightAnimalTwo.equals(animalArray[i].getName()) && !lastFightAnimalOne.equals(animalArray[j].getName())) {
-
-                                System.out.println("FIGHT");
-                                System.out.println("There is a fight between " + animalArray[i].getName() + " and " + animalArray[j].getName() + "." );
-
-                                lastFightAnimalOne = animalArray[i].getName();
-                                lastFightAnimalTwo = animalArray[j].getName();
-
-                                fights++;
-
-                            }
-                        }
                     }
                 }
             }
@@ -97,6 +81,7 @@ public class AnimalEncounter {
 
         }
 
+        // Print out the total number of fights and rounds.
         System.out.println(fights + " fights occurred in " + rounds + " rounds.");
 
     }
