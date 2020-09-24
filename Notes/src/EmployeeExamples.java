@@ -4,17 +4,15 @@ public class EmployeeExamples {
 
         Employee[] team = new Employee[3];
 
-        team[0] = new Employee();
-        team[0].setName("Adam");
+        team[0] = new Employee("Adam", 10);
 
-        team[1] = new Lawyer();
-        team[1].setName("Dale");
+        team[1] = new Lawyer("dale", 2, 8);
 
-        team[2] = new TrialLawyer();
-        team[2].setName("Cara");
+        team[2] = new TrialLawyer(6, "cara");
+
 
         for(int i = 0; i < team.length; i++) {
-            System.out.println(team[i]); // automatically calls toString
+            System.out.println(team[i].getYearsWorked()); // automatically calls toString
             //System.out.printf("%-10s - %5d - %5d%n", team[i].getName(), team[i].getHours(), team[i].getVacation());
         }
 
