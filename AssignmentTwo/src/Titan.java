@@ -7,15 +7,30 @@ import java.awt.*;
  * @version 9/25/20
  *
  */
-public class Titan extends Critter {
+public class Titan extends Giant {
 
     // **************************** Fields ****************************
+
     // ************************** Constructors ************************
+
     // **************************** Methods ***************************
 
     @Override
-    public String toString() {
-        return "T";
+    public Color getColor() {
+        if(toString().equals("fee") || toString().equals("foe")) {
+            return Color.BLACK;
+        } else {
+            return Color.WHITE;
+        }
     }
 
+    @Override
+    public Action getMove(CritterInfo info) {
+
+        if(info.getFront() != Neighbor.OTHER && info.getFront() != Neighbor.EMPTY) {
+            return Action.LEFT;
+        } else {
+            return super.getMove(info);
+        }
+    }
 }

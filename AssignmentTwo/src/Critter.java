@@ -41,6 +41,7 @@ public class Critter {
 
     // This method should be overriden (default action is turning left)
     public Action getMove(CritterInfo info) {
+
         return Action.LEFT;
     }
 
