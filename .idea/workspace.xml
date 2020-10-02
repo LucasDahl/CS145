@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="Finished the first assignment which was review.">
+    <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Critter.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Critter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/CritterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/CritterMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Gator.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Gator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Giant.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Giant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Lion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Titan.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Titan.java" afterDir="false" />
@@ -41,6 +41,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.CritterMain">
+    <configuration name="AnimalEncounter (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AnimalEncounter" />
+      <module name="AssignmentOne" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AnimalEncounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnimalEncounter" />
       <module name="Assignments" />
@@ -72,6 +79,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CritterMain" />
+        <item itemvalue="Application.AnimalEncounter (1)" />
         <item itemvalue="Application.ShapeStuffExamples" />
         <item itemvalue="Application.EmployeeExamples" />
         <item itemvalue="Application.AnimalEncounter" />
@@ -143,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601412324637</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finished the basics for all Critter subclasses, except Gator.">
+      <created>1601421858879</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601421858879</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,38 +170,39 @@
     <MESSAGE value="Added more notes about classes." />
     <MESSAGE value="Added the starter files for assignment 2." />
     <MESSAGE value="Adding notes about interfaces. Updated the classes of assignment number 2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding notes about interfaces. Updated the classes of assignment number 2." />
+    <MESSAGE value="Finished the basics for all Critter subclasses, except Gator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the basics for all Critter subclasses, except Gator." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1601412324136">
+    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1601421858746">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601412324136" />
+    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601421858746" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
-    <state width="1878" height="241" key="GridCell.Tab.0.bottom" timestamp="1601421387289">
+    <state width="1878" height="134" key="GridCell.Tab.0.bottom" timestamp="1601671011047">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="241" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601421387289" />
-    <state width="1878" height="275" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1600919692897" />
-    <state width="1878" height="241" key="GridCell.Tab.0.center" timestamp="1601421387287">
+    <state width="1878" height="134" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601671011047" />
+    <state width="1878" height="155" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1601500967136" />
+    <state width="1878" height="134" key="GridCell.Tab.0.center" timestamp="1601671011046">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="241" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601421387287" />
-    <state width="1878" height="275" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1600919692896" />
-    <state width="1878" height="241" key="GridCell.Tab.0.left" timestamp="1601421387286">
+    <state width="1878" height="134" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601671011046" />
+    <state width="1878" height="155" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1601500967135" />
+    <state width="1878" height="134" key="GridCell.Tab.0.left" timestamp="1601671011045">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="241" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601421387286" />
-    <state width="1878" height="275" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1600919692895" />
-    <state width="1878" height="241" key="GridCell.Tab.0.right" timestamp="1601421387288">
+    <state width="1878" height="134" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601671011045" />
+    <state width="1878" height="155" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1601500967134" />
+    <state width="1878" height="134" key="GridCell.Tab.0.right" timestamp="1601671011046">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="241" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601421387288" />
-    <state width="1878" height="275" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1600919692896" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1601412370717">
+    <state width="1878" height="134" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601671011046" />
+    <state width="1878" height="155" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1601500967135" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1601421866551">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601412370717" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601421866551" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892765137" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />

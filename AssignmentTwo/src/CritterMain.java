@@ -15,13 +15,13 @@ public class CritterMain {
         // uncomment each of these lines as you complete these classes
          frame.add(30, Bear.class);
          frame.add(30, Lion.class);
-         frame.add(30, Giant.class);
+         //frame.add(30, Giant.class);
 		 frame.add(30, Titan.class);
-        // frame.add(30, Gator.class);
+         frame.add(30, Gator.class);
 
-        frame.add(30, FlyTrap.class);
-        frame.add(30, Food.class);
+         frame.add(30, FlyTrap.class);
+         frame.add(30, Food.class);
 
-        frame.start();
+         frame.start();
     }
 }

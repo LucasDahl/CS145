@@ -16,7 +16,11 @@ public class Giant extends Critter {
 
     // ************************** Constructors ************************
 
+    /**
+     * This constructor sets the color of Giant.
+     */
     public Giant() {
+
         giantColor = Color.GRAY;
     }
 
@@ -39,12 +43,22 @@ public class Giant extends Critter {
 
     }
 
-    @Override
+    /**
+     * This will return the color of the Giant
+     * which is set with teh constructor.
+     * @return returns the color of the Giant.
+     */
     public Color getColor() {
         return giantColor;
     }
 
-    @Override
+    /**
+     *This method will take in critter info and make
+     * moves based on the info by returning and Action
+     *
+     * @param info this critter info will help with what action the critter should take.
+     * @return The action will return INFECT, LEFT, RIGHT, or HOP
+     */
     public Action getMove(CritterInfo info) {
 
         moves++;

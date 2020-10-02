@@ -21,7 +21,7 @@ public class Lion extends Critter  {
 
     /**
      * This is the default constructor that sets
-     * the lions intial color.
+     * the lions initial color.
      */
     public Lion() {
 
@@ -36,7 +36,12 @@ public class Lion extends Critter  {
         return "L";
     }
 
-    @Override
+    /**
+     * This method will return the color of the
+     * Lion which is randomly chosen from an array
+     * after every 3 steps
+     * @return returns the color of the Lion.
+     */
     public Color getColor() {
 
         if(moves > 3) {
@@ -47,7 +52,13 @@ public class Lion extends Critter  {
         return lionColor;
     }
 
-    @Override
+    /**
+     *This method will take in critter info and make
+     * moves based on the info by returning and Action
+     *
+     * @param info this critter info will help with what action the critter should take.
+     * @return The action will return INFECT, LEFT, RIGHT, or HOP
+     */
     public Action getMove(CritterInfo info) {
 
         moves++;

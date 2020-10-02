@@ -42,12 +42,22 @@ public class Bear extends Critter {
         }
     }
 
-    @Override
+    /**
+     * This method will return the given color of the bear
+     * which is determined on initialization.
+     * @return this returns the color of the bear.
+     */
     public Color getColor() {
         return bearColor;
     }
 
-    @Override
+    /**
+     *This method will take in critter info and make
+     * moves based on the info by returning and Action
+     *
+     * @param info this critter info will help with what action the critter should take.
+     * @return The action will return INFECT, LEFT, RIGHT, or HOP
+     */
     public Action getMove(CritterInfo info) {
 
         moves++;
@@ -56,6 +66,14 @@ public class Bear extends Critter {
             return Action.INFECT;
         } else if(info.getFront() == Neighbor.EMPTY) {
             return Action.HOP;
+        } else if(info.getFront() == Neighbor.WALL) {
+
+            if(info.getLeft() == Neighbor.EMPTY) {
+                return Action.LEFT;
+            } else {
+                return Action.RIGHT;
+            }
+
         } else {
             return super.getMove(info);
         }

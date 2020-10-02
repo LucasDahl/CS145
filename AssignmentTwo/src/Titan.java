@@ -9,13 +9,14 @@ import java.awt.*;
  */
 public class Titan extends Giant {
 
-    // **************************** Fields ****************************
-
-    // ************************** Constructors ************************
-
     // **************************** Methods ***************************
 
-    @Override
+    /**
+     * This method will return the color of the
+     * Titan, which changes based off what String is currently in
+     * the toString method based off teh super class.
+     * @return This returns the color of the Titan.
+     */
     public Color getColor() {
         if(toString().equals("fee") || toString().equals("foe")) {
             return Color.BLACK;
@@ -24,13 +25,21 @@ public class Titan extends Giant {
         }
     }
 
-    @Override
+    /**
+     *This method will take in critter info and make
+     * moves based on the info by returning and Action
+     *
+     * @param info this critter info will help with what action the critter should take.
+     * @return The action will return INFECT, LEFT, RIGHT, or HOP
+     */
     public Action getMove(CritterInfo info) {
 
-        if(info.getFront() != Neighbor.OTHER && info.getFront() != Neighbor.EMPTY) {
-            return Action.LEFT;
+        if(info.getFront() == Neighbor.OTHER) {
+            return Action.INFECT;
+        } else if(info.getFront() == Neighbor.EMPTY) {
+            return Action.HOP;
         } else {
-            return super.getMove(info);
+            return Action.LEFT;
         }
     }
 }
