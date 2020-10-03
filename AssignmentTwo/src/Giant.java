@@ -28,7 +28,7 @@ public class Giant extends Critter {
 
     @Override
     public String toString() {
-        
+
         if(moves == 6) {
             moves = 0;
 
@@ -62,6 +62,7 @@ public class Giant extends Critter {
     public Action getMove(CritterInfo info) {
 
         moves++;
+
 
         if(info.getFront() == Neighbor.OTHER) {
             return Action.INFECT;

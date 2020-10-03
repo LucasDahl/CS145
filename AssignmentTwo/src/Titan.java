@@ -18,11 +18,13 @@ public class Titan extends Giant {
      * @return This returns the color of the Titan.
      */
     public Color getColor() {
+
         if(toString().equals("fee") || toString().equals("foe")) {
             return Color.BLACK;
         } else {
             return Color.WHITE;
         }
+
     }
 
     /**
@@ -34,12 +36,11 @@ public class Titan extends Giant {
      */
     public Action getMove(CritterInfo info) {
 
-        if(info.getFront() == Neighbor.OTHER) {
-            return Action.INFECT;
-        } else if(info.getFront() == Neighbor.EMPTY) {
-            return Action.HOP;
-        } else {
+        if(info.getFront() != Neighbor.OTHER && info.getFront() != Neighbor.EMPTY) {
             return Action.LEFT;
+        } else {
+            return super.getMove(info);
         }
+
     }
 }
