@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AssignmentTwo/src/WorkingGator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AssignmentTwo/AssignmentTwo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentOne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShortAssignment/ShortAssignment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShortAssignment/src/CS145Chapter10ShortAssignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/CritterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/CritterMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Gator.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Gator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Giant.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Giant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Titan.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Titan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +33,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ShortAssignment/src" />
       <recent name="$PROJECT_DIR$/AssignmentTwo/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CritterMain">
+  <component name="RunManager" selected="Application.CS145Chapter10ShortAssignment">
     <configuration name="AnimalEncounter (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnimalEncounter" />
       <module name="AssignmentOne" />
@@ -47,9 +49,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnimalEncounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AnimalEncounter" />
-      <module name="Assignments" />
+    <configuration name="CS145Chapter10ShortAssignment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CS145Chapter10ShortAssignment" />
+      <module name="ShortAssignment" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,11 +79,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CS145Chapter10ShortAssignment" />
         <item itemvalue="Application.CritterMain" />
         <item itemvalue="Application.AnimalEncounter (1)" />
         <item itemvalue="Application.ShapeStuffExamples" />
         <item itemvalue="Application.EmployeeExamples" />
-        <item itemvalue="Application.AnimalEncounter" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601671721593</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated all Critter subclasses.">
+      <created>1601696671234</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601696671234</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -181,35 +190,35 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updated all Critter subclasses." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1601671721409">
+    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1601696671056">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601671721409" />
+    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601696671056" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
-    <state width="1878" height="134" key="GridCell.Tab.0.bottom" timestamp="1601696505773">
+    <state width="1878" height="149" key="GridCell.Tab.0.bottom" timestamp="1601872289960">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="134" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601696505773" />
+    <state width="1878" height="149" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601872289960" />
     <state width="1878" height="155" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1601500967136" />
-    <state width="1878" height="134" key="GridCell.Tab.0.center" timestamp="1601696505771">
+    <state width="1878" height="149" key="GridCell.Tab.0.center" timestamp="1601872289958">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="134" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601696505771" />
+    <state width="1878" height="149" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601872289958" />
     <state width="1878" height="155" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1601500967135" />
-    <state width="1878" height="134" key="GridCell.Tab.0.left" timestamp="1601696505771">
+    <state width="1878" height="149" key="GridCell.Tab.0.left" timestamp="1601872289958">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="134" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601696505771" />
+    <state width="1878" height="149" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601872289958" />
     <state width="1878" height="155" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1601500967134" />
-    <state width="1878" height="134" key="GridCell.Tab.0.right" timestamp="1601696505772">
+    <state width="1878" height="149" key="GridCell.Tab.0.right" timestamp="1601872289959">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="134" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601696505772" />
+    <state width="1878" height="149" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601872289959" />
     <state width="1878" height="155" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1601500967135" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1601671723296">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1601696704487">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601671723296" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601696704487" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892765137" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
@@ -219,10 +228,10 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2582" y="425" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707560601" />
-    <state x="344" y="189" key="new project wizard" timestamp="1600919903927">
-      <screen x="0" y="25" width="1920" height="1175" />
+    <state x="2264" y="172" key="new project wizard" timestamp="1601852998171">
+      <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2264" y="172" key="new project wizard/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707577978" />
+    <state x="2264" y="172" key="new project wizard/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601852998171" />
     <state x="344" y="189" key="new project wizard/0.25.1920.1175@0.25.1920.1175" timestamp="1600919903927" />
     <state x="2727" y="332" key="refactoring.ChangeSignatureDialog" timestamp="1601421002113">
       <screen x="1920" y="25" width="1920" height="1055" />
