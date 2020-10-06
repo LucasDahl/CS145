@@ -9,6 +9,7 @@ public class CS145Chapter10ShortAssignment
   public static void main(String[] args)
   {
     List<String> myList = new ArrayList<>();
+    int num = 0;
     
     myList.add("Four");
     myList.add("score");
@@ -122,7 +123,6 @@ public class CS145Chapter10ShortAssignment
     return list;
 
   }
-
 
 }
 
