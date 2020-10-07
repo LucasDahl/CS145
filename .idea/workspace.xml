@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Notes/src/Chapter11Examples.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes/src/Chapter11.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/src/Chapter11.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
       <recent name="$PROJECT_DIR$/AssignmentTwo/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Chapter11">
+  <component name="RunManager" selected="Application.Chapter11Examples">
     <configuration name="AnimalEncounter (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnimalEncounter" />
       <module name="AssignmentOne" />
@@ -59,6 +59,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Chapter11Examples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter11Examples" />
+      <module name="Notes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CritterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CritterMain" />
       <module name="AssignmentTwo" />
@@ -66,20 +73,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeStuffExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ShapeStuffExamples" />
-      <module name="Notes" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Chapter11Examples" />
         <item itemvalue="Application.Chapter11" />
         <item itemvalue="Application.CS145Chapter10ShortAssignment" />
         <item itemvalue="Application.CritterMain" />
         <item itemvalue="Application.AnimalEncounter (1)" />
-        <item itemvalue="Application.ShapeStuffExamples" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602007282034</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added notes about Maps.">
+      <created>1602017242224</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602017242224</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -199,38 +206,39 @@
     <MESSAGE value="Updated all Critter subclasses." />
     <MESSAGE value="Finished the short assignment and the challenge for chapter 10." />
     <MESSAGE value="Added notes about sets." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added notes about sets." />
+    <MESSAGE value="Added notes about Maps." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added notes about Maps." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1602007281850">
+    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1602017242025">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602007281850" />
+    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602017242025" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
-    <state width="1878" height="148" key="GridCell.Tab.0.bottom" timestamp="1602017181663">
+    <state width="1878" height="148" key="GridCell.Tab.0.bottom" timestamp="1602103773125">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="148" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602017181663" />
+    <state width="1878" height="148" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602103773125" />
     <state width="1878" height="171" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791767" />
-    <state width="1878" height="148" key="GridCell.Tab.0.center" timestamp="1602017181659">
+    <state width="1878" height="148" key="GridCell.Tab.0.center" timestamp="1602103773124">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="148" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602017181659" />
+    <state width="1878" height="148" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602103773124" />
     <state width="1878" height="171" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791765" />
-    <state width="1878" height="148" key="GridCell.Tab.0.left" timestamp="1602017181656">
+    <state width="1878" height="148" key="GridCell.Tab.0.left" timestamp="1602103773123">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="148" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602017181656" />
+    <state width="1878" height="148" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602103773123" />
     <state width="1878" height="171" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791765" />
-    <state width="1878" height="148" key="GridCell.Tab.0.right" timestamp="1602017181662">
+    <state width="1878" height="148" key="GridCell.Tab.0.right" timestamp="1602103773124">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="148" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602017181662" />
+    <state width="1878" height="148" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602103773124" />
     <state width="1878" height="171" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791766" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1602007310730">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1602017249764">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602007310730" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602017249764" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892765137" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
