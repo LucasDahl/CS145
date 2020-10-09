@@ -64,6 +64,9 @@ public class LevenshteinFinder {
 
     private void findPath(String a, String b) {
 
+        // Set the path distance
+        distance = wordPath.size();
+
     }
 
     /**
