@@ -21,6 +21,7 @@ public class LevenshteinFinder {
      * @param sPath This will be the staring path String.
      * @param ePath This will be the ending path String.
      * @param words This is the set of words.
+     * @throws IllegalArgumentException if the parameters sPath and ePAth are not the same length.
      */
     public LevenshteinFinder(String sPath, String ePath, Set<String> words) {
 
@@ -33,9 +34,8 @@ public class LevenshteinFinder {
 
         }
 
-        // Set the first and last part of the wordPath.
+        // Set the first wordPath.
         wordPath.add(sPath);
-        wordPath.add(1, ePath);
 
     }
 
