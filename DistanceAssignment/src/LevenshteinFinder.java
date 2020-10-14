@@ -10,13 +10,16 @@ public class LevenshteinFinder {
 
     // **************************** Fields ****************************
     private String startingPath, endingPath;
-    private Map<String, Set<String>> words = new TreeMap<>();
+    private Map<String, Set<String>> neighborWords = new TreeMap<>();
     private int distance = -1;
     private List<String> wordPath = new ArrayList<>();
 
     // ************************** Constructors ************************
 
     /**
+     *This constructor will setup the LevenshsteinFinder object. It will
+     * check both word lengths and trims the set to only contain words of
+     * that length.
      *
      * @param sPath This will be the staring path String.
      * @param ePath This will be the ending path String.
@@ -34,12 +37,36 @@ public class LevenshteinFinder {
 
         }
 
-        // Set the first wordPath.
+        // Trim the set to be only the words with the same length.
+        trimWords(words, startingPath.length());
+
+        // Set the first word in the wordPath.
         wordPath.add(sPath);
+
+        // Get the distance.
+        getDistance();
 
     }
 
+
     // **************************** Methods ***************************
+
+    // Trim the set to only keep the words with the same length as the path words.
+    private void trimWords(Set<String> theSet, int wordLength) {
+
+        // Properties
+        Iterator<String> words = theSet.iterator();
+
+        while(words.hasNext()) {
+            String word = words.next();
+            if(word.length() != wordLength) {
+                words.remove();
+            }
+        }
+
+        //return theSet;
+    }
+
     private int differentLetters(String a, String b) {
 
         // Properties
@@ -58,8 +85,7 @@ public class LevenshteinFinder {
     }
 
     private int findDistance(String a, String b) {
-
-        return distance;
+        return  distance = wordPath.size();
     }
 
     private void findPath(String a, String b) {
@@ -88,7 +114,6 @@ public class LevenshteinFinder {
         for(int i = 0; i < wordPath.size(); i++) {
 
             if(i == wordPath.size()) {
-
                 // This is the last word in the path
                 stringPath += (wordPath.get(i));
             } else {

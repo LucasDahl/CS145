@@ -13,7 +13,7 @@ public class Lion extends Critter  {
 
     // **************************** Fields ****************************
     private Color lionColor;
-    private Color[] colorArray = {Color.RED, Color.GREEN, Color.YELLOW, Color.BLUE};
+    private static Color[] colorArray = {Color.RED, Color.GREEN, Color.YELLOW, Color.BLUE};
     private Random randomColorNum = new Random();
     private int moves = 0;
 

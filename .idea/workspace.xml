@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Notes/src/Recursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notes/src/FileCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Lion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DistanceAssignment/src/LevenshteinFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/DistanceAssignment/src/LevenshteinFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DistanceAssignment/src/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes/src/Recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/src/Recursion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,24 +43,24 @@
       <recent name="$PROJECT_DIR$/ShortAssignment/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Recursion">
-    <configuration name="Chapter11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter11" />
-      <module name="Notes" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter11Examples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter11Examples" />
-      <module name="Notes" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.FileCrawler">
     <configuration name="Chapter11Iterators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chapter11Iterators" />
       <module name="Notes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileCrawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileCrawler" />
+      <module name="Notes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LevenDistanceFinderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LevenDistanceFinderMain" />
+      <module name="DistanceAssignment" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,11 +81,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileCrawler" />
         <item itemvalue="Application.Recursion" />
+        <item itemvalue="Application.LevenDistanceFinderMain" />
         <item itemvalue="Application.Occurrences" />
         <item itemvalue="Application.Chapter11Iterators" />
-        <item itemvalue="Application.Chapter11Examples" />
-        <item itemvalue="Application.Chapter11" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602276073257</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added notes on Recursion and updated Java doc on the Long assignment.">
+      <created>1602536949465</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602536949465</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -236,42 +244,47 @@
     <MESSAGE value="Added notes about Maps and sets." />
     <MESSAGE value="Started the class for assignment number 3(Distance assignment)." />
     <MESSAGE value="Updated the distance assignment and finished the short Occurrences assignment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the distance assignment and finished the short Occurrences assignment." />
+    <MESSAGE value="Added notes on Recursion and updated Java doc on the Long assignment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added notes on Recursion and updated Java doc on the Long assignment." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2568" y="292" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602112656876">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2568" y="292" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602112656876" />
-    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1602276073050">
+    <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602604866034">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602276073050" />
+    <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
+    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1602536949248">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602536949247" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
-    <state width="1878" height="218" key="GridCell.Tab.0.bottom" timestamp="1602535970127">
+    <state width="1878" height="218" key="GridCell.Tab.0.bottom" timestamp="1602707758538">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="218" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602535970127" />
+    <state width="1878" height="218" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602707758538" />
     <state width="1878" height="171" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791767" />
-    <state width="1878" height="218" key="GridCell.Tab.0.center" timestamp="1602535970126">
+    <state width="1878" height="218" key="GridCell.Tab.0.center" timestamp="1602707758537">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="218" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602535970126" />
+    <state width="1878" height="218" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602707758537" />
     <state width="1878" height="171" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791765" />
-    <state width="1878" height="218" key="GridCell.Tab.0.left" timestamp="1602535970125">
+    <state width="1878" height="218" key="GridCell.Tab.0.left" timestamp="1602707758536">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="218" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602535970125" />
+    <state width="1878" height="218" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602707758536" />
     <state width="1878" height="171" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791765" />
-    <state width="1878" height="218" key="GridCell.Tab.0.right" timestamp="1602535970127">
+    <state width="1878" height="218" key="GridCell.Tab.0.right" timestamp="1602707758538">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="218" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602535970127" />
+    <state width="1878" height="218" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602707758538" />
     <state width="1878" height="171" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791766" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1602276075120">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1602536952785">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602276075120" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602536952785" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892765137" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
