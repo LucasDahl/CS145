@@ -37,19 +37,47 @@ public class LevenshteinFinder {
 
         }
 
-        // Trim the set to be only the words with the same length.
-        trimWords(words, startingPath.length());
+        // Set up the map
+        setUpMap(neighborWords, words, startingPath.length());
 
-        // Set the first word in the wordPath.
-        wordPath.add(sPath);
+        // Find the distance.
+        findDistance(startingPath, endingPath);
 
-        // Get the distance.
-        getDistance();
+        // Find the path
+        findPath(startingPath, endingPath);
+
+//        System.out.println(neighborWords.get("aah"));
+//        System.out.println(neighborWords.get("aas"));
+//        System.out.println(neighborWords.get("aal"));
 
     }
 
-
     // **************************** Methods ***************************
+    private void setUpMap(Map<String, Set<String>> map, Set<String> set, int size) {
+
+        // Trim the set to be only the words of the same length.
+        trimWords(set, size);
+
+        // Setup the map
+        for(String word: set) {
+            map.put(word, setMapValues(word, set));
+        }
+
+    }
+
+    // This will set the values of each set in the map.
+    private Set<String> setMapValues(String wordKey, Set<String> setWords) {
+
+        Set<String> wordSet = new TreeSet<>();
+
+        // Loop through the set.
+        for(String word: setWords) {
+            if(differentLetters(wordKey, word) == 1) {
+                wordSet.add(word);
+            }
+        }
+        return wordSet;
+    }
 
     // Trim the set to only keep the words with the same length as the path words.
     private void trimWords(Set<String> theSet, int wordLength) {
@@ -85,13 +113,35 @@ public class LevenshteinFinder {
     }
 
     private int findDistance(String a, String b) {
-        return  distance = wordPath.size();
+
+        // Properties
+        Set<String> setOne = new TreeSet<>(), setTwo = new TreeSet<>();
+        int counter = 0;
+
+        setTwo.add(a);
+        while((setOne.size() != setTwo.size()) && !setTwo.contains(b)) {
+
+            // Set the first set and clear the second
+            setOne.addAll(setTwo);
+            setTwo.clear();
+
+            // Add all the neighbor words.
+            for(String word: setOne) {
+                setTwo.addAll(neighborWords.get(word));
+            }
+
+            counter++;
+        }
+
+        distance = counter;
+
+        return  distance;
     }
 
     private void findPath(String a, String b) {
 
         // Set the path distance
-        distance = wordPath.size();
+        //distance = wordPath.size();
 
     }
 

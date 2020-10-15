@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Notes/src/FileCrawler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssignmentTwo/src/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/AssignmentTwo/src/Lion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DistanceAssignment/src/LevenshteinFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/DistanceAssignment/src/LevenshteinFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes/src/Recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/src/Recursion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +35,13 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/MiniActivity/src" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/DistanceAssignment/src" />
-      <recent name="$PROJECT_DIR$/ShortAssignment/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FileCrawler">
+  <component name="RunManager" selected="Application.LevenDistanceFinderMain">
     <configuration name="Chapter11Iterators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chapter11Iterators" />
       <module name="Notes" />
@@ -81,9 +79,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LevenDistanceFinderMain" />
         <item itemvalue="Application.FileCrawler" />
         <item itemvalue="Application.Recursion" />
-        <item itemvalue="Application.LevenDistanceFinderMain" />
         <item itemvalue="Application.Occurrences" />
         <item itemvalue="Application.Chapter11Iterators" />
       </list>
@@ -224,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602536949465</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added more notes on recursion.">
+      <created>1602709037800</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1602709037800</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -245,9 +250,14 @@
     <MESSAGE value="Started the class for assignment number 3(Distance assignment)." />
     <MESSAGE value="Updated the distance assignment and finished the short Occurrences assignment." />
     <MESSAGE value="Added notes on Recursion and updated Java doc on the Long assignment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added notes on Recursion and updated Java doc on the Long assignment." />
+    <MESSAGE value="Added more notes on recursion." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more notes on recursion." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602717213668" />
     <state x="2568" y="292" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602112656876">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
@@ -256,35 +266,35 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1602536949248">
+    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1602709037600">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602536949247" />
+    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602709037600" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
-    <state width="1878" height="218" key="GridCell.Tab.0.bottom" timestamp="1602707758538">
+    <state width="1878" height="218" key="GridCell.Tab.0.bottom" timestamp="1602741250033">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="218" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602707758538" />
+    <state width="1878" height="218" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602741250033" />
     <state width="1878" height="171" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791767" />
-    <state width="1878" height="218" key="GridCell.Tab.0.center" timestamp="1602707758537">
+    <state width="1878" height="218" key="GridCell.Tab.0.center" timestamp="1602741250032">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="218" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602707758537" />
+    <state width="1878" height="218" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602741250032" />
     <state width="1878" height="171" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791765" />
-    <state width="1878" height="218" key="GridCell.Tab.0.left" timestamp="1602707758536">
+    <state width="1878" height="218" key="GridCell.Tab.0.left" timestamp="1602741250031">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="218" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602707758536" />
+    <state width="1878" height="218" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602741250031" />
     <state width="1878" height="171" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791765" />
-    <state width="1878" height="218" key="GridCell.Tab.0.right" timestamp="1602707758538">
+    <state width="1878" height="218" key="GridCell.Tab.0.right" timestamp="1602741250032">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="218" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602707758538" />
+    <state width="1878" height="218" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602741250032" />
     <state width="1878" height="171" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1601957791766" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1602536952785">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1602709070383">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602536952785" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602709070383" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892765137" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
