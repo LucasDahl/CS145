@@ -1,6 +1,7 @@
 import java.util.*;
 /**
- * This class
+ * This class uses the Levenshtein method to
+ * find the distance between two words.
  *
  * @author Lucas D. Dahl
  * @version 10/06/20
@@ -31,36 +32,18 @@ public class LevenshteinFinder {
         if(sPath.length() != ePath.length()) {
             throw new IllegalArgumentException("Both words must be the same length!");
         } else {
-
             startingPath = sPath;
             endingPath = ePath;
-
-        }
-
-        trimWords(words, startingPath.length());
-
-        for(String word: words) {
-            neighborWords.put(word, new TreeSet<>());
-        }
-
-        for(String word: words) {
-            for(String word2: words) {
-                if(differentLetters(word, word2) == 1) {
-                    neighborWords.get(word).add(word2);
-                    neighborWords.get(word2).add(word);
-                }
-             }
         }
 
         // Set up the map
-        //setUpMap(neighborWords, words, startingPath.length());
+        setUpMap(neighborWords, words, startingPath.length());
 
         // Find the distance.
         distance = findDistance(startingPath, endingPath);
 
         // Find the path
         findPath(startingPath, endingPath);
-
 
     }
 
@@ -104,14 +87,12 @@ public class LevenshteinFinder {
                 words.remove();
             }
         }
-
-        //return theSet;
     }
 
-    private int differentLetters(String a, String b) {
+    private int differentLetters(String a, String wordB) {
 
         // Properties
-        char[] wordOne = a.toCharArray(), wordTwo = b.toCharArray();
+        char[] wordOne = a.toCharArray(), wordTwo = wordB.toCharArray();
         int differentLetters = 0;
 
         for(int i = 0; i < a.length(); i++) {
@@ -119,9 +100,7 @@ public class LevenshteinFinder {
             if(wordOne[i] != wordTwo[i]) {
                 differentLetters++;
             }
-
         }
-
         return differentLetters;
     }
 
@@ -136,56 +115,58 @@ public class LevenshteinFinder {
 
         while(setOne.size() != setTwo.size() && !setTwo.contains(endWord)) {
 
-            for(String x: setTwo) {
-                setOne.add(x);
+            // Add all the words from the second set into the first set.
+            for(String word: setTwo) {
+                setOne.add(word);
             }
+
+            // Clear the second set
             setTwo.clear();
 
+            // Add every word in the first set and their neighbor into the second set.
             for(String word: setOne) {
                 setTwo.add(word);
-                for(String wordB: neighborWords.get(word)) {
-                    setTwo.add(wordB);
+                for(String wordNeighbor: neighborWords.get(word)) {
+                    setTwo.add(wordNeighbor);
                 }
             }
 
+            // Increase the counter
             counter++;
 
-            if(setTwo.contains(endWord)) {
-                return counter;
-            }
-
         }
-
-        counter = -1;
-        
+        // If the second set does not contain the end word, return -1
+        if (!setTwo.contains(endWord)) {
+            counter = -1;
+        }
         return counter;
-
     }
 
     private void findPath(String startWord, String endWord) {
-        Set<String> newSet = new TreeSet<>();
 
-        //int count = distance;
+        // Properties
+        Set<String> pathSet;
+
         if(distance < 0) {
-            wordPath.add("There is no path");
+            wordPath.add("There is no path.");
             return;
         } else {
 
             // Add the first element.
             wordPath.add(startWord);
-
-            newSet = neighborWords.get(startWord);
+            wordPath.add("->");
+            pathSet = neighborWords.get(startWord);
 
             for(int i = (distance - 1); i >= 1; i--) {
-                for(String x: newSet) {
+                for(String x: pathSet) {
                     if(findDistance(x, endWord) == i) {
                         wordPath.add(x);
-                        newSet = neighborWords.get(x);
+                        wordPath.add("->");
+                        pathSet = neighborWords.get(x);
                     }
                 }
             }
-
-
+            // Add the last word to the path
             wordPath.add(endWord);
 
         }
@@ -207,12 +188,9 @@ public class LevenshteinFinder {
 
         String stringPath = "";
 
-        for(int i = 0; i < wordPath.size() - 1; i++) {
-            stringPath += (wordPath.get(i) + "->");
+        for(int i = 0; i < wordPath.size(); i++) {
+            stringPath += (wordPath.get(i));
         }
-
-        stringPath += (wordPath.get(wordPath.size() - 1));
-
         return stringPath;
     }
 
