@@ -37,6 +37,21 @@ public class LevenshteinFinder {
 
         }
 
+//        trimWords(words, startingPath.length());
+//
+//        for(String word: words) {
+//            neighborWords.put(word, new TreeSet<>());
+//        }
+//
+//        for(String word: words) {
+//            for(String word2: words) {
+//                if(differentLetters(word, word2) == 1) {
+//                    neighborWords.get(word).add(word2);
+//                    neighborWords.get(word2).add(word);
+//                }
+//             }
+//        }
+
         // Set up the map
         setUpMap(neighborWords, words, startingPath.length());
 
@@ -46,9 +61,6 @@ public class LevenshteinFinder {
         // Find the path
         findPath(startingPath, endingPath);
 
-//        System.out.println(neighborWords.get("aah"));
-//        System.out.println(neighborWords.get("aas"));
-//        System.out.println(neighborWords.get("aal"));
 
     }
 
@@ -68,6 +80,7 @@ public class LevenshteinFinder {
     // This will set the values of each set in the map.
     private Set<String> setMapValues(String wordKey, Set<String> setWords) {
 
+        // Properties
         Set<String> wordSet = new TreeSet<>();
 
         // Loop through the set.
@@ -119,19 +132,33 @@ public class LevenshteinFinder {
         int counter = 0;
 
         setTwo.add(a);
+
+        setOne.addAll(setTwo);
+        setTwo.clear();
+
+        // Add all the neighbor words.
+
         while((setOne.size() != setTwo.size()) && !setTwo.contains(b)) {
 
             // Set the first set and clear the second
             setOne.addAll(setTwo);
             setTwo.clear();
 
-            // Add all the neighbor words.
             for(String word: setOne) {
                 setTwo.addAll(neighborWords.get(word));
             }
 
-            counter++;
+            if(counter >= setOne.size()) {
+                distance = -1;
+                return distance;
+            } else {
+                counter++;
+            }
+
         }
+
+
+
 
         distance = counter;
 
@@ -141,7 +168,6 @@ public class LevenshteinFinder {
     private void findPath(String a, String b) {
 
         // Set the path distance
-        //distance = wordPath.size();
 
     }
 
