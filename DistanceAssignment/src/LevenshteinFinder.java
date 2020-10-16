@@ -56,7 +56,7 @@ public class LevenshteinFinder {
         //setUpMap(neighborWords, words, startingPath.length());
 
         // Find the distance.
-        findDistance(startingPath, endingPath);
+        distance = findDistance(startingPath, endingPath);
 
         // Find the path
         findPath(startingPath, endingPath);
@@ -151,21 +151,21 @@ public class LevenshteinFinder {
             counter++;
 
             if(setTwo.contains(endWord)) {
-                distance = counter;
                 return counter;
             }
 
         }
 
-        distance = -1;
-        return distance;
+        counter = -1;
+        
+        return counter;
 
     }
 
     private void findPath(String startWord, String endWord) {
         Set<String> newSet = new TreeSet<>();
 
-        int count = distance;
+        //int count = distance;
         if(distance < 0) {
             wordPath.add("There is no path");
             return;
@@ -176,7 +176,7 @@ public class LevenshteinFinder {
 
             newSet = neighborWords.get(startWord);
 
-            for(int i = (count - 1); i >= 1; i--) {
+            for(int i = (distance - 1); i >= 1; i--) {
                 for(String x: newSet) {
                     if(findDistance(x, endWord) == i) {
                         wordPath.add(x);
@@ -207,16 +207,11 @@ public class LevenshteinFinder {
 
         String stringPath = "";
 
-        for(int i = 0; i < wordPath.size(); i++) {
-
-            if(i != wordPath.size()) {
-                stringPath += (wordPath.get(i) + "->");
-            } else {
-                // This is the last word in the path
-                stringPath += (wordPath.get(i));
-            }
-
+        for(int i = 0; i < wordPath.size() - 1; i++) {
+            stringPath += (wordPath.get(i) + "->");
         }
+
+        stringPath += (wordPath.get(wordPath.size() - 1));
 
         return stringPath;
     }
