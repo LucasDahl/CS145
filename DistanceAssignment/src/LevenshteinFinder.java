@@ -33,7 +33,6 @@ public class LevenshteinFinder {
             endingPath = ePath;
         }
 
-
         // Set up the map
         setUpMap(neighborWords, words, startingPath.length());
 
@@ -150,14 +149,12 @@ public class LevenshteinFinder {
         } else {
             // Add the first element and -> to the word path.
             wordPath.add(startWord);
-            wordPath.add("->");
             pathSet = neighborWords.get(startWord);
 
             for(int i = (distance - 1); i >= 1; i--) {
                 for(String word: pathSet) {
                     if(findDistance(word, endWord) == i) {
                         wordPath.add(word);
-                        wordPath.add("->");
                         pathSet = neighborWords.get(word);
                         break;
                     }
@@ -187,9 +184,10 @@ public class LevenshteinFinder {
         if(distance < 0) {
             stringPath = "There is no path";
         } else {
-            for(int i = 0; i < wordPath.size(); i++) {
-                stringPath += (wordPath.get(i));
+            for(int i = 0; i < wordPath.size() - 1; i++) {
+                stringPath += (wordPath.get(i) + "->");
             }
+            stringPath += (wordPath.get(wordPath.size() - 1));
         }
         return stringPath;
     }
