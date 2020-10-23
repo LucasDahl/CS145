@@ -1,6 +1,8 @@
 import java.util.*;
 
 /**
+ *This program will read an input file, and using grammar in Backus-Naur form
+ * will randomly generate elements of the grammar.
  *
  * @author Lucas D. Dahl
  * @version 10/19/20
@@ -40,6 +42,7 @@ public class GrammarSolver {
         // Set the delimiter
         lineScanner.useDelimiter("::=");
 
+        // Create the map of non-terminals and terminals.
         while(lineScanner.hasNext()) {
 
             ArrayList<String> terminal = new ArrayList<>();
@@ -54,26 +57,36 @@ public class GrammarSolver {
             // Set the delimiter
             termScan.useDelimiter("\\|");
 
+            // Divide by each terminal.
             while(termScan.hasNext()) {
-                terminal.add(termScan.next());
+                String word = termScan.next().trim();
+                terminal.add(word);
             }
+
+//            for(String terminalWord: grammarMap.keySet()) {
+//                Scanner test = new Scanner(terminalWord.trim());
+//                test.useDelimiter(" ");
+//                String word = test.next();
+//                terminal.add(word);
+//            }
 
             // Add them to the map.
             grammarMap.put(nonTerminal, terminal);
         }
 
-        for(String key: grammarMap.keySet()) {
-            System.out.println("key: " + key + " -- " + grammarMap.get(key));
-        }
+//        for(String key: grammarMap.keySet()) {
+//            System.out.println("key: " + key + " -- " + grammarMap.get(key));
+//        }
 
     }
 
     // **************************** Methods ***************************
 
-    // **************** Private ***************
 
     // **************** Public ****************
     /**
+     *This method will return true if the map contains the current
+     * symbol as a non-terminal, and false if it does not.
      *
      * @param symbol is the string symbol to check.
      * @return will return true or false if the map contains the key.
@@ -89,8 +102,10 @@ public class GrammarSolver {
     }
 
     /**
+     * This method will return a set containing all the string
+     * non-terminal strings from teh file.
      *
-     * @return
+     * @return a set of Strings that are non-terminal symbols.
      */
     public Set<String> getSymbols() {
 
@@ -101,32 +116,55 @@ public class GrammarSolver {
             grammarSet.add(rule);
         }
 
+        // Return the non-terminal symbols from the file.
         return grammarSet;
     }
 
     /**
+     *This method will take in a non-terminal symbol to start a recursive
+     * generated string.
      *
-     * @param symbol
-     * @return
+     * @param symbol is the symbol to start the generation from,
+     * @return the fine string to display to the user once the base case is met.
      */
     public String generate(String symbol) {
 
         // Properties
         String grammar = "";
         Random rand = new Random();
-        ArrayList<String> terminalSet;
+        ArrayList<String> terminalSet = new ArrayList<>();
 
         if(!contains(symbol)) { // CHECK?
             return symbol;
+        } else {
+
+            int randNum = rand.nextInt(grammarMap.get(symbol).size());
+            String line = grammarMap.get(symbol).get(randNum);
+
+            Scanner termScan = new Scanner(line);
+
+            // Set the delimiter
+            termScan.useDelimiter(" ");
+
+            while(termScan.hasNext()) {
+                String word = termScan.next().trim();
+                terminalSet.add(word);
+            }
+
+//            for(int i = 0; i < terminalSet.size(); i++) {
+//                randNum = rand.nextInt(terminalSet.size());
+//                // Need to check the ones with non-terminal symbols as terminals., maybe look at contains method
+//                grammar += generate(terminalSet.get(randNum)) + " ";
+//            }
+
+            // Create the sentence recursively.
+            for(String terminal: terminalSet) {
+                grammar += generate(terminal) + " ";
+            }
+
         }
 
-        terminalSet = grammarMap.get(symbol);
-        int randNum = rand.nextInt(terminalSet.size());
-        for(int i = 0; i < terminalSet.size(); i++) {
-            grammar += generate(terminalSet.get(randNum)) + " ";
-        }
-
-        return grammar;
+        return grammar.trim();
     }
 
 }

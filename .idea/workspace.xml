@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GrammerAssignment/GrammerAssignment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GrammerAssignment/src/GrammarMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GrammerAssignment/src/GrammarSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Midterm/Midterm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Midterm/src/QuestionFive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Midterm/src/QuestionFour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Midterm/src/QuestionOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Midterm/src/QuestionThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Midterm/src/QuestionTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notes/src/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentence.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentence2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentence3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrammerAssignment/src/GrammarSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/GrammerAssignment/src/GrammarSolver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602955987512</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Started the grammar assignment, and filled out the methods to produce a limited version of the final output.">
+      <created>1603429462135</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603429462135</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -309,7 +301,8 @@
     <MESSAGE value="completed the findPath method." />
     <MESSAGE value="Fixed an issue where the distance would always be one less than the actualt number." />
     <MESSAGE value="Fixed an issue where the path would be wrong if more than one word met the requirements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed an issue where the path would be wrong if more than one word met the requirements." />
+    <MESSAGE value="Started the grammar assignment, and filled out the methods to produce a limited version of the final output." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started the grammar assignment, and filled out the methods to produce a limited version of the final output." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
@@ -328,51 +321,51 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1602955987314">
+    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1603429461918">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602955987314" />
+    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429461918" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
-    <state width="1878" height="235" key="GridCell.Tab.0.bottom" timestamp="1603429383061">
+    <state width="1878" height="235" key="GridCell.Tab.0.bottom" timestamp="1603482356289">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="235" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429383061" />
+    <state width="1878" height="235" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603482356289" />
     <state width="1878" height="269" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1603313863539" />
-    <state width="1878" height="235" key="GridCell.Tab.0.center" timestamp="1603429383059">
+    <state width="1878" height="235" key="GridCell.Tab.0.center" timestamp="1603482356288">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="235" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429383059" />
+    <state width="1878" height="235" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603482356288" />
     <state width="1878" height="269" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1603313863538" />
-    <state width="1878" height="235" key="GridCell.Tab.0.left" timestamp="1603429383059">
+    <state width="1878" height="235" key="GridCell.Tab.0.left" timestamp="1603482356287">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="235" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429383059" />
+    <state width="1878" height="235" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603482356287" />
     <state width="1878" height="269" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1603313863538" />
-    <state width="1878" height="235" key="GridCell.Tab.0.right" timestamp="1603429383060">
+    <state width="1878" height="235" key="GridCell.Tab.0.right" timestamp="1603482356288">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="235" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429383060" />
+    <state width="1878" height="235" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603482356288" />
     <state width="1878" height="269" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1603313863538" />
-    <state width="1878" height="354" key="GridCell.Tab.1.bottom" timestamp="1603402959925">
+    <state width="1878" height="354" key="GridCell.Tab.1.bottom" timestamp="1603429769219">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="354" key="GridCell.Tab.1.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603402959925" />
-    <state width="1878" height="354" key="GridCell.Tab.1.center" timestamp="1603402959924">
+    <state width="1878" height="354" key="GridCell.Tab.1.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429769219" />
+    <state width="1878" height="354" key="GridCell.Tab.1.center" timestamp="1603429769219">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="354" key="GridCell.Tab.1.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603402959924" />
-    <state width="1878" height="354" key="GridCell.Tab.1.left" timestamp="1603402959923">
+    <state width="1878" height="354" key="GridCell.Tab.1.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429769219" />
+    <state width="1878" height="354" key="GridCell.Tab.1.left" timestamp="1603429769218">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="354" key="GridCell.Tab.1.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603402959923" />
-    <state width="1878" height="354" key="GridCell.Tab.1.right" timestamp="1603402959924">
+    <state width="1878" height="354" key="GridCell.Tab.1.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429769218" />
+    <state width="1878" height="354" key="GridCell.Tab.1.right" timestamp="1603429769219">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="354" key="GridCell.Tab.1.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603402959924" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603082692025">
+    <state width="1878" height="354" key="GridCell.Tab.1.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429769219" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603429463882">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603082692025" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429463882" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892765137" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
