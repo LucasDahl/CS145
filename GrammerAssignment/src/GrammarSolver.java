@@ -63,21 +63,13 @@ public class GrammarSolver {
                 terminal.add(word);
             }
 
-//            for(String terminalWord: grammarMap.keySet()) {
-//                Scanner test = new Scanner(terminalWord.trim());
-//                test.useDelimiter(" ");
-//                String word = test.next();
-//                terminal.add(word);
-//            }
-
             // Add them to the map.
             grammarMap.put(nonTerminal, terminal);
         }
 
 //        for(String key: grammarMap.keySet()) {
-//            System.out.println("key: " + key + " -- " + grammarMap.get(key));
+//            System.out.println("Key: " + key + " -- " + grammarMap.get(key));
 //        }
-
     }
 
     // **************************** Methods ***************************
@@ -141,21 +133,20 @@ public class GrammarSolver {
             int randNum = rand.nextInt(grammarMap.get(symbol).size());
             String line = grammarMap.get(symbol).get(randNum);
 
-            Scanner termScan = new Scanner(line);
+            Scanner termScan = new Scanner(line.trim());
 
             // Set the delimiter
             termScan.useDelimiter(" ");
 
             while(termScan.hasNext()) {
                 String word = termScan.next().trim();
-                terminalSet.add(word);
+
+                // If the terminal is not empty, add it to the set.
+                if(!word.isEmpty()) {
+                    terminalSet.add(word);
+                }
             }
 
-//            for(int i = 0; i < terminalSet.size(); i++) {
-//                randNum = rand.nextInt(terminalSet.size());
-//                // Need to check the ones with non-terminal symbols as terminals., maybe look at contains method
-//                grammar += generate(terminalSet.get(randNum)) + " ";
-//            }
 
             // Create the sentence recursively.
             for(String terminal: terminalSet) {
