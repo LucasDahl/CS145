@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
+    <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="Started the grammar assignment, and filled out the methods to produce a limited version of the final output.">
+      <change afterPath="$PROJECT_DIR$/Midterm/src/Alpha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/src/AlphaMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/src/Beta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/src/Delta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm/src/Gamma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrammerAssignment/src/GrammarSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/GrammerAssignment/src/GrammarSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Midterm/src/QuestionFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/Midterm/src/QuestionFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Midterm/src/QuestionOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/Midterm/src/QuestionOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Midterm/src/QuestionThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Midterm/src/QuestionThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Midterm/src/QuestionTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Midterm/src/QuestionTwo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,49 +51,49 @@
       <recent name="$PROJECT_DIR$/MiniActivity/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GrammarMain">
-    <configuration name="FileCrawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FileCrawler" />
-      <module name="Notes" />
+  <component name="RunManager" selected="Application.QuestionFour">
+    <configuration name="AlphaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AlphaMain" />
+      <module name="Midterm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrammarMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GrammarMain" />
-      <module name="GrammerAssignment" />
+    <configuration name="QuestionFour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuestionFour" />
+      <module name="Midterm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LevenDistanceFinderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LevenDistanceFinderMain" />
-      <module name="DistanceAssignment" />
+    <configuration name="QuestionOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuestionOne" />
+      <module name="Midterm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recursion (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Recursion" />
-      <module name="Chapter12MiniAssignment" />
+    <configuration name="QuestionThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuestionThree" />
+      <module name="Midterm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="Notes" />
+    <configuration name="QuestionTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuestionTwo" />
+      <module name="Midterm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GrammarMain" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.Recursion (1)" />
-        <item itemvalue="Application.LevenDistanceFinderMain" />
-        <item itemvalue="Application.FileCrawler" />
+        <item itemvalue="Application.QuestionFour" />
+        <item itemvalue="Application.QuestionThree" />
+        <item itemvalue="Application.QuestionOne" />
+        <item itemvalue="Application.QuestionTwo" />
+        <item itemvalue="Application.AlphaMain" />
       </list>
     </recent_temporary>
   </component>
@@ -321,51 +329,51 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1603429461918">
+    <state x="2516" y="143" key="CommitChangelistDialog2" timestamp="1603498630190">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429461918" />
+    <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603498630190" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
-    <state width="1878" height="235" key="GridCell.Tab.0.bottom" timestamp="1603498464847">
+    <state width="1878" height="235" key="GridCell.Tab.0.bottom" timestamp="1603513990983">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="235" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603498464847" />
+    <state width="1878" height="235" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603513990983" />
     <state width="1878" height="269" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1603313863539" />
-    <state width="1878" height="235" key="GridCell.Tab.0.center" timestamp="1603498464846">
+    <state width="1878" height="235" key="GridCell.Tab.0.center" timestamp="1603513990981">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="235" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603498464846" />
+    <state width="1878" height="235" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603513990981" />
     <state width="1878" height="269" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1603313863538" />
-    <state width="1878" height="235" key="GridCell.Tab.0.left" timestamp="1603498464845">
+    <state width="1878" height="235" key="GridCell.Tab.0.left" timestamp="1603513990981">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="235" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603498464845" />
+    <state width="1878" height="235" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603513990981" />
     <state width="1878" height="269" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1603313863538" />
-    <state width="1878" height="235" key="GridCell.Tab.0.right" timestamp="1603498464846">
+    <state width="1878" height="235" key="GridCell.Tab.0.right" timestamp="1603513990982">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="235" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603498464846" />
+    <state width="1878" height="235" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603513990982" />
     <state width="1878" height="269" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1603313863538" />
-    <state width="1878" height="354" key="GridCell.Tab.1.bottom" timestamp="1603429769219">
+    <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1603510313611">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="354" key="GridCell.Tab.1.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429769219" />
-    <state width="1878" height="354" key="GridCell.Tab.1.center" timestamp="1603429769219">
+    <state width="1878" height="237" key="GridCell.Tab.1.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603510313611" />
+    <state width="1878" height="237" key="GridCell.Tab.1.center" timestamp="1603510313610">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="354" key="GridCell.Tab.1.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429769219" />
-    <state width="1878" height="354" key="GridCell.Tab.1.left" timestamp="1603429769218">
+    <state width="1878" height="237" key="GridCell.Tab.1.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603510313610" />
+    <state width="1878" height="237" key="GridCell.Tab.1.left" timestamp="1603510313609">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="354" key="GridCell.Tab.1.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429769218" />
-    <state width="1878" height="354" key="GridCell.Tab.1.right" timestamp="1603429769219">
+    <state width="1878" height="237" key="GridCell.Tab.1.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603510313609" />
+    <state width="1878" height="237" key="GridCell.Tab.1.right" timestamp="1603510313611">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="354" key="GridCell.Tab.1.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603429769219" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603482781446">
+    <state width="1878" height="237" key="GridCell.Tab.1.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603510313611" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603498641555">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603482781446" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603498641555" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892765137" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
