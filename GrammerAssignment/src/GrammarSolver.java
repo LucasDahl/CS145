@@ -10,7 +10,7 @@ import java.util.*;
 public class GrammarSolver {
 
     // **************************** Fields ****************************
-    private Map<String, ArrayList<String>> grammarMap = new TreeMap<>();
+    private Map<String, List<String>> grammarMap = new TreeMap<>();
 
     // ************************** Constructors ************************
 
@@ -64,7 +64,11 @@ public class GrammarSolver {
             }
 
             // Add them to the map.
-            grammarMap.put(nonTerminal, terminal);
+            if(!grammarMap.containsKey(nonTerminal)) {
+                grammarMap.put(nonTerminal, terminal);
+            } else {
+                throw new IllegalArgumentException("Contains more than one rule set for a non-terminal.");
+            }
         }
 
 //        for(String key: grammarMap.keySet()) {
@@ -126,7 +130,7 @@ public class GrammarSolver {
         Random rand = new Random();
         ArrayList<String> terminalSet = new ArrayList<>();
 
-        if(!contains(symbol)) { // CHECK?
+        if(!contains(symbol)) {
             return symbol;
         } else {
 
@@ -135,7 +139,7 @@ public class GrammarSolver {
 
             Scanner termScan = new Scanner(line.trim());
 
-            // Set the delimiter
+            // Set the delimiter - TRY A TAB
             termScan.useDelimiter(" ");
 
             while(termScan.hasNext()) {
@@ -146,7 +150,6 @@ public class GrammarSolver {
                     terminalSet.add(word);
                 }
             }
-
 
             // Create the sentence recursively.
             for(String terminal: terminalSet) {
