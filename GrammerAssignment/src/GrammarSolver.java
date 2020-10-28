@@ -25,7 +25,6 @@ public class GrammarSolver {
         // Properties
         String nonTerminal = null, list = "";
 
-
         // Make sure the list is not null or empty
         if(rules.isEmpty()) {
             throw new IllegalArgumentException("The rule list must contain at least one rule.");
@@ -71,9 +70,6 @@ public class GrammarSolver {
             }
         }
 
-//        for(String key: grammarMap.keySet()) {
-//            System.out.println("Key: " + key + " -- " + grammarMap.get(key));
-//        }
     }
 
     // **************************** Methods ***************************
@@ -139,7 +135,7 @@ public class GrammarSolver {
 
             Scanner termScan = new Scanner(line.trim());
 
-            // Set the delimiter - TRY A TAB
+            // Set the delimiter
             termScan.useDelimiter(" ");
 
             while(termScan.hasNext()) {
