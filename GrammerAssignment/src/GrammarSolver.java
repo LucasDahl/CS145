@@ -59,7 +59,7 @@ public class GrammarSolver {
             // Divide by each terminal.
             while(termScan.hasNext()) {
                 String word = termScan.next().trim();
-                terminal.add(word);
+                terminal.add(word.trim());
             }
 
             // Add them to the map.
@@ -131,27 +131,20 @@ public class GrammarSolver {
         } else {
 
             int randNum = rand.nextInt(grammarMap.get(symbol).size());
-            String line = grammarMap.get(symbol).get(randNum);
+            String line = grammarMap.get(symbol).get(randNum).trim();
 
             Scanner termScan = new Scanner(line.trim());
 
-            // Set the delimiter
-            termScan.useDelimiter(" ");
-
             while(termScan.hasNext()) {
-                String word = termScan.next().trim();
 
-                // If the terminal is not empty, add it to the set.
-                if(!word.isEmpty()) {
-                    terminalSet.add(word);
-                }
+                String word = termScan.next().trim();
+                terminalSet.add(word);
             }
 
             // Create the sentence recursively.
             for(String terminal: terminalSet) {
                 grammar += generate(terminal) + " ";
             }
-
         }
 
         return grammar.trim();
