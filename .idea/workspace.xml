@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Notes/src/Evaluator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notes/src/TestEverything.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrammerAssignment/src/GrammarSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/GrammerAssignment/src/GrammarSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes/src/StringSplitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/src/StringSplitter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
       <recent name="$PROJECT_DIR$/MiniActivity/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GrammarMain">
+  <component name="RunManager" selected="Application.TestEverything">
     <configuration name="GrammarMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GrammarMain" />
       <module name="GrammerAssignment" />
@@ -65,13 +68,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="QuestionThree" />
-      <module name="Midterm" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StackExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StackExample" />
       <module name="Notes" />
@@ -79,13 +75,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestEverything" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestEverything" />
+      <module name="Notes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestEverything" />
         <item itemvalue="Application.GrammarMain" />
         <item itemvalue="Application.LevenDistanceFinderMain" />
         <item itemvalue="Application.StackExample" />
         <item itemvalue="Application.QuestionFour" />
-        <item itemvalue="Application.QuestionThree" />
       </list>
     </recent_temporary>
   </component>
@@ -356,25 +359,25 @@
     <state x="596" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925873237" />
     <state x="2516" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603908750204" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1600892737595" />
-    <state width="1878" height="206" key="GridCell.Tab.0.bottom" timestamp="1603984391301">
+    <state width="1878" height="206" key="GridCell.Tab.0.bottom" timestamp="1604005419324">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="206" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603984391301" />
+    <state width="1878" height="206" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604005419324" />
     <state width="1878" height="267" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1603745676918" />
-    <state width="1878" height="206" key="GridCell.Tab.0.center" timestamp="1603984391300">
+    <state width="1878" height="206" key="GridCell.Tab.0.center" timestamp="1604005419323">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="206" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603984391300" />
+    <state width="1878" height="206" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604005419323" />
     <state width="1878" height="267" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1603745676918" />
-    <state width="1878" height="206" key="GridCell.Tab.0.left" timestamp="1603984391299">
+    <state width="1878" height="206" key="GridCell.Tab.0.left" timestamp="1604005419322">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="206" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603984391299" />
+    <state width="1878" height="206" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604005419322" />
     <state width="1878" height="267" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1603745676917" />
-    <state width="1878" height="206" key="GridCell.Tab.0.right" timestamp="1603984391300">
+    <state width="1878" height="206" key="GridCell.Tab.0.right" timestamp="1604005419323">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="206" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603984391300" />
+    <state width="1878" height="206" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604005419323" />
     <state width="1878" height="267" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1603745676918" />
     <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1603570397840">
       <screen x="1920" y="25" width="1920" height="1055" />

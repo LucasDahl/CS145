@@ -19,6 +19,7 @@ public class GrammarSolver {
      *  a file that has non-terminals and terminals.
      *
      * @param rules is the list of rules to use to construct a sentence.
+     * @throws IllegalArgumentException throws an error if the list is null, empty, or the key already exists.
      */
     public GrammarSolver(List<String> rules) {
 
@@ -52,7 +53,7 @@ public class GrammarSolver {
             }
 
             // Make sure there are two non-terminals that are the same.
-            if(!grammarMap.containsKey(nonTerminal)) {
+            if(!contains(nonTerminal)) {
                 grammarMap.put(nonTerminal, terminal);
             } else {
                 throw new IllegalArgumentException("Contains more than one rule set for a non-terminal.");
@@ -68,6 +69,7 @@ public class GrammarSolver {
      *
      * @param symbol is the string symbol to check.
      * @return will return true or false if the map contains the key.
+     * @throws IllegalArgumentException throws an error if the symbol is null or empty.
      */
     public Boolean contains(String symbol) {
 
@@ -106,6 +108,7 @@ public class GrammarSolver {
      *
      * @param symbol is the symbol to start the generation from,
      * @return the fine string to display to the user once the base case is met.
+     * @throws IllegalArgumentException throws an error if the symbol is null or empty.
      */
     public String generate(String symbol) {
 

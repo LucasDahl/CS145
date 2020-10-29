@@ -57,7 +57,7 @@ public class StringSplitter {
             if(!SPECIAL_CHARACTERS.contains(nextToken)) {
                 boolean done = false;
 
-                while(!characters.isEmpty()) {
+                while(!characters.isEmpty() && !done) {
 
                     // Look at the next char
                     char ch = characters.peek();
