@@ -23,7 +23,7 @@ public class GrammarSolver {
     public GrammarSolver(List<String> rules) {
 
         // Properties
-        String nonTerminal = null, list = "";
+        String list = "";
 
         // Make sure the list is not null or empty
         if(rules.isEmpty()) {
@@ -35,10 +35,8 @@ public class GrammarSolver {
             list += word + "::=";
         }
 
-        // Setup the scanner.
+        // Setup the scanner and the delimiter
         Scanner lineScanner = new Scanner(list);
-
-        // Set the delimiter
         lineScanner.useDelimiter("::=");
 
         // Create the map of non-terminals and terminals.
@@ -47,9 +45,7 @@ public class GrammarSolver {
             ArrayList<String> terminal = new ArrayList<>();
 
             // Get the terminal and the non-terminal
-            nonTerminal = lineScanner.next().trim();
-
-            // Setup the terminals to scan through an breakup.
+            String nonTerminal = lineScanner.next().trim();
             String terminalLine = lineScanner.next();
             Scanner termScan = new Scanner(terminalLine);
 
@@ -59,23 +55,19 @@ public class GrammarSolver {
             // Divide by each terminal.
             while(termScan.hasNext()) {
                 String word = termScan.next().trim();
-                terminal.add(word.trim());
+                terminal.add(word);
             }
 
-            // Add them to the map.
             if(!grammarMap.containsKey(nonTerminal)) {
                 grammarMap.put(nonTerminal, terminal);
             } else {
                 throw new IllegalArgumentException("Contains more than one rule set for a non-terminal.");
             }
         }
-
     }
 
     // **************************** Methods ***************************
 
-
-    // **************** Public ****************
     /**
      *This method will return true if the map contains the current
      * symbol as a non-terminal, and false if it does not.
@@ -90,6 +82,7 @@ public class GrammarSolver {
             throw new IllegalArgumentException("The symbol does not exist.");
         }
 
+        // Return true if the symbol is a key in the map.
         return grammarMap.containsKey(symbol);
     }
 
@@ -104,6 +97,7 @@ public class GrammarSolver {
         // Properties
         Set<String> grammarSet = new TreeSet<>();
 
+        // Get all the keys(non-terminals) from the map.
         for(String rule: grammarMap.keySet()) {
             grammarSet.add(rule);
         }
@@ -123,20 +117,26 @@ public class GrammarSolver {
 
         // Properties
         String grammar = "";
-        Random rand = new Random();
-        ArrayList<String> terminalSet = new ArrayList<>();
+
+        // Make sure the symbol is not empty or null.
+        if(symbol.isEmpty()) {
+            throw new IllegalArgumentException("The symbol does not exist.");
+        }
 
         if(!contains(symbol)) {
             return symbol;
         } else {
 
+            // Get the terminals into a set.
+            Random rand = new Random();
+            ArrayList<String> terminalSet = new ArrayList<>();
             int randNum = rand.nextInt(grammarMap.get(symbol).size());
-            String line = grammarMap.get(symbol).get(randNum).trim();
 
+            // Setup the scanner
+            String line = grammarMap.get(symbol).get(randNum);
             Scanner termScan = new Scanner(line.trim());
 
             while(termScan.hasNext()) {
-
                 String word = termScan.next().trim();
                 terminalSet.add(word);
             }
@@ -149,5 +149,4 @@ public class GrammarSolver {
 
         return grammar.trim();
     }
-
 }
