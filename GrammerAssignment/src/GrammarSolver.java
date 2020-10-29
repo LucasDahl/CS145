@@ -22,42 +22,36 @@ public class GrammarSolver {
      */
     public GrammarSolver(List<String> rules) {
 
-        // Properties
-        String list = "";
-
         // Make sure the list is not null or empty
         if(rules.isEmpty()) {
             throw new IllegalArgumentException("The rule list must contain at least one rule.");
         }
 
-        // Create the string to scan.
+        // Split the list into non-terminals and terminals.
         for(String word: rules) {
-            list += word + "::=";
-        }
 
-        // Setup the scanner and the delimiter
-        Scanner lineScanner = new Scanner(list);
-        lineScanner.useDelimiter("::=");
-
-        // Create the map of non-terminals and terminals.
-        while(lineScanner.hasNext()) {
-
+            // Loop properties
             ArrayList<String> terminal = new ArrayList<>();
+            Scanner lineScanner = new Scanner(word);
+
+            // Set the Delimiter
+            lineScanner.useDelimiter("::=");
 
             // Get the terminal and the non-terminal
             String nonTerminal = lineScanner.next().trim();
             String terminalLine = lineScanner.next();
             Scanner termScan = new Scanner(terminalLine);
 
-            // Set the delimiter
+            // Set the  new delimiter
             termScan.useDelimiter("\\|");
 
-            // Divide by each terminal.
+            // Separate for each terminal
             while(termScan.hasNext()) {
-                String word = termScan.next().trim();
-                terminal.add(word);
+                String termWord = termScan.next().trim();
+                terminal.add(termWord);
             }
 
+            // Make sure there are two non-terminals that are the same.
             if(!grammarMap.containsKey(nonTerminal)) {
                 grammarMap.put(nonTerminal, terminal);
             } else {
