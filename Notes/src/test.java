@@ -41,6 +41,13 @@ public class test {
         System.out.println(front);
         System.out.println(back);
 
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        int test = (int)Math.pow((2 * 90 + 90), 0.5) * 10;
+        System.out.println(test);
+
+
     }
 
     public static void mystery2(ArrayList<Integer> list) {
