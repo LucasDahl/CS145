@@ -1,5 +1,7 @@
 /**
- * This class
+ * This class is a subclass of the Card class,
+ * and will use most of teh methods and constructors of
+ * the super class.
  *
  * @author Lucas D. Dahl
  * @version 11/1/20

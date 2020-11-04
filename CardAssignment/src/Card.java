@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- * This class
+ * This class will make a card object to store certain values.
  *
  * @author Lucas D. Dahl
  * @version 11/1/20
