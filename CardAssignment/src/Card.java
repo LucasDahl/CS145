@@ -5,7 +5,7 @@ import java.util.*;
  * @author Lucas D. Dahl
  * @version 11/1/20
  */
-public class Card {
+public class Card implements Comparable<Card> {
 
     // **************************** Fields ****************************
     private int power;
@@ -64,6 +64,15 @@ public class Card {
     // **************************** Methods ***************************
 
     /**
+     * 
+     * @param o
+     * @return
+     */
+    public int compareTo(Card o) {
+        return 0;
+    }
+
+    /**
      * This method simply returns the cards
      * power.
      *
@@ -91,7 +100,7 @@ public class Card {
      * @return will return the cost of the card.
      */
     public int getCost() {
-        return (int) Math.pow((2 * power + toughness), 0.5) * 10; // Check with Teacher
+        return (int) Math.ceil(Math.pow((2 * power + toughness), 0.5) * 10);
     }
 
     @Override

@@ -12,7 +12,7 @@ public class CardArrayList implements CardList {
 
     // **************************** Fields ****************************
     private Card[] cardArray;
-    private int size = 0;
+    private int size;
     // ************************** Constructors ************************
 
     /**
@@ -21,6 +21,7 @@ public class CardArrayList implements CardList {
      */
     public CardArrayList() {
         cardArray = new Card[10];
+        size = 0;
     }
 
     /**
@@ -33,9 +34,10 @@ public class CardArrayList implements CardList {
     public CardArrayList(int x) {
 
         if(x < 1) {
-            throw new IllegalArgumentException("The array of Cards must be greater than one.");
+            throw new IllegalArgumentException("The array of Cards must be at least one.");
         } else {
             cardArray = new Card[x];
+            size = 0;
         }
 
     }
@@ -45,15 +47,21 @@ public class CardArrayList implements CardList {
     public String toString() {
 
         // Properties
-        String cardList = "[0: ";
+        String cardList = "";
 
-        for(int i = 0; i < cardArray.length; i++) {
-            cardList += cardArray[i].toString() + ",";
+        if(size == 0) {
+            return "[0: " + size + "]";
+        } else {
+
+            for(int i = 0; i < size + 1; i++) {
+                if(cardArray[i] != null) {
+                    cardList = cardList + "," + cardArray[i].toString();
+                }
+            }
+
         }
 
-        cardList += ":" + cardArray.length + "]";
-
-        return cardList;
+        return  "[0: " + cardList.substring(1) + " :" + size + "]";
     }
 
     /**
@@ -63,34 +71,53 @@ public class CardArrayList implements CardList {
      * @return this is the total number of elements in the array, not the size of the array.
      */
     public int size() {
-
-        // Get the total number of elements in the array
-        for(int i = 0; i < cardArray.length; i++) {
-
-            if(cardArray[i] != null) {
-                size++;
-            }
-        }
-
         return size;
     }
 
     /**
+     * This method will add a given card to the array.
      *
-     * @param x
+     * @param x this is the card to passed in to add to the array.
      */
     public void add(Card x) {
+
+        if(cardArray[size] == null) {
+            cardArray[size + 1] = x;
+            size++;
+        } else {
+
+            // Expand the array and then add.
+            expand();
+            cardArray[size + 1] = x;
+            size++;
+        }
 
     }
 
     /**
+     * This method will add a given card at a specific index.
      *
-     * @param l
-     * @param x
+     * @param l this is the given index to place the card.
+     * @param x is the card to be added into the array.
      */
     public void add(int l, Card x) {
 
+        if(isRoom() == false) {
+            expand();
+        } else {
+            for(int i = 0; i < cardArray.length; i++) {
+                if(i == l) {
+                    for(int j = i; j < cardArray.length; j++) {
+                        cardArray[j + 1] = cardArray[i];
+                    }
+
+                    cardArray[i] = x;
+                    size++;
+                }
+            }
+        }
     }
+
 
     /**
      * This method will remove a card from
@@ -104,7 +131,7 @@ public class CardArrayList implements CardList {
         Card removed;
 
         // Get the card to remove.
-        removed = cardArray[cardArray.length - 1];
+        removed = cardArray[size];
 
         // Decrement size
         size--;
@@ -112,7 +139,11 @@ public class CardArrayList implements CardList {
         return removed;
     }
 
-    @Override //!!!!!!!!!!!!!!!!!!!!!!!!!
+    /**
+     *
+     * @param location
+     * @return
+     */
     public Card remove(int location) {
 
         if(location - 1 > cardArray.length) {
@@ -130,7 +161,11 @@ public class CardArrayList implements CardList {
      * @return the car to return at a given index.
      */
     public Card get(int x) {
-        return cardArray[x - 1];
+        if(x > size) {
+            throw new IllegalArgumentException("The index is our of bounds");
+        } else {
+            return cardArray[x - 1];
+        }
     }
 
     /**
@@ -143,47 +178,59 @@ public class CardArrayList implements CardList {
         for(int i = 0; i < size; i++) {
 
             if((cardArray[i].getCost() == x.getCost()) && (cardArray[i].getPower() == x.getPower()) && (cardArray[i].getToughness() == x.getToughness())) {
-                return i;
+                return i; // TODO add a method to compare
             }
         }
         return -1;
     }
 
-    @Override
+    /**
+     * This method will sort the array from smallest to biggest.
+     */
     public void sort() {
+
+        // TODO Needs recursion
 
     }
 
-    @Override
+    /**
+     *
+     */
     public void shuffle() {
 
     }
 
-    /**
-     *
-     */
-    public void expand() {
-
-    }
-
-    /**
-     *
-     * @param a
-     * @param b
-     */
-    public void swap(int a, int b) {
-
-    }
 
     /**
      *
      */
     public void clear() {
-
+       cardArray = new Card[10];
+       size = 0;
     }
 
+    // **************************** Private Methods ***************************
+
+    // This method will return true if the array currently has any empty spaces.
     private Boolean isRoom() {
-        return false;
+        if(size == cardArray.length) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // This will double the size of the array.
+    private void expand() {
+        cardArray = Arrays.copyOf(cardArray, cardArray.length * 2);
+    }
+
+    // This method will swap two card with the specific indexes.
+    private void swap(int a, int b) {
+        Card tempCard = null;
+        tempCard = cardArray[a];
+        cardArray[a] = cardArray[b];
+        cardArray[b] = tempCard;
     }
 
 }

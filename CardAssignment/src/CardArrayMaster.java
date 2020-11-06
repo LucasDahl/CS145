@@ -15,83 +15,83 @@ public class CardArrayMaster {
    {
      PrintStream SO = System.out;  // Lazy mode  enabled;
      
-     // STAGE 1
+     // STAGE 1 --------------------------------- Passed
      // Can we add to a master list and print it out?
      CardList masterList1 = new CardArrayList();
-     masterList1.add(new Card());     
-     masterList1.add(new Card(20));     
+     masterList1.add(new Card());
+     masterList1.add(new Card(20));
      masterList1.add(new Card(10,10));
-     SO.print("Initial list   : "); 
-     SO.println(masterList1);     
+     SO.print("Initial list   : ");
+     SO.println(masterList1);
    
-     // STAGE 2
-     // Can we add a premium card? 
-     // masterList1.add(new PremiumCard(100));     
-     // SO.print("Premium Card   : "); 
-     // SO.println(masterList1);
+     // STAGE 2 --------------------------------- Passed
+     // Can we add a premium card?
+//      masterList1.add(new PremiumCard(100));
+//      SO.print("Premium Card   : ");
+//      SO.println(masterList1);
 
-     // STAGE 3
+     // STAGE 3 --------------------------------- Passed
      // Can we add cars in the middle?
      
-     // masterList1.add(1, new Card(4,4));
-     // masterList1.add(1, new Card(5,5));
-     // SO.print("Added internal : "); 
-     // SO.println(masterList1);
+//      masterList1.add(1, new Card(4,4));
+//      masterList1.add(1, new Card(5,5));
+//      SO.print("Added internal : ");
+//      SO.println(masterList1);
      
-     // STAGE 4
+     // STAGE 4 --------------------------------- Passed
      // can we add more cards and make it expand?
      
-     // masterList1.add(new Card(6));
-     // masterList1.add(new Card(7));
-     // masterList1.add(new Card(8));
-     // masterList1.add(new Card(9));
-     // masterList1.add(new Card(10));
-     // masterList1.add(new Card(11));
-     // masterList1.add(new Card(12));
-     // SO.print("After Expand   : "); 
-     // SO.println(masterList1);
+//      masterList1.add(new Card(6));
+//      masterList1.add(new Card(7));
+//      masterList1.add(new Card(8));
+//      masterList1.add(new Card(9));
+//      masterList1.add(new Card(10));
+//      masterList1.add(new Card(11));
+//      masterList1.add(new Card(12));
+//      SO.print("After Expand   : ");
+//      SO.println(masterList1);
 
-     // STAGE 5
+     // STAGE 5 --------------------------------- Passed
      // Can we Remove the end value
-     // masterList1.remove();
-     // SO.print("After Remove   : "); 
-     // SO.println(masterList1);
-     
-     // STAGE 6
+//      masterList1.remove();
+//      SO.print("After Remove   : ");
+//      SO.println(masterList1);
+
+     // STAGE 6 --------------------------------- Passed
      // Does remove return the removed value?
      
-     // SO.print("Removed value  : "); 
-     // SO.println(masterList1.remove() );
-     // SO.print("List afterward : "); 
-     // SO.println(masterList1);
-     
+//      SO.print("Removed value  : ");
+//      SO.println(masterList1.remove() );
+//      SO.print("List afterward : ");
+//      SO.println(masterList1);
+
      // STAGE 7
      // Did it remove from the middle
      // And return the value removed?
-     // Card tmp = masterList1.remove(2);
-     // SO.print("Removed value  : "); 
-     // SO.println(tmp);
-     // SO.print("List afterward : "); 
-     // SO.println(masterList1);
+      Card tmp = masterList1.remove(2);
+      SO.print("Removed value  : ");
+      SO.println(tmp);
+      SO.print("List afterward : ");
+      SO.println(masterList1);
      
      // STAGE 8
      // Did get work correctly?
-     // SO.print("Get Values     : "); 
-     // SO.println(masterList1.get(2) + " : " + masterList1.get(4) );
-     // masterList1.get(2).boost();
-     // masterList1.get(4).weaken();
-     // SO.print("Altered Values : "); 
-     // SO.println(masterList1.get(2) + " : " + masterList1.get(4) );    
+//      SO.print("Get Values     : ");
+//      SO.println(masterList1.get(2) + " : " + masterList1.get(4) );
+//      masterList1.get(2).boost();
+//      masterList1.get(4).weaken();
+//      SO.print("Altered Values : ");
+//      SO.println(masterList1.get(2) + " : " + masterList1.get(4) );
 
      // STAGE 9
      // IndexOF
      
-     // SO.print("Found Success  : ");
-     // SO.println(masterList1.indexOf(new Card(98,98)));
-     // SO.print("Found Success   : ");
-     // SO.println(masterList1.indexOf(new Card(22,22))); 
-     // SO.print("Found Failed   : ");
-     // SO.println(masterList1.indexOf(new Card(7,8)));
+//      SO.print("Found Success  : ");
+//      SO.println(masterList1.indexOf(new Card(98,98)));
+//      SO.print("Found Success   : ");
+//      SO.println(masterList1.indexOf(new Card(22,22)));
+//      SO.print("Found Failed   : ");
+//      SO.println(masterList1.indexOf(new Card(7,8)));
      
      // STAGE 10
      // Does shuffle work?
@@ -104,24 +104,24 @@ public class CardArrayMaster {
      // SO.print("Post shuffle 2 : ");
      // SO.println(masterList1);
      
-     // STAGE 11
+     // STAGE 11 --------------------------------- Passed
      // Does Clear Work?
-     // masterList1.clear();
-     // SO.print("After Clear    : ");
-     // SO.println(masterList1);
+//      masterList1.clear();
+//      SO.print("After Clear    : ");
+//      SO.println(masterList1);
      
      // STAGE 12
      // Create a large list
      // And check that sort works.
      
-     // for (int i=0; i <100; i++)
-     // {
-     //   masterList1.add(new Card());
-     // }
-     // for (int i=0; i <5; i++)
-     // {
-     //   masterList1.add(new PremiumCard());
-     // }
+//      for (int i=0; i <100; i++)
+//      {
+//        masterList1.add(new Card());
+//      }
+//      for (int i=0; i <5; i++)
+//      {
+//        masterList1.add(new PremiumCard());
+//      }
      
      // SO.print("Before Sorted  : ");
      // SO.println(masterList1);
@@ -133,15 +133,15 @@ public class CardArrayMaster {
      // Can we create a second list
      // and make a copy of all NON premium cards
      
-     // CardList masterList2 = new CardArrayList(1);
-     
-     // for (int j = 0; j <masterList1.size(); j++)
-     // {
-     //   if (!(masterList1.get(j) instanceof PremiumCard))
-     //   {
-     //     masterList2.add(masterList1.get(j) );
-     //   }
-     // }
+//      CardList masterList2 = new CardArrayList(1);
+//
+//      for (int j = 0; j <masterList1.size(); j++)
+//      {
+//        if (!(masterList1.get(j) instanceof PremiumCard))
+//        {
+//          masterList2.add(masterList1.get(j) );
+//        }
+//      }
      
      // SO.print("Success Removed: ");
      // SO.println(masterList2);

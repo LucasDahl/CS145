@@ -219,7 +219,7 @@ public class CardArrayMasterGUI implements ActionListener
       textData[0].setText(x); 
         
       if(DEBUGMODE)
-         if (masterList1.size() == 3 && masterList1.toString().contains("],[20/20::78],[10/10::55]")) 
+         if (masterList1.size() == 3 && masterList1.toString().contains("],[20/20:78],[10/10:55]"))
            SO.println("PASSED STAGE 1"); 
          else SO.println("   FAILED STAGE 1");
    
@@ -235,7 +235,7 @@ public class CardArrayMasterGUI implements ActionListener
       x += masterList1;
       textData[1].setText(x);
       if(DEBUGMODE)
-         if (masterList1.toString().contains(",{{100/100::174}}")) 
+         if (masterList1.toString().contains(",{{100/100:174}}"))
             SO.println("PASSED STAGE 2"); 
          else SO.println("   FAILED STAGE 2");
    }
@@ -253,7 +253,7 @@ public class CardArrayMasterGUI implements ActionListener
       textData[2].setText(x);
      
       if(DEBUGMODE)
-         if (masterList1.toString().contains(",[5/5::39],[4/4::35],[20/20::78],")) 
+         if (masterList1.toString().contains(",[5/5:39],[4/4:35],[20/20:78],"))
             SO.println("PASSED STAGE 3"); 
          else SO.println("   FAILED STAGE 3");
    }     
@@ -310,7 +310,7 @@ public class CardArrayMasterGUI implements ActionListener
       textData[5].setText(x);
           
       if(DEBUGMODE)
-         if (tmp.toString().equals("[11/11::58]")) 
+         if (tmp.toString().equals("[11/11:58]"))
             SO.println("PASSED STAGE 6"); 
          else SO.println("   FAILED STAGE 6");
    }
@@ -334,7 +334,7 @@ public class CardArrayMasterGUI implements ActionListener
       textData[6].setText(x);
    
       if(DEBUGMODE)
-         if (masterList1.toString().contains(",[5/5::39],[20/20::78],")) 
+         if (masterList1.toString().contains(",[5/5:39],[20/20:78],"))
             SO.println("PASSED STAGE 7B"); 
          else SO.println("   FAILED STAGE 7B");
    }
@@ -349,7 +349,7 @@ public class CardArrayMasterGUI implements ActionListener
       x += masterList1.get(2) + " : " + masterList1.get(4) ;
          
       if(DEBUGMODE)
-         if (x.contains("[20/20::78] : {{100/100::174}}")) 
+         if (x.contains("[20/20:78] : {{100/100:174}}"))
             SO.println("PASSED STAGE 8A"); 
          else SO.println("   FAILED STAGE 8A");
    
@@ -361,7 +361,7 @@ public class CardArrayMasterGUI implements ActionListener
       textData[7].setText(x);
          
       if(DEBUGMODE)
-         if (xx.contains("[18/18::82] : {{98/98::172}}")) 
+         if (xx.contains("[18/18:82] : {{98/98:172}}"))
             SO.println("PASSED STAGE 8B"); 
          else SO.println("   FAILED STAGE 8B");
          

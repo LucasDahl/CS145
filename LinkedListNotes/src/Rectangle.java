@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle implements Comparable<Rectangle> {
 
     private int length;
     private int width;
@@ -25,5 +25,10 @@ public class Rectangle {
     public int getArea() {
         return length * width;
     }
+
+    public int compareTo(Rectangle o) {
+        return getArea() - o.getArea(); // Define compare by the area of teh two rectangles.
+    }
+
 
 }
