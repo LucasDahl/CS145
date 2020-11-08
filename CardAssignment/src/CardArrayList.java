@@ -50,10 +50,10 @@ public class CardArrayList implements CardList {
         String cardList = "";
 
         if(size == 0) {
-            return "[0: " + size + "]";
+            return "[0: " + ":"+ size + "]";
         } else {
 
-            for(int i = 0; i < size + 1; i++) {
+            for(int i = 0; i < size; i++) {
                 if(cardArray[i] != null) {
                     cardList = cardList + "," + cardArray[i].toString();
                 }
@@ -143,11 +143,11 @@ public class CardArrayList implements CardList {
         // Properties
         Card removed;
 
-        // Get the card to remove.
-        removed = cardArray[size];
-
         // Decrement size
         size--;
+
+        // Get the card to remove.
+        removed = cardArray[size];
 
         return removed;
     }
@@ -162,7 +162,23 @@ public class CardArrayList implements CardList {
         if(location - 1 > cardArray.length) {
             throw new IndexOutOfBoundsException("There is no card at that location.");
         } else {
-            return cardArray[location - 1];
+
+            Card[] tempArray = new Card[cardArray.length];
+            Card tempCard = null;
+            
+            for(int i = 0; i < cardArray.length; i++) {
+
+                if(i == location) {
+                    tempCard = cardArray[i];
+                } else if(i < location) {
+                    tempArray[i] = cardArray[i];
+                } else {
+                    tempArray[i - 1] = cardArray[i];
+                }
+            }
+            size--;
+            cardArray = tempArray;
+            return tempCard;
         }
     }
 
@@ -174,10 +190,11 @@ public class CardArrayList implements CardList {
      * @return the car to return at a given index.
      */
     public Card get(int x) {
-        if(x > size) {
-            throw new IllegalArgumentException("The index is our of bounds");
+
+        if(x > cardArray.length) {
+            throw new IllegalArgumentException("The index is out of bounds");
         } else {
-            return cardArray[size - 1];
+            return cardArray[x];
         }
     }
 
@@ -275,7 +292,7 @@ public class CardArrayList implements CardList {
 
         while(iFirst < left.length && iSecond < right.length) {
 
-            if(left[iFirst].compareTo(right[iSecond]) == 1) {
+            if(left[iFirst].compareTo(right[iSecond]) == -1) {
                 initCard[iMerged] = left[iFirst];
                 iFirst++;
             } else {

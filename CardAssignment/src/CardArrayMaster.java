@@ -30,13 +30,13 @@ public class CardArrayMaster {
 //      SO.print("Premium Card   : ");
 //      SO.println(masterList1);
 
-     // STAGE 3
+     // STAGE 3 --------------------------------- Passed
      // Can we add cars in the middle?
      
-      masterList1.add(1, new Card(4,4));
-      masterList1.add(1, new Card(5,5));
-      SO.print("Added internal : ");
-      SO.println(masterList1);
+//      masterList1.add(1, new Card(4,4));
+//      masterList1.add(1, new Card(5,5));
+//      SO.print("Added internal : ");
+//      SO.println(masterList1);
      
      // STAGE 4 --------------------------------- Passed
      // can we add more cards and make it expand?
@@ -65,7 +65,7 @@ public class CardArrayMaster {
 //      SO.print("List afterward : ");
 //      SO.println(masterList1);
 
-     // STAGE 7
+     // STAGE 7 --------------------------------- Passed
      // Did it remove from the middle
      // And return the value removed?
 //      Card tmp = masterList1.remove(2);
@@ -73,7 +73,7 @@ public class CardArrayMaster {
 //      SO.println(tmp);
 //      SO.print("List afterward : ");
 //      SO.println(masterList1);
-     
+
      // STAGE 8 --------------------------------- Passed
      // Did get work correctly?
 //      SO.print("Get Values     : ");
@@ -86,12 +86,12 @@ public class CardArrayMaster {
      // STAGE 9
      // IndexOF
      
-//      SO.print("Found Success  : ");
-//      SO.println(masterList1.indexOf(new Card(98,98)));
-//      SO.print("Found Success   : ");
-//      SO.println(masterList1.indexOf(new Card(22,22)));
-//      SO.print("Found Failed   : ");
-//      SO.println(masterList1.indexOf(new Card(7,8)));
+      SO.print("Found Success  : ");
+      SO.println(masterList1.indexOf(new Card(98,98)));
+      SO.print("Found Success   : ");
+      SO.println(masterList1.indexOf(new Card(22,22)));
+      SO.print("Found Failed   : ");
+      SO.println(masterList1.indexOf(new Card(7,8)));
      
      // STAGE 10
      // Does shuffle work?
@@ -109,7 +109,7 @@ public class CardArrayMaster {
 //      masterList1.clear();
 //      SO.print("After Clear    : ");
 //      SO.println(masterList1);
-     
+//
      // STAGE 12 --------------------------------- Passed
      // Create a large list
      // And check that sort works.
@@ -132,7 +132,7 @@ public class CardArrayMaster {
      // STAGE 13
      // Can we create a second list
      // and make a copy of all NON premium cards
-     
+//
 //      CardList masterList2 = new CardArrayList(1);
 //
 //      for (int j = 0; j <masterList1.size(); j++)
@@ -142,8 +142,8 @@ public class CardArrayMaster {
 //          masterList2.add(masterList1.get(j) );
 //        }
 //      }
-     
-     // SO.print("Success Removed: ");
-     // SO.println(masterList2);
+//
+//      SO.print("Success Removed: ");
+//      SO.println(masterList2);
    }
 }
