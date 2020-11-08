@@ -79,33 +79,21 @@ public class CardArrayList implements CardList {
      *
      * @param x this is the card to passed in to add to the array.
      */
-//    public void add(Card x) {
-//
-//        if(isRoom()) {
-//            cardArray[size + 1] = x;
-//            size++;
-//        } else {
-//
-//            // Expand the array and then add.
-//            expand();
-//            cardArray[size + 1] = x;
-//            size++;
-//        }
-//
-//    }
-
     public void add(Card x) {
-        int length = cardArray.length;;
-        for (int i = 0; i < length; i++) {
-            if (cardArray[i] == null) {
-                cardArray[i] = x;
 
-                break;
-            } else {
-                expand();
+        // Check if there is room.
+        if(!isRoom()) {
+            expand();
+        }
+
+        // Find the first null value to place the card at.
+        for(int i = 0; i < cardArray.length; i++) {
+            if(cardArray[i] == null) {
+                cardArray[i] = x;
+                size++;
+                return;
             }
         }
-        size++;
     }
 
     /**
@@ -253,13 +241,6 @@ public class CardArrayList implements CardList {
             tempArray = cards;
         }
 
-
-//        for(int i = 0; i < tempArray.length; i++) {
-//            System.out.println(tempArray[i]);
-//        }
-
-
-
         // Split the array
         Card[] cardsLH = new Card[tempArray.length / 2];
         Card[] cardsRH = new Card[tempArray.length - cardsLH.length];
@@ -300,20 +281,15 @@ public class CardArrayList implements CardList {
     // This method will return true if the array currently has any empty spaces.
     private Boolean isRoom() {
         if(size == cardArray.length) {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
 
     // This will double the size of the array.
     private void expand() {
-        //cardArray = Arrays.copyOf(cardArray, cardArray.length * 2);
-        Card[] newArray = new Card[cardArray.length + 1]; //for making one bigger
-        //Card[] newArray = new Card[cardArray.length * 2];
-        System.arraycopy(cardArray, 0, newArray, 0, cardArray.length);
-
-        cardArray = newArray;
+        cardArray = Arrays.copyOf(cardArray, cardArray.length * 2);
     }
 
     // This method will swap two card with the specific indexes.
