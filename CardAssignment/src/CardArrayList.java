@@ -79,19 +79,33 @@ public class CardArrayList implements CardList {
      *
      * @param x this is the card to passed in to add to the array.
      */
+//    public void add(Card x) {
+//
+//        if(isRoom()) {
+//            cardArray[size + 1] = x;
+//            size++;
+//        } else {
+//
+//            // Expand the array and then add.
+//            expand();
+//            cardArray[size + 1] = x;
+//            size++;
+//        }
+//
+//    }
+
     public void add(Card x) {
+        int length = cardArray.length;;
+        for (int i = 0; i < length; i++) {
+            if (cardArray[i] == null) {
+                cardArray[i] = x;
 
-        if(cardArray[size] == null) {
-            cardArray[size + 1] = x;
-            size++;
-        } else {
-
-            // Expand the array and then add.
-            expand();
-            cardArray[size + 1] = x;
-            size++;
+                break;
+            } else {
+                expand();
+            }
         }
-
+        size++;
     }
 
     /**
@@ -164,7 +178,7 @@ public class CardArrayList implements CardList {
         if(x > size) {
             throw new IllegalArgumentException("The index is our of bounds");
         } else {
-            return cardArray[x - 1];
+            return cardArray[size - 1];
         }
     }
 
@@ -177,8 +191,8 @@ public class CardArrayList implements CardList {
 
         for(int i = 0; i < size; i++) {
 
-            if((cardArray[i].getCost() == x.getCost()) && (cardArray[i].getPower() == x.getPower()) && (cardArray[i].getToughness() == x.getToughness())) {
-                return i; // TODO add a method to compare
+            if((cardArray[i].getCost() == x.getCost())) {
+                return i; // TODO add compareTo
             }
         }
         return -1;
@@ -188,9 +202,8 @@ public class CardArrayList implements CardList {
      * This method will sort the array from smallest to biggest.
      */
     public void sort() {
-
-        // TODO Needs recursion
-
+        // TODO Needs recursion(maybe) Needs a helper method (Check pictures) probably compare to
+        mergeSort(cardArray);
     }
 
     /**
@@ -211,6 +224,79 @@ public class CardArrayList implements CardList {
 
     // **************************** Private Methods ***************************
 
+    private static Card[] mergeSort(Card[] cards) {
+
+        //TODO maybe try a for loop to take out null values
+        int tempNum = 0;
+        Card[] tempArray;
+
+        // Return the array if its empty(hit the bottom)
+        if(cards.length < 2) {
+            return cards;
+        }
+
+        if(cards[cards.length -1] == null) {
+            for (int i = 0; i < cards.length; i++) {
+                if (cards[i] != null) {
+                    tempNum++;
+                }
+            }
+
+            //tempNum++;
+            tempArray = new Card[tempNum];
+            for(int i = 0; i < cards.length; i++) {
+                if (cards[i] != null) {
+                    tempArray[i] = cards[i];
+                }
+            }
+        } else {
+            tempArray = cards;
+        }
+
+
+//        for(int i = 0; i < tempArray.length; i++) {
+//            System.out.println(tempArray[i]);
+//        }
+
+
+
+        // Split the array
+        Card[] cardsLH = new Card[tempArray.length / 2];
+        Card[] cardsRH = new Card[tempArray.length - cardsLH.length];
+
+        System.arraycopy(tempArray, 0, cardsLH, 0, cardsLH.length);
+        System.arraycopy(tempArray, cardsLH.length, cardsRH, 0, cardsRH.length);
+
+        mergeSort(cardsLH);
+        mergeSort(cardsRH);
+
+        // Merge the arrays
+        merge(cardsLH, cardsRH, cards);
+
+        return cards;
+    }
+
+    private static void merge(Card[] left, Card[] right, Card[] initCard) {
+
+        // Properties
+        int iFirst =0, iSecond = 0, iMerged = 0;
+
+        while(iFirst < left.length && iSecond < right.length) {
+
+            if(left[iFirst].compareTo(right[iSecond]) == 1) {
+                initCard[iMerged] = left[iFirst];
+                iFirst++;
+            } else {
+                initCard[iMerged] = right[iSecond];
+                iSecond++;
+            }
+            iMerged++;
+        }
+
+        System.arraycopy(left, iFirst, initCard, iMerged, left.length - iFirst);
+        System.arraycopy(right, iSecond, initCard, iMerged, right.length - iSecond);
+    }
+
     // This method will return true if the array currently has any empty spaces.
     private Boolean isRoom() {
         if(size == cardArray.length) {
@@ -222,7 +308,12 @@ public class CardArrayList implements CardList {
 
     // This will double the size of the array.
     private void expand() {
-        cardArray = Arrays.copyOf(cardArray, cardArray.length * 2);
+        //cardArray = Arrays.copyOf(cardArray, cardArray.length * 2);
+        Card[] newArray = new Card[cardArray.length + 1]; //for making one bigger
+        //Card[] newArray = new Card[cardArray.length * 2];
+        System.arraycopy(cardArray, 0, newArray, 0, cardArray.length);
+
+        cardArray = newArray;
     }
 
     // This method will swap two card with the specific indexes.

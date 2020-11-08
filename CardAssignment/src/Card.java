@@ -64,12 +64,21 @@ public class Card implements Comparable<Card> {
     // **************************** Methods ***************************
 
     /**
-     * 
-     * @param o
+     *
+     * @param card
      * @return
      */
-    public int compareTo(Card o) {
-        return 0;
+    public int compareTo(Card card) {
+        int compare = 0;
+
+        if(getCost() > card.getCost()) {
+            compare = 1;
+        } else {
+            compare = -1;
+        }
+
+        return compare;
+
     }
 
     /**

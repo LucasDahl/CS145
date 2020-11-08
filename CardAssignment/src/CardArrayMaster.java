@@ -30,7 +30,7 @@ public class CardArrayMaster {
 //      SO.print("Premium Card   : ");
 //      SO.println(masterList1);
 
-     // STAGE 3 --------------------------------- Passed
+     // STAGE 3
      // Can we add cars in the middle?
      
 //      masterList1.add(1, new Card(4,4));
@@ -68,13 +68,13 @@ public class CardArrayMaster {
      // STAGE 7
      // Did it remove from the middle
      // And return the value removed?
-      Card tmp = masterList1.remove(2);
-      SO.print("Removed value  : ");
-      SO.println(tmp);
-      SO.print("List afterward : ");
-      SO.println(masterList1);
+//      Card tmp = masterList1.remove(2);
+//      SO.print("Removed value  : ");
+//      SO.println(tmp);
+//      SO.print("List afterward : ");
+//      SO.println(masterList1);
      
-     // STAGE 8
+     // STAGE 8 --------------------------------- Passed
      // Did get work correctly?
 //      SO.print("Get Values     : ");
 //      SO.println(masterList1.get(2) + " : " + masterList1.get(4) );
@@ -110,24 +110,24 @@ public class CardArrayMaster {
 //      SO.print("After Clear    : ");
 //      SO.println(masterList1);
      
-     // STAGE 12
+     // STAGE 12 --------------------------------- Passed
      // Create a large list
      // And check that sort works.
      
-//      for (int i=0; i <100; i++)
-//      {
-//        masterList1.add(new Card());
-//      }
-//      for (int i=0; i <5; i++)
-//      {
-//        masterList1.add(new PremiumCard());
-//      }
-     
-     // SO.print("Before Sorted  : ");
-     // SO.println(masterList1);
-     // masterList1.sort();
-     // SO.print("Success Sorted : ");
-     // SO.println(masterList1);
+      for (int i=0; i <100; i++)
+      {
+        masterList1.add(new Card());
+      }
+      for (int i=0; i <5; i++)
+      {
+        masterList1.add(new PremiumCard());
+      }
+
+      SO.print("Before Sorted  : ");
+      SO.println(masterList1);
+      masterList1.sort();
+      SO.print("Success Sorted : ");
+      SO.println(masterList1);
 
      // STAGE 13
      // Can we create a second list

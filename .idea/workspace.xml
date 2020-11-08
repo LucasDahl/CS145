@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Notes/src/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CardAssignment/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/CardAssignment/src/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CardAssignment/src/CardArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CardAssignment/src/CardArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CardAssignment/src/CardArrayMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/CardAssignment/src/CardArrayMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CardAssignment/src/CardArrayMasterGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/CardAssignment/src/CardArrayMasterGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListNotes/src/MainTestProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListNotes/src/MainTestProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListNotes/src/RectLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListNotes/src/RectLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListNotes/src/RectNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListNotes/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListNotes/src/Rectangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +45,7 @@
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTestProgram">
+  <component name="RunManager" selected="Application.CardArrayMaster">
     <configuration name="CardArrayMaster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CardArrayMaster" />
       <module name="CardAssignment" />
@@ -89,9 +83,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainTestProgram" />
         <item itemvalue="Application.CardArrayMaster" />
         <item itemvalue="Application.CardArrayMasterGUI" />
+        <item itemvalue="Application.MainTestProgram" />
         <item itemvalue="Application.Test2" />
         <item itemvalue="Application.test" />
       </list>
@@ -351,12 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1604526527590</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Finished notes on the linked list notes. Also added a few methods to the card assignment.">
+      <created>1604698269433</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1604698269433</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Finished the short assignment and the challenge for chapter 10." />
     <MESSAGE value="Added notes about sets." />
     <MESSAGE value="Added notes about Maps." />
     <MESSAGE value="Added notes about Maps and sets." />
@@ -381,7 +381,8 @@
     <MESSAGE value="Finished the basics of the Card and PremiumCard classes." />
     <MESSAGE value="Started the base classes for notes on LinkedLists." />
     <MESSAGE value="Added notes to all the classes for LinkedListNotes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added notes to all the classes for LinkedListNotes." />
+    <MESSAGE value="Finished notes on the linked list notes. Also added a few methods to the card assignment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished notes on the linked list notes. Also added a few methods to the card assignment." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
@@ -401,57 +402,57 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="596" y="156" key="CommitChangelistDialog2" timestamp="1604526527430">
-      <screen x="0" y="25" width="1920" height="1175" />
+    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1604698269187">
+      <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="596" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925873237" />
-    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604431346259" />
+    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604698269187" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526527430" />
-    <state width="1878" height="205" key="GridCell.Tab.0.bottom" timestamp="1604697466145">
+    <state width="1878" height="205" key="GridCell.Tab.0.bottom" timestamp="1604806965747">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="205" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604697466145" />
+    <state width="1878" height="205" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604806965747" />
     <state width="1878" height="234" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="205" key="GridCell.Tab.0.center" timestamp="1604697466143">
+    <state width="1878" height="205" key="GridCell.Tab.0.center" timestamp="1604806965745">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="205" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604697466143" />
+    <state width="1878" height="205" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604806965745" />
     <state width="1878" height="234" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="205" key="GridCell.Tab.0.left" timestamp="1604697466142">
+    <state width="1878" height="205" key="GridCell.Tab.0.left" timestamp="1604806965744">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="205" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604697466142" />
+    <state width="1878" height="205" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604806965744" />
     <state width="1878" height="234" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967390" />
-    <state width="1878" height="205" key="GridCell.Tab.0.right" timestamp="1604697466144">
+    <state width="1878" height="205" key="GridCell.Tab.0.right" timestamp="1604806965746">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="205" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604697466144" />
+    <state width="1878" height="205" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604806965746" />
     <state width="1878" height="234" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1603570397840">
+    <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1604698465618">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="237" key="GridCell.Tab.1.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603570397840" />
-    <state width="1878" height="237" key="GridCell.Tab.1.center" timestamp="1603570397839">
+    <state width="1878" height="237" key="GridCell.Tab.1.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604698465618" />
+    <state width="1878" height="237" key="GridCell.Tab.1.center" timestamp="1604698465617">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="237" key="GridCell.Tab.1.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603570397839" />
-    <state width="1878" height="237" key="GridCell.Tab.1.left" timestamp="1603570397839">
+    <state width="1878" height="237" key="GridCell.Tab.1.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604698465617" />
+    <state width="1878" height="237" key="GridCell.Tab.1.left" timestamp="1604698465616">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="237" key="GridCell.Tab.1.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603570397839" />
-    <state width="1878" height="237" key="GridCell.Tab.1.right" timestamp="1603570397840">
+    <state width="1878" height="237" key="GridCell.Tab.1.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604698465616" />
+    <state width="1878" height="237" key="GridCell.Tab.1.right" timestamp="1604698465618">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="237" key="GridCell.Tab.1.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603570397840" />
+    <state width="1878" height="237" key="GridCell.Tab.1.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604698465618" />
     <state x="2469" y="299" key="IDE.errors.dialog" timestamp="1603823015749">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2469" y="299" key="IDE.errors.dialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603823015749" />
-    <state x="560" y="319" key="Vcs.Push.Dialog.v2" timestamp="1604526529886">
-      <screen x="0" y="25" width="1920" height="1175" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1604698299068">
+      <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="560" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925875349" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604431348135" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604698299068" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526529886" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
@@ -461,6 +462,10 @@
       <screen x="0" y="25" width="1920" height="1175" />
     </state>
     <state x="761" y="528" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604524394486" />
+    <state x="2426" y="292" width="908" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604707270955">
+      <screen x="1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2426" y="292" width="908" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604707270955" />
     <state x="2582" y="425" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600707560601">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
@@ -478,9 +483,19 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2546" y="255" key="run.anything.popup/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600966533745" />
-    <state x="2545" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1604093291054">
+    <state x="2545" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1604705114001">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2545" y="259" width="670" height="676" key="search.everywhere.popup/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604093291054" />
+    <state x="2545" y="259" width="670" height="676" key="search.everywhere.popup/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604705114001" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
