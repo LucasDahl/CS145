@@ -33,10 +33,10 @@ public class CardArrayMaster {
      // STAGE 3
      // Can we add cars in the middle?
      
-//      masterList1.add(1, new Card(4,4));
-//      masterList1.add(1, new Card(5,5));
-//      SO.print("Added internal : ");
-//      SO.println(masterList1);
+      masterList1.add(1, new Card(4,4));
+      masterList1.add(1, new Card(5,5));
+      SO.print("Added internal : ");
+      SO.println(masterList1);
      
      // STAGE 4 --------------------------------- Passed
      // can we add more cards and make it expand?
@@ -114,20 +114,20 @@ public class CardArrayMaster {
      // Create a large list
      // And check that sort works.
      
-      for (int i=0; i <100; i++)
-      {
-        masterList1.add(new Card());
-      }
-      for (int i=0; i <5; i++)
-      {
-        masterList1.add(new PremiumCard());
-      }
-
-      SO.print("Before Sorted  : ");
-      SO.println(masterList1);
-      masterList1.sort();
-      SO.print("Success Sorted : ");
-      SO.println(masterList1);
+//      for (int i=0; i <100; i++)
+//      {
+//        masterList1.add(new Card());
+//      }
+//      for (int i=0; i <5; i++)
+//      {
+//        masterList1.add(new PremiumCard());
+//      }
+//
+//      SO.print("Before Sorted  : ");
+//      SO.println(masterList1);
+//      masterList1.sort();
+//      SO.print("Success Sorted : ");
+//      SO.println(masterList1);
 
      // STAGE 13
      // Can we create a second list

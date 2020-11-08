@@ -96,6 +96,7 @@ public class CardArrayList implements CardList {
         }
     }
 
+
     /**
      * This method will add a given card at a specific index.
      *
@@ -104,22 +105,32 @@ public class CardArrayList implements CardList {
      */
     public void add(int l, Card x) {
 
-        if(isRoom() == false) {
-            expand();
-        } else {
-            for(int i = 0; i < cardArray.length; i++) {
-                if(i == l) {
-                    for(int j = i; j < cardArray.length; j++) {
-                        cardArray[j + 1] = cardArray[i];
-                    }
+       if(l > (cardArray.length + 1)) {
+           throw new IllegalArgumentException("The position is out of bounds");
+        }
 
-                    cardArray[i] = x;
-                    size++;
-                }
+        // Make the array bigger by one to add the element.
+        Card[] newArray = new Card[cardArray.length + 1];
+        //System.arraycopy(cardArray, 0, newArray, 0, cardArray.length); // Check with teacher
+        //cardArray = newArray;
+
+
+        for(int i = 0; i < cardArray.length; i++) {
+
+            if(i == l) {
+                newArray[i] = x;
+            } else if(i > l) {
+                newArray[i] = cardArray[i - 1];
+            } else {
+                newArray[i] = cardArray[i];
             }
         }
-    }
 
+        size++;
+
+        cardArray = newArray;
+
+    }
 
     /**
      * This method will remove a card from
@@ -179,7 +190,7 @@ public class CardArrayList implements CardList {
 
         for(int i = 0; i < size; i++) {
 
-            if((cardArray[i].getCost() == x.getCost())) {
+            if(cardArray[i].compareTo(x) == 1) {
                 return i; // TODO add compareTo
             }
         }
