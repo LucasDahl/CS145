@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * This class will create an array of Card and PremiumCard
@@ -129,7 +130,6 @@ public class CardArrayList implements CardList {
         size++;
 
         cardArray = newArray;
-
     }
 
     /**
@@ -199,16 +199,21 @@ public class CardArrayList implements CardList {
     }
 
     /**
+     *This method will accept a Card and return the index of that card.
      *
-     * @param x
-     * @return
+     * @param x is the card passed into the array to retrieve the index for.
+     * @return this is in the index of the card that was passed in.
      */
     public int indexOf(Card x) {
 
+        for(int i = 0; i < size; i ++) {
+
+        }
+
         for(int i = 0; i < size; i++) {
 
-            if(cardArray[i].compareTo(x) == 1) {
-                return i; // TODO add compareTo
+            if(cardArray[i].compareTo(x) == 2) {
+                return i; // TODO add compareTo?
             }
         }
         return -1;
@@ -218,20 +223,27 @@ public class CardArrayList implements CardList {
      * This method will sort the array from smallest to biggest.
      */
     public void sort() {
-        // TODO Needs recursion(maybe) Needs a helper method (Check pictures) probably compare to
         mergeSort(cardArray);
     }
 
     /**
-     *
+     * This method will randomly shuffle the elements in the array.
      */
     public void shuffle() {
+
+        // Properties
+        Random rand = new Random();
+        int totalShuffle = size * rand.nextInt(10 - 5) +5 ;
+
+        for(int i = 0; i < totalShuffle; i++) {
+            swap(rand.nextInt(size - 1) + 1, rand.nextInt(size - 1) + 1);
+        }
 
     }
 
 
     /**
-     *
+     * this method clears the array, and sets the size back to zero.
      */
     public void clear() {
        cardArray = new Card[10];

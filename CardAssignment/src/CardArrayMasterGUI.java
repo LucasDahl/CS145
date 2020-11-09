@@ -361,7 +361,7 @@ public class CardArrayMasterGUI implements ActionListener
       textData[7].setText(x);
          
       if(DEBUGMODE)
-         if (xx.contains("[18/18:82] : {{98/98:172}}"))
+         if (xx.contains("[22/22:82] : {{98/98:172}}"))
             SO.println("PASSED STAGE 8B"); 
          else SO.println("   FAILED STAGE 8B");
          

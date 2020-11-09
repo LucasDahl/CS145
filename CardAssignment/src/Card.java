@@ -10,7 +10,7 @@ public class Card implements Comparable<Card> {
     // **************************** Fields ****************************
     private int power;
     private int toughness;
-    private int cost;
+
     // ************************** Constructors ************************
 
     /**
@@ -64,20 +64,25 @@ public class Card implements Comparable<Card> {
     // **************************** Methods ***************************
 
     /**
+     * This method will compare two cards based on their fields. If a
+     * -1 is returned the compared(passed in card) has a greater cost. If 1
+     * is returned the card its self has a greater cost, and if 2 is returned
+     * the cards are equal.
      *
-     * @param card
-     * @return
+     * @param card this is the card to compare to.
+     * @return this returns a number based on the outcome of the comparison.
      */
     public int compareTo(Card card) {
-        int compare = 0;
 
         if(getCost() > card.getCost()) {
-            compare = 1;
+            return 1;
+        } else if(getCost() == card.getCost() && getPower() == card.getPower() && getToughness() == card.getToughness()) {
+            return 2;
         } else {
-            compare = -1;
+            return -1;
         }
 
-        return compare;
+        //return compare;
 
     }
 
