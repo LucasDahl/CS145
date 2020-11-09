@@ -61,7 +61,6 @@ public class CardArrayList implements CardList {
             }
 
         }
-
         return  "[0: " + cardList.substring(1) + " :" + size + "]";
     }
 
@@ -103,6 +102,7 @@ public class CardArrayList implements CardList {
      *
      * @param l this is the given index to place the card.
      * @param x is the card to be added into the array.
+     * @IndexOutOfBoundsException will throw an error if the location is out of range.
      */
     public void add(int l, Card x) {
 
@@ -112,9 +112,6 @@ public class CardArrayList implements CardList {
 
         // Make the array bigger by one to add the element.
         Card[] newArray = new Card[cardArray.length + 1];
-        //System.arraycopy(cardArray, 0, newArray, 0, cardArray.length); // Check with teacher
-        //cardArray = newArray;
-
 
         for(int i = 0; i < cardArray.length; i++) {
 
@@ -153,9 +150,12 @@ public class CardArrayList implements CardList {
     }
 
     /**
+     * This method will remove a card at the given index
+     * and slide all other elements over.
      *
      * @param location
-     * @return
+     * @return this is the card at a given location
+     * @IndexOutOfBoundsException will throw an error if the location is out of range.
      */
     public Card remove(int location) {
 
@@ -176,9 +176,11 @@ public class CardArrayList implements CardList {
                     tempArray[i - 1] = cardArray[i];
                 }
             }
+
             size--;
             cardArray = tempArray;
             return tempCard;
+
         }
     }
 
@@ -188,6 +190,7 @@ public class CardArrayList implements CardList {
      *
      * @param x the given index to retrieve a card from the array.
      * @return the car to return at a given index.
+     * @IndexOutOfBoundsException will throw an error if the location is out of range.
      */
     public Card get(int x) {
 
@@ -205,10 +208,6 @@ public class CardArrayList implements CardList {
      * @return this is in the index of the card that was passed in.
      */
     public int indexOf(Card x) {
-
-        for(int i = 0; i < size; i ++) {
-
-        }
 
         for(int i = 0; i < size; i++) {
 
@@ -285,9 +284,10 @@ public class CardArrayList implements CardList {
         Card[] cardsLH = new Card[tempArray.length / 2];
         Card[] cardsRH = new Card[tempArray.length - cardsLH.length];
 
-        System.arraycopy(tempArray, 0, cardsLH, 0, cardsLH.length);
+        System.arraycopy(tempArray, 0, cardsLH, 0, cardsLH.length); // TODO ask if we can do this, if not add for loops
         System.arraycopy(tempArray, cardsLH.length, cardsRH, 0, cardsRH.length);
 
+        // Cal mergeSort on both arrays.
         mergeSort(cardsLH);
         mergeSort(cardsRH);
 
@@ -300,22 +300,22 @@ public class CardArrayList implements CardList {
     private static void merge(Card[] left, Card[] right, Card[] initCard) {
 
         // Properties
-        int iFirst =0, iSecond = 0, iMerged = 0;
+        int leftIndex =0, rightIndex = 0, mergeIndex = 0;
 
-        while(iFirst < left.length && iSecond < right.length) {
+        while(leftIndex < left.length && rightIndex < right.length) {
 
-            if(left[iFirst].compareTo(right[iSecond]) == -1) {
-                initCard[iMerged] = left[iFirst];
-                iFirst++;
+            if(left[leftIndex].compareTo(right[rightIndex]) == -1 || left[leftIndex].compareTo(right[rightIndex]) == 2) {
+                initCard[mergeIndex] = left[leftIndex];
+                leftIndex++;
             } else {
-                initCard[iMerged] = right[iSecond];
-                iSecond++;
+                initCard[mergeIndex] = right[rightIndex];
+                rightIndex++;
             }
-            iMerged++;
+            mergeIndex++;
         }
 
-        System.arraycopy(left, iFirst, initCard, iMerged, left.length - iFirst);
-        System.arraycopy(right, iSecond, initCard, iMerged, right.length - iSecond);
+        System.arraycopy(left, leftIndex, initCard, mergeIndex, left.length - leftIndex);
+        System.arraycopy(right, rightIndex, initCard, mergeIndex, right.length - rightIndex);
     }
 
     // This method will return true if the array currently has any empty spaces.
