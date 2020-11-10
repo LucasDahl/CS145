@@ -240,7 +240,6 @@ public class CardArrayList implements CardList {
 
     }
 
-
     /**
      * this method clears the array, and sets the size back to zero.
      */
@@ -253,7 +252,7 @@ public class CardArrayList implements CardList {
 
     private static Card[] mergeSort(Card[] cards) {
 
-        //TODO maybe try a for loop to take out null values
+        //TODO clean up
         int tempNum = 0;
         Card[] tempArray;
 
@@ -284,8 +283,15 @@ public class CardArrayList implements CardList {
         Card[] cardsLH = new Card[tempArray.length / 2];
         Card[] cardsRH = new Card[tempArray.length - cardsLH.length];
 
-        System.arraycopy(tempArray, 0, cardsLH, 0, cardsLH.length); // TODO ask if we can do this, if not add for loops
-        System.arraycopy(tempArray, cardsLH.length, cardsRH, 0, cardsRH.length);
+
+        for(int i = 0; i < cardsLH.length; i++) {
+            cardsLH[i] = tempArray[i];
+        }
+
+        for(int i = 0; i < cardsRH.length; i++) {
+            cardsRH[i] = tempArray[i];
+        }
+
 
         // Cal mergeSort on both arrays.
         mergeSort(cardsLH);
