@@ -392,12 +392,18 @@
       <option name="project" value="LOCAL" />
       <updated>1604896708066</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Took out System,arraycopy and replaced it with for loops.">
+      <created>1604968237787</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1604968237787</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added more notes on recursion." />
     <MESSAGE value="Finished the findDistance method for the long assignment." />
     <MESSAGE value="Corrected the findDistance method for the long assignment. Added notes about implements." />
     <MESSAGE value="completed the findPath method." />
@@ -422,7 +428,8 @@
     <MESSAGE value="Fixed various methods that were slightly off on their specific index it would return." />
     <MESSAGE value="Fixed a few more bugs in CardArrayList, and took out a useless variable in Card compareTo class." />
     <MESSAGE value="Added more java doc and took out old code that was not being used in both the CardArrayList and Card classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more java doc and took out old code that was not being used in both the CardArrayList and Card classes." />
+    <MESSAGE value="Took out System,arraycopy and replaced it with for loops." />
+    <option name="LAST_COMMIT_MESSAGE" value="Took out System,arraycopy and replaced it with for loops." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
@@ -442,31 +449,31 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1604896707935">
+    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1604968237578">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="596" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925873237" />
-    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604896707935" />
+    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604968237578" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526527430" />
-    <state width="1878" height="205" key="GridCell.Tab.0.bottom" timestamp="1604968179813">
+    <state width="1878" height="211" key="GridCell.Tab.0.bottom" timestamp="1604990778014">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="205" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604968179813" />
+    <state width="1878" height="211" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604990778014" />
     <state width="1878" height="234" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="205" key="GridCell.Tab.0.center" timestamp="1604968179811">
+    <state width="1878" height="211" key="GridCell.Tab.0.center" timestamp="1604990778013">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="205" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604968179811" />
+    <state width="1878" height="211" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604990778013" />
     <state width="1878" height="234" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="205" key="GridCell.Tab.0.left" timestamp="1604968179811">
+    <state width="1878" height="211" key="GridCell.Tab.0.left" timestamp="1604990778012">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="205" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604968179811" />
+    <state width="1878" height="211" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604990778012" />
     <state width="1878" height="234" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967390" />
-    <state width="1878" height="205" key="GridCell.Tab.0.right" timestamp="1604968179812">
+    <state width="1878" height="211" key="GridCell.Tab.0.right" timestamp="1604990778014">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="205" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604968179812" />
+    <state width="1878" height="211" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604990778014" />
     <state width="1878" height="234" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
     <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1604898944951">
       <screen x="1920" y="25" width="1920" height="1055" />
@@ -488,11 +495,11 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2469" y="299" key="IDE.errors.dialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603823015749" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1604896716912">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1604968328551">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="560" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925875349" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604896716912" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604968328551" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526529886" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />

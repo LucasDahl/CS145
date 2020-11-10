@@ -77,9 +77,9 @@ public class CardArrayList implements CardList {
     /**
      * This method will add a given card to the array.
      *
-     * @param x this is the card to passed in to add to the array.
+     * @param card this is the card to passed in to add to the array.
      */
-    public void add(Card x) {
+    public void add(Card card) {
 
         // Check if there is room.
         if(!isRoom()) {
@@ -89,7 +89,7 @@ public class CardArrayList implements CardList {
         // Find the first null value to place the card at.
         for(int i = 0; i < cardArray.length; i++) {
             if(cardArray[i] == null) {
-                cardArray[i] = x;
+                cardArray[i] = card;
                 size++;
                 return;
             }
@@ -100,13 +100,13 @@ public class CardArrayList implements CardList {
     /**
      * This method will add a given card at a specific index.
      *
-     * @param l this is the given index to place the card.
-     * @param x is the card to be added into the array.
+     * @param location this is the given index to place the card.
+     * @param card is the card to be added into the array.
      * @IndexOutOfBoundsException will throw an error if the location is out of range.
      */
-    public void add(int l, Card x) {
+    public void add(int location, Card card) {
 
-       if(l > (cardArray.length + 1)) {
+       if(location > (cardArray.length + 1)) {
            throw new IllegalArgumentException("The position is out of bounds");
         }
 
@@ -115,9 +115,9 @@ public class CardArrayList implements CardList {
 
         for(int i = 0; i < cardArray.length; i++) {
 
-            if(i == l) {
-                newArray[i] = x;
-            } else if(i > l) {
+            if(i == location) {
+                newArray[i] = card;
+            } else if(i > location) {
                 newArray[i] = cardArray[i - 1];
             } else {
                 newArray[i] = cardArray[i];
@@ -204,14 +204,14 @@ public class CardArrayList implements CardList {
     /**
      *This method will accept a Card and return the index of that card.
      *
-     * @param x is the card passed into the array to retrieve the index for.
+     * @param card is the card passed into the array to retrieve the index for.
      * @return this is in the index of the card that was passed in.
      */
-    public int indexOf(Card x) {
+    public int indexOf(Card card) {
 
         for(int i = 0; i < size; i++) {
 
-            if(cardArray[i].compareTo(x) == 2) {
+            if(cardArray[i].compareTo(card) == 2) {
                 return i; // TODO add compareTo?
             }
         }
@@ -283,45 +283,59 @@ public class CardArrayList implements CardList {
         Card[] cardsLH = new Card[tempArray.length / 2];
         Card[] cardsRH = new Card[tempArray.length - cardsLH.length];
 
+        // Set both arrays
+        for(int i = 0; i < tempArray.length; i++) {
 
-        for(int i = 0; i < cardsLH.length; i++) {
-            cardsLH[i] = tempArray[i];
+            if(i < cardsLH.length) {
+                cardsLH[i] = tempArray[i];
+            }
+
+            if(i < cardsRH.length) {
+                cardsRH[i] = tempArray[cardsLH.length + i];
+            }
+
         }
 
-        for(int i = 0; i < cardsRH.length; i++) {
-            cardsRH[i] = tempArray[i];
-        }
 
-
-        // Cal mergeSort on both arrays.
+        // Call mergeSort on both arrays.
         mergeSort(cardsLH);
         mergeSort(cardsRH);
 
         // Merge the arrays
-        merge(cardsLH, cardsRH, cards);
+        mergeArray(cardsLH, cardsRH, cards);
 
         return cards;
     }
 
-    private static void merge(Card[] left, Card[] right, Card[] initCard) {
+    private static void mergeArray(Card[] left, Card[] right, Card[] cardArray) {
 
         // Properties
-        int leftIndex =0, rightIndex = 0, mergeIndex = 0;
+        int leftIndex = 0, rightIndex = 0, mergeIndex = 0;
 
         while(leftIndex < left.length && rightIndex < right.length) {
 
             if(left[leftIndex].compareTo(right[rightIndex]) == -1 || left[leftIndex].compareTo(right[rightIndex]) == 2) {
-                initCard[mergeIndex] = left[leftIndex];
+                cardArray[mergeIndex] = left[leftIndex];
                 leftIndex++;
             } else {
-                initCard[mergeIndex] = right[rightIndex];
+                cardArray[mergeIndex] = right[rightIndex];
                 rightIndex++;
             }
             mergeIndex++;
         }
 
-        System.arraycopy(left, leftIndex, initCard, mergeIndex, left.length - leftIndex);
-        System.arraycopy(right, rightIndex, initCard, mergeIndex, right.length - rightIndex);
+        while(leftIndex < left.length) {
+            cardArray[mergeIndex] = left[leftIndex];
+            leftIndex++;
+            mergeIndex++;
+        }
+        while(rightIndex < right.length) {
+            cardArray[mergeIndex] = right[rightIndex];
+            rightIndex++;
+            mergeIndex++;
+        }
+
+
     }
 
     // This method will return true if the array currently has any empty spaces.
