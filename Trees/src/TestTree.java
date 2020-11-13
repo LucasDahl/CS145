@@ -9,6 +9,8 @@ public class TestTree {
         theTree.add(4);
         theTree.add(66);
 
+        System.out.println(theTree.toString());
+
     }
 
 }

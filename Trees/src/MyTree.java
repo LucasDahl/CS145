@@ -61,4 +61,35 @@ public class MyTree {
 
     }
 
+    public String toString() {
+        return printTree(root);
+    }
+
+    private String printTree(Node currentRoot) {
+
+        if(currentRoot == null) {
+            return "";
+        } else {
+
+            // This is preorder because print then left then right
+            String x = "";
+            x = x + currentRoot.data + " ";
+            x = x +printTree(currentRoot.left);
+            x = x + printTree(currentRoot.right);
+
+            // In order
+//            printTree(currentRoot.left);
+//            System.out.print(currentRoot.data + " ");
+//            printTree(currentRoot.right);
+
+            // Post data
+//            printTree(currentRoot.left);
+//            printTree(currentRoot.right);
+//            System.out.print(currentRoot.data + " ");
+
+            return x;
+        }
+
+    }
+
 }

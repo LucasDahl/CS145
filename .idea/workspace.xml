@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CardAssignment/src/CardLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CardAssignment/src/CardListMasterTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedList Card Assignment/LinkedList Card Assignment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedListNotes/LinkedListNotes.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trees/Trees.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trees/src/MyTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trees/src/TestTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CardAssignment/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/CardAssignment/src/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CardAssignment/src/CardArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CardAssignment/src/CardArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/src/MyTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/src/MyTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/src/TestTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/src/TestTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +44,7 @@
       <recent name="$PROJECT_DIR$/DistanceAssignment/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CardArrayMaster">
+  <component name="RunManager" selected="Application.TestTree">
     <configuration name="CardArrayMaster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CardArrayMaster" />
       <module name="CardAssignment" />
@@ -81,20 +73,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="Notes" />
+    <configuration name="TestTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestTree" />
+      <module name="Trees" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestTree" />
         <item itemvalue="Application.CardArrayMaster" />
         <item itemvalue="Application.CardArrayMasterGUI" />
         <item itemvalue="Application.MainTestProgram" />
         <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -415,12 +407,18 @@
       <option name="project" value="LOCAL" />
       <updated>1604990818132</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added some notes on Binary trees, along with started the CardLinkedList class for a future assignment.">
+      <created>1605298831965</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1605298831965</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Corrected the findDistance method for the long assignment. Added notes about implements." />
     <MESSAGE value="completed the findPath method." />
     <MESSAGE value="Fixed an issue where the distance would always be one less than the actualt number." />
     <MESSAGE value="Fixed an issue where the path would be wrong if more than one word met the requirements." />
@@ -445,7 +443,8 @@
     <MESSAGE value="Added more java doc and took out old code that was not being used in both the CardArrayList and Card classes." />
     <MESSAGE value="Took out System,arraycopy and replaced it with for loops." />
     <MESSAGE value="Took out System,arraycopy and replaced it with for loops in the merge method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Took out System,arraycopy and replaced it with for loops in the merge method." />
+    <MESSAGE value="Added some notes on Binary trees, along with started the CardLinkedList class for a future assignment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some notes on Binary trees, along with started the CardLinkedList class for a future assignment." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
@@ -465,11 +464,11 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1604990817991">
+    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1605298831770">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="596" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925873237" />
-    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604990817991" />
+    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1605298831770" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526527430" />
     <state width="1878" height="255" key="GridCell.Tab.0.bottom" timestamp="1605070529245">
       <screen x="1920" y="25" width="1920" height="1055" />
@@ -511,11 +510,11 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2469" y="299" key="IDE.errors.dialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603823015749" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1604990826162">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605298833945">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="560" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925875349" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604990826162" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1605298833945" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526529886" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
