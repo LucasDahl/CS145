@@ -137,16 +137,10 @@ public class CardArrayList implements CardList {
      */
     public Card remove() {
 
-        // Properties
-        Card removed;
-
         // Decrement size
         size--;
 
-        // Get the card to remove.
-        removed = cardArray[size];
-
-        return removed;
+        return cardArray[size];
     }
 
     /**
@@ -212,7 +206,7 @@ public class CardArrayList implements CardList {
         for(int i = 0; i < size; i++) {
 
             if(cardArray[i].compareTo(card) == 2) {
-                return i; // TODO add compareTo?
+                return i;
             }
         }
         return -1;
@@ -222,7 +216,18 @@ public class CardArrayList implements CardList {
      * This method will sort the array from smallest to biggest.
      */
     public void sort() {
-        mergeSort(cardArray);
+
+        // Create the arrays with no null values.
+        Card[] left = Arrays.copyOfRange(cardArray, 0, size / 2);
+        Card[] right = Arrays.copyOfRange(cardArray, size / 2, size);
+
+        // Sort the arrays recursively.
+        mergeSort(left);
+        mergeSort(right);
+        //mergeSort(cardArray);
+
+        // Merge the arrays.
+        mergeArray(left, right, cardArray);
     }
 
     /**
@@ -252,49 +257,14 @@ public class CardArrayList implements CardList {
 
     private static Card[] mergeSort(Card[] cards) {
 
-        //TODO clean up
-        int tempNum = 0;
-        Card[] tempArray;
-
-        // Return the array if its empty(hit the bottom)
+        // Return the array if its empty(hit the bottom) or cannot be split.
         if(cards.length < 2) {
             return cards;
         }
 
-        if(cards[cards.length -1] == null) {
-            for (int i = 0; i < cards.length; i++) {
-                if (cards[i] != null) {
-                    tempNum++;
-                }
-            }
-
-            //tempNum++;
-            tempArray = new Card[tempNum];
-            for(int i = 0; i < cards.length; i++) {
-                if (cards[i] != null) {
-                    tempArray[i] = cards[i];
-                }
-            }
-        } else {
-            tempArray = cards;
-        }
-
-        // Split the array
-        Card[] cardsLH = new Card[tempArray.length / 2];
-        Card[] cardsRH = new Card[tempArray.length - cardsLH.length];
-
-        // Set both arrays
-        for(int i = 0; i < tempArray.length; i++) {
-
-            if(i < cardsLH.length) {
-                cardsLH[i] = tempArray[i];
-            }
-
-            if(i < cardsRH.length) {
-                cardsRH[i] = tempArray[cardsLH.length + i];
-            }
-
-        }
+        // Create the arrays
+        Card[] cardsLH = Arrays.copyOfRange(cards, 0, cards.length / 2);
+        Card[] cardsRH = Arrays.copyOfRange(cards, cards.length / 2, cards.length);
 
 
         // Call mergeSort on both arrays.
@@ -324,18 +294,19 @@ public class CardArrayList implements CardList {
             mergeIndex++;
         }
 
+        // Add any left over elements from the left side.
         while(leftIndex < left.length) {
             cardArray[mergeIndex] = left[leftIndex];
             leftIndex++;
             mergeIndex++;
         }
+
+        // Add any left over elements from the right side.
         while(rightIndex < right.length) {
             cardArray[mergeIndex] = right[rightIndex];
             rightIndex++;
             mergeIndex++;
         }
-
-
     }
 
     // This method will return true if the array currently has any empty spaces.
@@ -359,5 +330,4 @@ public class CardArrayList implements CardList {
         cardArray[a] = cardArray[b];
         cardArray[b] = tempCard;
     }
-
 }

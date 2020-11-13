@@ -11,11 +11,13 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter14MiniAssignment/Chapter14MiniAssignment.iml" filepath="$PROJECT_DIR$/Chapter14MiniAssignment/Chapter14MiniAssignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/DistanceAssignment/DistanceAssignment.iml" filepath="$PROJECT_DIR$/DistanceAssignment/DistanceAssignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/GrammerAssignment/GrammerAssignment.iml" filepath="$PROJECT_DIR$/GrammerAssignment/GrammerAssignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedList Card Assignment/LinkedList Card Assignment.iml" filepath="$PROJECT_DIR$/LinkedList Card Assignment/LinkedList Card Assignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedListNotes/LinkedListNotes.iml" filepath="$PROJECT_DIR$/LinkedListNotes/LinkedListNotes.iml" />
       <module fileurl="file://$PROJECT_DIR$/Midterm/Midterm.iml" filepath="$PROJECT_DIR$/Midterm/Midterm.iml" />
       <module fileurl="file://$PROJECT_DIR$/MiniActivity/MiniActivity.iml" filepath="$PROJECT_DIR$/MiniActivity/MiniActivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Notes/Notes.iml" filepath="$PROJECT_DIR$/Notes/Notes.iml" />
       <module fileurl="file://$PROJECT_DIR$/ShortAssignment/ShortAssignment.iml" filepath="$PROJECT_DIR$/ShortAssignment/ShortAssignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trees/Trees.iml" filepath="$PROJECT_DIR$/Trees/Trees.iml" />
     </modules>
   </component>
 </project>
