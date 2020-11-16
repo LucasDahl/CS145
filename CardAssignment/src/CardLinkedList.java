@@ -149,7 +149,6 @@ public class CardLinkedList implements CardList {
 
         }
 
-
     }
 
     /**
@@ -191,27 +190,27 @@ public class CardLinkedList implements CardList {
     public Card remove(int loc) {
 
         // Properties
-        CardNode frontCard = headCard, backCard = headCard;
+        CardNode traversalCard = headCard, endingCard = headCard;
 
         if(loc < 0) throw new IllegalArgumentException("Index cannot be negatives");
         if(loc > size) throw new IllegalArgumentException("Index cannot be greater than the size.");
+        if(loc == 0) {
+            traversalCard = headCard;
+            headCard = headCard.next;
+        } else {
+            for(int i = 0; i < loc; i++) {
+                endingCard = traversalCard;
+                traversalCard = traversalCard.next;
+            }
 
+            endingCard.next = traversalCard.next;
+            traversalCard.next = null;
 
-        for(int i = 0; i < loc; i++) {
-            frontCard = frontCard.next;
         }
-
-        // Make the backCard's next be the card after the one being removed.
-       if(loc == 0) {
-           headCard = frontCard.next;
-       }
-//       else {
-//           backCard.next = frontCard.next;
-//       }
 
         size--;
 
-        return frontCard.card;
+        return traversalCard.card;
     }
 
     /**
@@ -247,15 +246,11 @@ public class CardLinkedList implements CardList {
 
         // Properties
         CardNode currentCard = headCard;
-        int index = 0;
 
-        while(currentCard.next != null) {
-
-            if(currentCard.card.compareTo(c) == 1 || currentCard.card.compareTo(c) == 2) {
-                return index;
+        for(int i = 0; i < size; i++) {
+            if(currentCard.card.compareTo(c) == 2) {
+                return i;
             }
-
-            index++;
             currentCard = currentCard.next;
 
         }
@@ -274,7 +269,12 @@ public class CardLinkedList implements CardList {
      *
      */
     public void shuffle() {
+        // Properties
+        Random rand = new Random();
 
+        for(int i = 0; i < size; i++) {
+            swap(rand.nextInt(size-1), rand.nextInt(size-1));
+        }
     }
 
     /**
@@ -292,13 +292,13 @@ public class CardLinkedList implements CardList {
     private void swap(int a, int b) {
 
         // Properties
-        Card tempCardOne = null, tempCardTwo = null;
+        Card tempCardOne = new Card(), tempCardTwo = new Card();
         CardNode traversalCard = headCard;
         int loop = 0;
 
         while(traversalCard.next != null) {
 
-            if(a == loop) {
+            if(a == loop ) {
                 tempCardOne = traversalCard.card;
             }
 
@@ -312,6 +312,7 @@ public class CardLinkedList implements CardList {
 
         }
 
+        traversalCard = headCard;
         for(int i = 0; i < a; i++) traversalCard = traversalCard.next;
 
         traversalCard.card = tempCardTwo;

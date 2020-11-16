@@ -157,9 +157,9 @@ public class CardListMasterTester {
      
     // STAGE 9
      // IndexOF
-     public void stage9()  // PASS------------------------------?
+     public void stage9() // PASS------------------------------
      {
-      SO.print("Found Success=3: ");
+      SO.print("Found Success=2: ");
       SO.println(masterList1.indexOf(new Card(22,22)));
       SO.print("Found Success=5: ");
       SO.println(masterList1.indexOf(new Card(7,7))); 
@@ -167,7 +167,7 @@ public class CardListMasterTester {
       SO.println(masterList1.indexOf(new Card(3,4)));
      }
      
-     public void stage10()
+     public void stage10() // PASS------------------------------
      {
      // STAGE 10
      // Does shuffle work?
