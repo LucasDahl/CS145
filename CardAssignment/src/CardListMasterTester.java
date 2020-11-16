@@ -49,7 +49,7 @@ public class CardListMasterTester {
        stage105();
        
     }
-    public void stage1()
+    public void stage1() // PASS------------------------------
     {
      // STAGE 1
      // Can we add to a master list and print it out?
@@ -61,7 +61,7 @@ public class CardListMasterTester {
      SO.print("Initial list   : "); 
      SO.println(masterList1);     
     }
-    public void stage2()
+    public void stage2() // PASS------------------------------
     {
      // STAGE 2
      // Can we add in other Locations? 
@@ -74,7 +74,7 @@ public class CardListMasterTester {
       SO.println(masterList1);
 
     }
-    public void stage3()
+    public void stage3() // PASS------------------------------
     {     
      // STAGE 3
      // can we add more cards
@@ -86,7 +86,7 @@ public class CardListMasterTester {
       SO.print("After More     : "); 
       SO.println(masterList1);
     }
-    public void stage4()
+    public void stage4() // PASS------------------------------
     {
      // STAGE 4
      // Can we Remove the end value
@@ -94,7 +94,7 @@ public class CardListMasterTester {
       SO.print("After A Remove : "); 
       SO.println(masterList1);
     }
-    public void stage5()
+    public void stage5() // PASS------------------------------
     { 
      // STAGE 5
      // Does remove return the removed value?
@@ -105,7 +105,7 @@ public class CardListMasterTester {
       SO.print("After Remove #2: "); 
       SO.println(masterList1);
     }
-    public void stage6()
+    public void stage6() // PASS------------------------------?
     { 
      // STAGE 6
      // Did it remove from the middle
@@ -117,7 +117,7 @@ public class CardListMasterTester {
       SO.print("List afterward : "); 
       SO.println(masterList1);
      }
-     public void stage7()
+     public void stage7() // PASS------------------------------
      { 
      // STAGE 7
      // Did it remove from the front
@@ -130,7 +130,7 @@ public class CardListMasterTester {
        SO.println(masterList1);
      }     
      
-     public void stage8()
+     public void stage8() // PASS------------------------------
      {
      // STAGE 8
      // Did get work correctly?
@@ -157,7 +157,7 @@ public class CardListMasterTester {
      
     // STAGE 9
      // IndexOF
-     public void stage9()
+     public void stage9()  // PASS------------------------------?
      {
       SO.print("Found Success=3: ");
       SO.println(masterList1.indexOf(new Card(22,22)));
@@ -181,7 +181,7 @@ public class CardListMasterTester {
       SO.println(masterList1);
      }
      
-     public void stage11()
+     public void stage11() // PASS------------------------------
      {
      // STAGE 11
      // Does Clear Work?

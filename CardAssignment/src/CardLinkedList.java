@@ -9,10 +9,37 @@ public class CardLinkedList implements CardList {
 
     // **************************** Fields ****************************
     private List<Card> cards;
+    private CardNode headCard;
     private int size;
+
+    // ************************** Inner Class **************************
+    private class CardNode {
+
+        // Properties
+        public Card card;
+        public CardNode next;
+
+        /**
+         * This is the constructor for the node.
+         *
+         * @param card this is the card to add to the node.
+         */
+        public CardNode(Card card) {
+            this.card = card;
+            next = null;
+        }
+
+    }
+
     // ************************** Constructors ************************
 
+    /**
+     *
+     */
     public CardLinkedList() {
+
+        headCard = null;
+        size = 0;
 
     }
 
@@ -20,67 +47,220 @@ public class CardLinkedList implements CardList {
 
     @Override
     public String toString() {
-        return "";
+
+        // Properties
+        String cardsString = "";
+        CardNode currentCard;
+
+        if(headCard == null) {
+            cardsString = "[0: " + ":" + size + "]";
+            return cardsString;
+        }
+
+        // Set the current node.
+        currentCard = headCard;
+
+        while(currentCard != null) {
+
+            // Update the string
+            cardsString = cardsString + "," + currentCard.card.toString();
+
+            // Update the current card.
+            currentCard = currentCard.next;
+
+        }
+
+        return "[0: " + cardsString.substring(1) + " :" + size +"]";
     }
 
     /**
+     * This method will return the total size of the
+     * list that has elements.
      *
-     * @return
+     * @return This will return the size of the list with elements.
      */
     public int size() {
-        return 0;
+        return size;
     }
 
     /**
+     * This method will add a card at the back of
+     * the list.
      *
      * @param c the Card object to be added.
      */
     public void add(Card c) {
 
+        if(headCard == null) {
+            headCard = new CardNode(c);
+            size++;
+        } else {
+
+            // Make a traversal card and set it to the head
+            CardNode traversalCard  = headCard;
+
+            // Find the last spot
+            while(traversalCard.next != null) {
+                traversalCard = traversalCard.next;
+            }
+
+            // Once an empty spot is set, add the passed in card.
+            traversalCard.next = new CardNode(c);
+            size++;
+
+        }
+
     }
 
     /**
+     * This method will a card at the given
+     * location.
      *
      * @param loc the desired index of the card to be added.
      * @param c the Card object to be added.
+     * @IllegalArgumentExceptio will throw if the index is either below 0, or larger than the size.
      */
     public void add(int loc, Card c) {
 
+        // Properties
+        CardNode currentCard = headCard;
+        CardNode cardToAdd = new CardNode(c);
+
+        if(loc < 0) throw new IllegalArgumentException("Index cannot be negatives");
+        if(loc > size) throw new IllegalArgumentException("Index cannot be greater than the size.");
+        if(loc == size) {
+            add(c);
+        } else if(loc == 0) {
+            cardToAdd.card = c;
+            cardToAdd.next = headCard;
+            headCard = cardToAdd;
+            size++;
+
+        } else {
+
+            for(int i = 1; i < loc; i++) currentCard = currentCard.next;
+
+            // Once we are at the given position insert the car, and move everything over.
+            cardToAdd.card = c;
+            cardToAdd.next = currentCard.next;
+            currentCard.next = cardToAdd;
+
+            size++;
+
+        }
+
+
     }
 
     /**
+     * This method will remove the last in the
+     * list and return it after its removed.
      *
-     * @return
+     * @return will return the last card in the list after taking it out of the list.
      */
     public Card remove() {
-        return null;
+
+        // If the list is empty, simply return.
+        if(headCard == null) {
+            return null;
+        }
+
+        // Make a traversal card and set it to the head
+        CardNode traversalCard = headCard, endingCard = headCard;
+
+        // Find the last spot
+        while(traversalCard.next != null) {
+            endingCard = traversalCard;
+            traversalCard = traversalCard.next;
+        }
+
+        // Decrement the size and make the ending node next be null.
+        size--;
+        endingCard.next = null;
+
+        return traversalCard.card;
     }
 
     /**
+     * This card will remove a card at a specific index.
      *
      * @param loc the index of the card to be removed.
-     * @return
+     * @return is the card that is being removed.
+     * @IllegalArgumentExceptio will throw if the index is either below 0, or larger than the size.
      */
     public Card remove(int loc) {
-        return null;
+
+        // Properties
+        CardNode frontCard = headCard, backCard = headCard;
+
+        if(loc < 0) throw new IllegalArgumentException("Index cannot be negatives");
+        if(loc > size) throw new IllegalArgumentException("Index cannot be greater than the size.");
+
+
+        for(int i = 0; i < loc; i++) {
+            frontCard = frontCard.next;
+        }
+
+        // Make the backCard's next be the card after the one being removed.
+       if(loc == 0) {
+           headCard = frontCard.next;
+       }
+//       else {
+//           backCard.next = frontCard.next;
+//       }
+
+        size--;
+
+        return frontCard.card;
     }
 
     /**
+     * This method will return a card at a
+     * specific index.
      *
-     * @param i The index of the desired card.
-     * @return
+     * @param index The index of the desired card.
+     * @return This is the card at the specific index.
+     * @IllegalArgumentExceptio will throw if the index is either below 0, or larger than the size.
      */
-    public Card get(int i) {
-        return null;
+    public Card get(int index) {
+
+        // Properties
+        CardNode currentCard = headCard;
+
+        if(index < 0) throw new IllegalArgumentException("Index cannot be negatives");
+        if(index > size) throw new IllegalArgumentException("Index cannot be greater than the size.");
+
+        for(int i = 0; i < index; i++) currentCard = currentCard.next;
+
+        return currentCard.card;
+
     }
 
     /**
+     * This method will return the index of
+     * the card that is passed in.
      *
      * @param c Card object
-     * @return
+     * @return This is the index of the card in the list.
      */
     public int indexOf(Card c) {
-        return 0;
+
+        // Properties
+        CardNode currentCard = headCard;
+        int index = 0;
+
+        while(currentCard.next != null) {
+
+            if(currentCard.card.compareTo(c) == 1 || currentCard.card.compareTo(c) == 2) {
+                return index;
+            }
+
+            index++;
+            currentCard = currentCard.next;
+
+        }
+
+        return -1;
     }
 
     /**
@@ -98,9 +278,44 @@ public class CardLinkedList implements CardList {
     }
 
     /**
-     *
+     * This method simply clears the list by
+     * setting the head to null and size to zero.
+     * The garbage collector will clean up after
+     * the head is set to null.
      */
     public void clear() {
+        headCard = null;
+        size = 0;
+    }
+
+    // This method will swap two elements.
+    private void swap(int a, int b) {
+
+        // Properties
+        Card tempCardOne = null, tempCardTwo = null;
+        CardNode traversalCard = headCard;
+        int loop = 0;
+
+        while(traversalCard.next != null) {
+
+            if(a == loop) {
+                tempCardOne = traversalCard.card;
+            }
+
+            if(b == loop) {
+                tempCardTwo = traversalCard.card;
+                traversalCard.card = tempCardOne;
+            }
+
+            traversalCard = traversalCard.next;
+            loop++;
+
+        }
+
+        for(int i = 0; i < a; i++) traversalCard = traversalCard.next;
+
+        traversalCard.card = tempCardTwo;
 
     }
+
 }
