@@ -93,7 +93,7 @@ public class CardLinkedList implements CardList {
 
         if(headCard == null) {
             headCard = new CardNode(c);
-            size++;
+//            size++;
         } else {
 
             // Make a traversal card and set it to the head
@@ -106,9 +106,10 @@ public class CardLinkedList implements CardList {
 
             // Once an empty spot is set, add the passed in card.
             traversalCard.next = new CardNode(c);
-            size++;
+            //size++;
 
         }
+        size++;
 
     }
 
@@ -262,7 +263,7 @@ public class CardLinkedList implements CardList {
      *
      */
     public void sort() {
-
+       mergeSort(this);
     }
 
     /**
@@ -272,8 +273,8 @@ public class CardLinkedList implements CardList {
         // Properties
         Random rand = new Random();
 
-        for(int i = 0; i < size; i++) {
-            swap(rand.nextInt(size-1), rand.nextInt(size-1));
+        for(int i = 0; i < size * 5; i++) {
+            swap(rand.nextInt(size), rand.nextInt(size));
         }
     }
 
@@ -288,34 +289,72 @@ public class CardLinkedList implements CardList {
         size = 0;
     }
 
+    // **************************** Private Methods ***************************
+
     // This method will swap two elements.
     private void swap(int a, int b) {
 
         // Properties
-        Card tempCardOne = new Card(), tempCardTwo = new Card();
-        CardNode traversalCard = headCard;
-        int loop = 0;
+        CardNode cardA = headCard, cardB = headCard;
 
-        while(traversalCard.next != null) {
-
-            if(a == loop ) {
-                tempCardOne = traversalCard.card;
-            }
-
-            if(b == loop) {
-                tempCardTwo = traversalCard.card;
-                traversalCard.card = tempCardOne;
-            }
-
-            traversalCard = traversalCard.next;
-            loop++;
-
+        // Return if the parameters are the same.
+        if(a == b) {
+            return;
         }
 
-        traversalCard = headCard;
-        for(int i = 0; i < a; i++) traversalCard = traversalCard.next;
+        // Get the card for index a
+        for(int i = 0; i < a; i++) {
+            cardA = cardA.next;
+        }
 
-        traversalCard.card = tempCardTwo;
+        // Get the card for index b
+        for(int i = 0; i < b; i++) {
+            cardB = cardB.next;
+        }
+
+        // Swap the cards(node data)
+        Card c = cardA.card;
+        cardA.card = cardB.card;
+        cardB.card = c;
+
+    }
+
+    private void mergeSort(CardLinkedList list) {
+        if(list.size() < 2) {
+            return;
+        }
+
+        CardLinkedList left = new CardLinkedList();
+        CardLinkedList right = new CardLinkedList();
+        int middle = list.size() / 2;
+        for(int i = 0; i < middle; i++) {
+            Card temp = list.remove(0);
+            left.add(temp);
+        }
+
+        while(list.size() > 0) {
+            right.add(list.remove(0));
+        }
+
+        mergeSort(left);
+        mergeSort(right);
+        merge(left,right, list);
+
+    }
+
+    private void merge(CardLinkedList listLeft, CardLinkedList listRight, CardLinkedList list) {
+
+        while(listLeft.size()  + listRight.size() > 0) {
+            if(listLeft.size() == 0) {
+                list.add(listRight.remove(0));
+            } else if(listRight.size() == 0) {
+                list.add(listLeft.remove(0));
+            } else if(listLeft.get(0).compareTo(listRight.get(0)) < 0) {
+                list.add(listLeft.remove(0));
+            } else {
+                list.add(listRight.remove(0));
+            }
+        }
 
     }
 

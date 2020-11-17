@@ -16,47 +16,65 @@ public class MyTree {
     public void add(int x) {
 
         // Base case
-        if(root == null) { // if there is no tree
-            root = new Node();
-            root.data = x;
-            root.left = null;
-            root.right = null; // Not really needed since they are already null
-            return;
-        } else {
-
-            add(x, root); // This is where we start the recursion
-
-        }
+//        if(root == null) { // if there is no tree
+//            root = new Node();
+//            root.data = x;
+//            root.left = null;
+//            root.right = null; // Not really needed since they are already null
+//            return;
+//        } else {
+//
+//            add(x, root); // This is where we start the recursion
+//
+//
+//       }
+        root = add(x, root);
     }
 
     // Recursive call, that goes down the tree, until a blank spot is found.
-    public void add(int x, Node currentRoot) {
+    public Node add(int x, Node currentRoot) {
 
-        if(currentRoot.left == null) { // If the left side is clear, add here.
-            currentRoot.left = new Node();
-            currentRoot.left.data = x;
-            currentRoot.left.left = null;
-            currentRoot.left.right = null;
-            return;
-        } else if(currentRoot.right == null) {
-            currentRoot.right = new Node();
-            currentRoot.right.data = x;
-            currentRoot.right.left = null;
-            currentRoot.right.right = null;
-            return;
+//        if(currentRoot.left == null) { // If the left side is clear, add here.
+//            currentRoot.left = new Node();
+//            currentRoot.left.data = x;
+//            currentRoot.left.left = null;
+//            currentRoot.left.right = null;
+//            return;
+//        } else if(currentRoot.right == null) {
+//            currentRoot.right = new Node();
+//            currentRoot.right.data = x;
+//            currentRoot.right.left = null;
+//            currentRoot.right.right = null;
+//            return;
+//        } else {
+//
+//            // If both left and right are empty
+//            // pick randomly... and go recursive
+//            // go left or right
+//            Random rand = new Random();
+//            int coin = rand.nextInt(2);
+//            if(coin == 0) {
+//                add(x, currentRoot.left);
+//            } else {
+//                add(x, currentRoot.right);
+//            }
+//
+//        }
+
+        if(currentRoot == null) {
+            Node temp = new Node();
+            temp.data = x;
+            return temp;
         } else {
-
-            // If both left and right are empty
-            // pick randomly... and go recursive
-            // go left or right
-            Random rand = new Random();
-            int coin = rand.nextInt(2);
-            if(coin == 0) {
-                add(x, currentRoot.left);
+            if(currentRoot.data < x) {
+                currentRoot.left = add(x, currentRoot.left);
+                return currentRoot;
+            } else if(currentRoot.data > x) {
+                currentRoot.right = add(x, currentRoot.right);
+                return currentRoot;
             } else {
-                add(x, currentRoot.right);
+                return currentRoot;
             }
-
         }
 
     }

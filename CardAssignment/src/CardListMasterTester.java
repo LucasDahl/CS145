@@ -190,7 +190,7 @@ public class CardListMasterTester {
       SO.println(masterList1);
      }
      
-     public void stage12()
+     public void stage12() // PASS------------------------------
      {
         // STAGE 12
         // Create a large list
