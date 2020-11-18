@@ -34,7 +34,9 @@ public class CardLinkedList implements CardList {
     // ************************** Constructors ************************
 
     /**
-     *
+     * This is the constructor that will
+     * set the size to 0, and the headCard
+     * to null.
      */
     public CardLinkedList() {
 
@@ -93,7 +95,6 @@ public class CardLinkedList implements CardList {
 
         if(headCard == null) {
             headCard = new CardNode(c);
-//            size++;
         } else {
 
             // Make a traversal card and set it to the head
@@ -106,11 +107,10 @@ public class CardLinkedList implements CardList {
 
             // Once an empty spot is set, add the passed in card.
             traversalCard.next = new CardNode(c);
-            //size++;
 
         }
-        size++;
 
+        size++;
     }
 
     /**
@@ -260,20 +260,25 @@ public class CardLinkedList implements CardList {
     }
 
     /**
-     *
+     * This method will sort the elements
+     * in the LinkedList from smallest to greatest.
      */
     public void sort() {
        mergeSort(this);
     }
 
     /**
-     *
+     * This method will randomly shuffle
+     * the list a random amount of times
+     * the size of the list.
      */
     public void shuffle() {
+
         // Properties
         Random rand = new Random();
 
-        for(int i = 0; i < size * 5; i++) {
+        // Randomly shuffle the list.
+        for(int i = 0; i < (size * rand.nextInt(5) + 1); i++) {
             swap(rand.nextInt(size), rand.nextInt(size));
         }
     }
@@ -319,43 +324,64 @@ public class CardLinkedList implements CardList {
 
     }
 
+    // This method will sort a list and merge it.
     private void mergeSort(CardLinkedList list) {
+
+        // If the list as less than 2 elements simply return
         if(list.size() < 2) {
             return;
         }
 
+        // Create each a left and right list.
         CardLinkedList left = new CardLinkedList();
         CardLinkedList right = new CardLinkedList();
+
         int middle = list.size() / 2;
-        for(int i = 0; i < middle; i++) {
+        // Set the left list.
+        for(int i = 0; i < (list.size() / 2); i++) {
             Card temp = list.remove(0);
             left.add(temp);
         }
 
+        // Set the right list.
         while(list.size() > 0) {
             right.add(list.remove(0));
         }
 
+        // sort each list
         mergeSort(left);
         mergeSort(right);
+
+        // Merge the lists together.
         merge(left,right, list);
 
     }
 
+    // This merges all the the elements of to CardLinkedLists into another.
     private void merge(CardLinkedList listLeft, CardLinkedList listRight, CardLinkedList list) {
 
         while(listLeft.size()  + listRight.size() > 0) {
             if(listLeft.size() == 0) {
+
+                // The left size is empty, so add from the right and remove(to eventually destroy the list).
                 list.add(listRight.remove(0));
+
             } else if(listRight.size() == 0) {
+
+                // The right size is empty, so add from the left and remove(to eventually destroy the list).
                 list.add(listLeft.remove(0));
-            } else if(listLeft.get(0).compareTo(listRight.get(0)) < 0) {
+
+            } else if(listLeft.get(0).compareTo(listRight.get(0)) == 2 || listLeft.get(0).compareTo(listRight.get(0)) == -1) {
+
+                // The left card is smaller so we add it to the list.
                 list.add(listLeft.remove(0));
+
             } else {
+
+                // The right card is smaller so we add it to the list.
                 list.add(listRight.remove(0));
             }
         }
-
     }
 
 }
