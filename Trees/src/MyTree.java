@@ -1,3 +1,4 @@
+import java.util.NoSuchElementException;
 import java.util.Random;
 
 public class MyTree {
@@ -14,52 +15,11 @@ public class MyTree {
     // This is a recursive helper method, that also adds the first node if neccesary
     // otherwise it just starts the recursion
     public void add(int x) {
-
-        // Base case
-//        if(root == null) { // if there is no tree
-//            root = new Node();
-//            root.data = x;
-//            root.left = null;
-//            root.right = null; // Not really needed since they are already null
-//            return;
-//        } else {
-//
-//            add(x, root); // This is where we start the recursion
-//
-//
-//       }
         root = add(x, root);
     }
 
     // Recursive call, that goes down the tree, until a blank spot is found.
-    public Node add(int x, Node currentRoot) {
-
-//        if(currentRoot.left == null) { // If the left side is clear, add here.
-//            currentRoot.left = new Node();
-//            currentRoot.left.data = x;
-//            currentRoot.left.left = null;
-//            currentRoot.left.right = null;
-//            return;
-//        } else if(currentRoot.right == null) {
-//            currentRoot.right = new Node();
-//            currentRoot.right.data = x;
-//            currentRoot.right.left = null;
-//            currentRoot.right.right = null;
-//            return;
-//        } else {
-//
-//            // If both left and right are empty
-//            // pick randomly... and go recursive
-//            // go left or right
-//            Random rand = new Random();
-//            int coin = rand.nextInt(2);
-//            if(coin == 0) {
-//                add(x, currentRoot.left);
-//            } else {
-//                add(x, currentRoot.right);
-//            }
-//
-//        }
+    private Node add(int x, Node currentRoot) {
 
         if(currentRoot == null) {
             Node temp = new Node();
@@ -108,6 +68,44 @@ public class MyTree {
             return x;
         }
 
+    }
+
+    public int getMin() {
+        if(root == null) throw new IllegalArgumentException();
+        return (getMin(root));
+    }
+
+    private int getMin(Node currentRoot) {
+        if(currentRoot.left == null) return currentRoot.data;
+        else
+            return getMin(currentRoot.left);
+    }
+
+    public void remove(int value) {
+        root = remove(value, root);
+    }
+
+    private Node remove(int value, Node currentRoot) {
+        if(currentRoot == null) {
+            // We went through the whole tree and never found it
+            return null;
+        } else if(root.data > value) {
+            currentRoot.left = remove(value, currentRoot.left);
+        } else if(root.data < value) {
+            currentRoot.right = remove(value, currentRoot.right);
+        } else {
+            // found it
+            // remove current root/value from tree
+            if(currentRoot.right == null) {
+                return currentRoot.left;
+            } else if(currentRoot.left == null) {
+                return currentRoot.right;
+            } else {
+                currentRoot.data = getMin(currentRoot.right);
+                currentRoot.right = remove(value, currentRoot.right);
+            }
+        }
+        return currentRoot;
     }
 
 }

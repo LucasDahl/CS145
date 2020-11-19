@@ -1,6 +1,8 @@
 import java.util.*;
 /**
- * This class
+ * This class will make a custom Linked List
+ * that implements CardList and stores card
+ * objects.
  *
  * @author Lucas D. Dahl
  * @version 11/12/20
@@ -8,7 +10,6 @@ import java.util.*;
 public class CardLinkedList implements CardList {
 
     // **************************** Fields ****************************
-    private List<Card> cards;
     private CardNode headCard;
     private int size;
 
@@ -16,7 +17,14 @@ public class CardLinkedList implements CardList {
     private class CardNode {
 
         // Properties
+        /**
+         * This is the card data fir the node.
+         */
         public Card card;
+
+        /**
+         * This is the node that comes after the current node.
+         */
         public CardNode next;
 
         /**
@@ -89,12 +97,12 @@ public class CardLinkedList implements CardList {
      * This method will add a card at the back of
      * the list.
      *
-     * @param c the Card object to be added.
+     * @param card the Card object to be added.
      */
-    public void add(Card c) {
+    public void add(Card card) {
 
         if(headCard == null) {
-            headCard = new CardNode(c);
+            headCard = new CardNode(card);
         } else {
 
             // Make a traversal card and set it to the head
@@ -106,7 +114,7 @@ public class CardLinkedList implements CardList {
             }
 
             // Once an empty spot is set, add the passed in card.
-            traversalCard.next = new CardNode(c);
+            traversalCard.next = new CardNode(card);
 
         }
 
@@ -117,32 +125,37 @@ public class CardLinkedList implements CardList {
      * This method will a card at the given
      * location.
      *
-     * @param loc the desired index of the card to be added.
-     * @param c the Card object to be added.
+     * @param location the desired index of the card to be added.
+     * @param card the Card object to be added.
      * @IllegalArgumentExceptio will throw if the index is either below 0, or larger than the size.
      */
-    public void add(int loc, Card c) {
+    public void add(int location, Card card) {
 
         // Properties
         CardNode currentCard = headCard;
-        CardNode cardToAdd = new CardNode(c);
+        CardNode cardToAdd = new CardNode(card);
 
-        if(loc < 0) throw new IllegalArgumentException("Index cannot be negatives");
-        if(loc > size) throw new IllegalArgumentException("Index cannot be greater than the size.");
-        if(loc == size) {
-            add(c);
-        } else if(loc == 0) {
-            cardToAdd.card = c;
+        // Make sure the location is not out of bounds.
+        if(location < 0 || location > size) throw new IllegalArgumentException("Index out of bounds");
+
+        if(location == size) {
+            // The card is at the end
+            add(card);
+        } else if(location == 0) {
+
+            // Card goes at the front.
+            cardToAdd.card = card;
             cardToAdd.next = headCard;
             headCard = cardToAdd;
             size++;
 
         } else {
 
-            for(int i = 1; i < loc; i++) currentCard = currentCard.next;
+            // Card is not at the front.
+            for(int i = 1; i < location; i++) currentCard = currentCard.next;
 
             // Once we are at the given position insert the car, and move everything over.
-            cardToAdd.card = c;
+            cardToAdd.card = card;
             cardToAdd.next = currentCard.next;
             currentCard.next = cardToAdd;
 
@@ -184,22 +197,23 @@ public class CardLinkedList implements CardList {
     /**
      * This card will remove a card at a specific index.
      *
-     * @param loc the index of the card to be removed.
+     * @param location the index of the card to be removed.
      * @return is the card that is being removed.
      * @IllegalArgumentExceptio will throw if the index is either below 0, or larger than the size.
      */
-    public Card remove(int loc) {
+    public Card remove(int location) {
 
         // Properties
         CardNode traversalCard = headCard, endingCard = headCard;
 
-        if(loc < 0) throw new IllegalArgumentException("Index cannot be negatives");
-        if(loc > size) throw new IllegalArgumentException("Index cannot be greater than the size.");
-        if(loc == 0) {
+        // Make sure the location is not out of bounds.
+        if(location < 0 || location > size) throw new IllegalArgumentException("Index cannot be negatives");
+
+        if(location == 0) {
             traversalCard = headCard;
             headCard = headCard.next;
         } else {
-            for(int i = 0; i < loc; i++) {
+            for(int i = 0; i < location; i++) {
                 endingCard = traversalCard;
                 traversalCard = traversalCard.next;
             }
@@ -227,9 +241,10 @@ public class CardLinkedList implements CardList {
         // Properties
         CardNode currentCard = headCard;
 
-        if(index < 0) throw new IllegalArgumentException("Index cannot be negatives");
-        if(index > size) throw new IllegalArgumentException("Index cannot be greater than the size.");
+        // Make sure the index is not out of bounds.
+        if(index < 0 || index > size) throw new IllegalArgumentException("Index out of bounds.");
 
+        // Get the card at the index
         for(int i = 0; i < index; i++) currentCard = currentCard.next;
 
         return currentCard.card;
@@ -240,18 +255,20 @@ public class CardLinkedList implements CardList {
      * This method will return the index of
      * the card that is passed in.
      *
-     * @param c Card object
+     * @param card Card object
      * @return This is the index of the card in the list.
      */
-    public int indexOf(Card c) {
+    public int indexOf(Card card) {
 
         // Properties
         CardNode currentCard = headCard;
 
+        // Check if their is a card of the parameter inside the list.
         for(int i = 0; i < size; i++) {
-            if(currentCard.card.compareTo(c) == 2) {
+            if(currentCard.card.compareTo(card) == 2) {
                 return i;
             }
+
             currentCard = currentCard.next;
 
         }
@@ -264,7 +281,7 @@ public class CardLinkedList implements CardList {
      * in the LinkedList from smallest to greatest.
      */
     public void sort() {
-       mergeSort(this);
+       sort(this);
     }
 
     /**
@@ -325,63 +342,65 @@ public class CardLinkedList implements CardList {
     }
 
     // This method will sort a list and merge it.
-    private void mergeSort(CardLinkedList list) {
+    private void sort(CardLinkedList list) {
+
+        // Properties
+        CardLinkedList leftList = new CardLinkedList();
+        CardLinkedList rightList = new CardLinkedList();
 
         // If the list as less than 2 elements simply return
         if(list.size() < 2) {
             return;
         }
 
-        // Create each a left and right list.
-        CardLinkedList left = new CardLinkedList();
-        CardLinkedList right = new CardLinkedList();
-
-        int middle = list.size() / 2;
-        // Set the left list.
-        for(int i = 0; i < (list.size() / 2); i++) {
-            Card temp = list.remove(0);
-            left.add(temp);
-        }
-
-        // Set the right list.
+        // Remove from the initial list and add the first half to
+        // the left and the second half to the right.
         while(list.size() > 0) {
-            right.add(list.remove(0));
+
+            if(leftList.size() < (list.size() / 2)) {
+                leftList.add(list.remove(0));
+            } else {
+                rightList.add(list.remove(0));
+            }
         }
 
         // sort each list
-        mergeSort(left);
-        mergeSort(right);
+        sort(leftList);
+        sort(rightList);
 
         // Merge the lists together.
-        merge(left,right, list);
+        merge(leftList, rightList, list);
 
     }
 
     // This merges all the the elements of to CardLinkedLists into another.
-    private void merge(CardLinkedList listLeft, CardLinkedList listRight, CardLinkedList list) {
+    private void merge(CardLinkedList leftList, CardLinkedList rightList, CardLinkedList list) {
 
-        while(listLeft.size()  + listRight.size() > 0) {
-            if(listLeft.size() == 0) {
+        // Combine the two lists into one.
+        while(leftList.size() + rightList.size() > 0) {
+
+            // Check if the left or right side is empty or not
+            if(leftList.size() == 0) {
 
                 // The left size is empty, so add from the right and remove(to eventually destroy the list).
-                list.add(listRight.remove(0));
+                list.add(rightList.remove(0));
 
-            } else if(listRight.size() == 0) {
+            } else if(rightList.size() == 0) {
 
                 // The right size is empty, so add from the left and remove(to eventually destroy the list).
-                list.add(listLeft.remove(0));
+                list.add(leftList.remove(0));
 
-            } else if(listLeft.get(0).compareTo(listRight.get(0)) == 2 || listLeft.get(0).compareTo(listRight.get(0)) == -1) {
+            } else if(leftList.get(0).compareTo(rightList.get(0)) == 2 || leftList.get(0).compareTo(rightList.get(0)) == -1) {
 
+                // The list is not empty so we need to compare the current card from both sides.
                 // The left card is smaller so we add it to the list.
-                list.add(listLeft.remove(0));
+                list.add(leftList.remove(0));
 
             } else {
 
                 // The right card is smaller so we add it to the list.
-                list.add(listRight.remove(0));
+                list.add(rightList.remove(0));
             }
         }
     }
-
 }
