@@ -26,16 +26,18 @@ public class MyTree {
             temp.data = x;
             return temp;
         } else {
-            if(currentRoot.data < x) {
+            if(currentRoot.data > x) {
                 currentRoot.left = add(x, currentRoot.left);
                 return currentRoot;
-            } else if(currentRoot.data > x) {
+            } else if(currentRoot.data < x) {
                 currentRoot.right = add(x, currentRoot.right);
                 return currentRoot;
             } else {
                 return currentRoot;
             }
         }
+
+
 
     }
 
@@ -68,6 +70,15 @@ public class MyTree {
             return x;
         }
 
+    }
+
+    private boolean contains(Node currentRoot, int x) {
+        if(currentRoot == null) return false;
+        if(currentRoot.data == x) return true;
+        else if( currentRoot.data < x) return contains(currentRoot.right, x);
+        else if(currentRoot.data > x) return contains(currentRoot.left, x);
+
+        return false;
     }
 
     public int getMin() {
