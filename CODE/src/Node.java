@@ -9,8 +9,8 @@ public class Node implements Comparable<Node> {
     // **************************** Fields *****************************
     private Character character;
     private Integer frequency;
-    private Node left;
-    private Node right;
+    private Node leftNode;
+    private Node rightNode;
 
     // ************************** Constructors *************************
 
@@ -65,10 +65,6 @@ public class Node implements Comparable<Node> {
      * @return returns true if the node is a leaf.
      */
     public Boolean isLeaf() {
-        if (left == null && right == null) {
-            return true;
-        } else {
-            return false;
-        }
+        return leftNode == null && rightNode == null;
     }
 }

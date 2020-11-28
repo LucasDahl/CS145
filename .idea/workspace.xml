@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CODE/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CODE/src/CreateCodeAndEncode.java" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/src/CreateCodeAndEncode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODE/src/DecodeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/src/DecodeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/src/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,16 +44,9 @@
       <recent name="$PROJECT_DIR$/DistanceAssignment/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestTree">
+  <component name="RunManager" selected="Application.CreateCodeAndEncode">
     <configuration name="CardArrayMaster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CardArrayMaster" />
-      <module name="CardAssignment" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CardArrayMasterGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CardArrayMasterGUI" />
       <module name="CardAssignment" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -63,6 +55,13 @@
     <configuration name="CardListMasterTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CardListMasterTester" />
       <module name="CardAssignment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCodeAndEncode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CreateCodeAndEncode" />
+      <module name="CODE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,11 +82,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CreateCodeAndEncode" />
         <item itemvalue="Application.TestTree" />
         <item itemvalue="Application.ShowMe" />
         <item itemvalue="Application.CardListMasterTester" />
         <item itemvalue="Application.CardArrayMaster" />
-        <item itemvalue="Application.CardArrayMasterGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -99,13 +98,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600707457981</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added some notes about polymorphism.">
-      <created>1600976333025</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1600976333025</updated>
     </task>
     <task id="LOCAL-00005" summary="Added some more notes on polymorphism.">
       <created>1600976593053</created>
@@ -443,12 +435,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606322485558</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Finished the Node class for the CODE assignment.">
+      <created>1606536887198</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1606536887199</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added notes about stacks and queues." />
     <MESSAGE value="Fixed an issue that would cause the grammar class to not recognize other terminal symbols." />
     <MESSAGE value="Fixed an issue that would cause the grammar class to not recognize other terminal symbols. Added notes on stacks and queues, and started a stringSplitter class." />
     <MESSAGE value="Added Java doc to the grammar assignment, fixed errors in the StringSplitter and added an evaluator class." />
@@ -473,7 +471,8 @@
     <MESSAGE value="Finished the sort method for teh CardLinkedList." />
     <MESSAGE value="Added comments and Java Doc." />
     <MESSAGE value="Fixed an issue in the Binary tree notes that wouldn't get the actual min. Added the files for the next assignment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed an issue in the Binary tree notes that wouldn't get the actual min. Added the files for the next assignment." />
+    <MESSAGE value="Finished the Node class for the CODE assignment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the Node class for the CODE assignment." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
@@ -493,31 +492,31 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1606322485353">
+    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1606536887006">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="596" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925873237" />
-    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606322485353" />
+    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606536887006" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526527430" />
-    <state width="1878" height="105" key="GridCell.Tab.0.bottom" timestamp="1606333814861">
+    <state width="1878" height="168" key="GridCell.Tab.0.bottom" timestamp="1606538991811">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="105" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606333814861" />
+    <state width="1878" height="168" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606538991811" />
     <state width="1878" height="234" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="105" key="GridCell.Tab.0.center" timestamp="1606333814860">
+    <state width="1878" height="168" key="GridCell.Tab.0.center" timestamp="1606538991810">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="105" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606333814860" />
+    <state width="1878" height="168" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606538991810" />
     <state width="1878" height="234" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="105" key="GridCell.Tab.0.left" timestamp="1606333814860">
+    <state width="1878" height="168" key="GridCell.Tab.0.left" timestamp="1606538991810">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="105" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606333814860" />
+    <state width="1878" height="168" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606538991810" />
     <state width="1878" height="234" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967390" />
-    <state width="1878" height="105" key="GridCell.Tab.0.right" timestamp="1606333814861">
+    <state width="1878" height="168" key="GridCell.Tab.0.right" timestamp="1606538991810">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="105" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606333814861" />
+    <state width="1878" height="168" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606538991810" />
     <state width="1878" height="234" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
     <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1604898944951">
       <screen x="1920" y="25" width="1920" height="1055" />
@@ -539,11 +538,11 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2469" y="299" key="IDE.errors.dialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603823015749" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606322487724">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606536888998">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="560" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925875349" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606322487724" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606536888998" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526529886" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
