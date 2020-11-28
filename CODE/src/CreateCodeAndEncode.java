@@ -72,6 +72,33 @@ public class CreateCodeAndEncode {
 
         }
 
+        // Create the priority queue
+        for(char c: tempMap.keySet()) {
+
+            Node e = new Node(c, tempMap.get(c));
+            pq.add(e);
+
+        }
+
+
+        while(pq.size() > 1) {
+
+            // Properties
+            Node tempNodeOne = pq.remove(), tempNodeTwo = pq.remove(), newNode = new Node();
+
+            // Set the frequency and left and right nodes
+            // then and add it back
+            newNode.frequency = (tempNodeOne.frequency + tempNodeTwo.frequency);
+            newNode.leftNode = tempNodeOne;
+            newNode.rightNode = tempNodeTwo;
+
+            pq.add(newNode);
+
+        }
+
+        
+
+
     }
 
 

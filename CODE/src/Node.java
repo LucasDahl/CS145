@@ -8,9 +8,19 @@ public class Node implements Comparable<Node> {
 
     // **************************** Fields *****************************
     private Character character;
-    private Integer frequency;
-    private Node leftNode;
-    private Node rightNode;
+
+    /**
+     * This is the frequency of the node
+     */
+    public Integer frequency;
+    /**
+     * this is the left node of teh current node
+     */
+    public Node leftNode;
+    /**
+     * This is the right node of the current node.
+     */
+    public Node rightNode;
 
     // ************************** Constructors *************************
 
@@ -54,7 +64,7 @@ public class Node implements Comparable<Node> {
 
     @Override
     public String toString() {
-        return "Character: " + character + "Frequency: " + frequency;
+        return "Character: " + character + " Frequency: " + frequency;
     }
 
     /**
