@@ -371,7 +371,7 @@ public class CardLinkedList implements CardList {
         // Merge the lists together.
         merge(leftList, rightList, list);
 
-    }
+}
 
     // This merges all the the elements of to CardLinkedLists into another.
     private void merge(CardLinkedList leftList, CardLinkedList rightList, CardLinkedList list) {

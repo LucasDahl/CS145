@@ -54,7 +54,7 @@ public class MyTree {
             // This is preorder because print then left then right
             String x = "";
             x = x + currentRoot.data + " ";
-            x = x +printTree(currentRoot.left);
+            x = x + printTree(currentRoot.left);
             x = x + printTree(currentRoot.right);
 
             // In order

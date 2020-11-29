@@ -7,7 +7,10 @@
 public class Node implements Comparable<Node> {
 
     // **************************** Fields *****************************
-    private Character character;
+    /**
+     * This is the letter of the node.
+     */
+    public Character character;
 
     /**
      * This is the frequency of the node
