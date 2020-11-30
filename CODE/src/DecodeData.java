@@ -48,10 +48,6 @@ public class DecodeData {
 
         }
 
-//        for(char c: codeMap.keySet()) {
-//            System.out.println(c + " : " + codeMap.get(c));
-//        }
-
         // Get the huff file
         huffFileName = getFile(".huff");
 

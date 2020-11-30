@@ -58,7 +58,7 @@ public class Node implements Comparable<Node> {
      * @return the int returned determines which letter is better.
      */
     public int compareTo(Node node) {
-        if(frequency > node.frequency || frequency == node.frequency) {
+        if(frequency > node.frequency || frequency.equals(node.frequency)) {
             return 1;
         } else {
             return -1;

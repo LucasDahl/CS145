@@ -10,6 +10,7 @@ import java.util.*;
  * @version 11/24/20
  */
 public class CreateCodeAndEncode {
+    
 
     /**
      * THis is the main method.
