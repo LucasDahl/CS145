@@ -2,14 +2,19 @@ import java.io.*;
 import java.util.*;
 
 /**
- *  This class
+ *  This class will take an input file and
+ *  convert it to huffman code. It will produce
+ *  a .code and a .huff file.
  *
  * @author Lucas D. Dahl
  * @version 11/24/20
  */
 public class CreateCodeAndEncode {
 
-
+    /**
+     * THis is the main method.
+     * @param args the arguments to pass in.
+     */
     public static void main(String[] args) {
 
         // Properties
@@ -22,7 +27,6 @@ public class CreateCodeAndEncode {
 
         // Get the file name.
         file = getFile(".txt");
-        System.out.println(file);
 
         // Get teh list from the file
         tempList = openFile(file);
@@ -79,7 +83,7 @@ public class CreateCodeAndEncode {
         writeCodeFile(huffmanCode);
 
         // Write the huff file.
-        //writeHuffFile(huffmanCode);
+        writeHuffFile(tempList, huffmanCode);
 
     } //=================================== End main
 
@@ -92,7 +96,7 @@ public class CreateCodeAndEncode {
         do {
 
             // Ask the user for the filename
-            System.out.println("please enter a file to encode");
+            System.out.println("please enter a " + fileFormat + " file.");
             System.out.print("--> ");
             file = keyboard.nextLine();
 
@@ -205,7 +209,7 @@ public class CreateCodeAndEncode {
 
     }
 
-    private static void writeHuffFile(Map<Character, String> theMap) {
+    private static void writeHuffFile(List<Character> theList, Map<Character, String> theMap) {
 
         // Properties
         PrintStream outStream = null;
@@ -228,7 +232,7 @@ public class CreateCodeAndEncode {
         }
 
         // Write to the file
-        for(char c: theMap.keySet()) {
+        for(char c: theList) {
 
             outStream.print(theMap.get(c));
 
