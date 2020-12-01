@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GUI/src/SimpleFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE/src/CreateCodeAndEncode.java" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/src/CreateCodeAndEncode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE/src/DecodeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/src/DecodeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE/src/Node.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateCodeAndEncode$Node" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CreateCodeAndEncode$Node" />
+      <module name="CODE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateCodeAndEncode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CreateCodeAndEncode" />
       <module name="CODE" />
@@ -61,13 +70,6 @@
     <configuration name="DecodeData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DecodeData" />
       <module name="CODE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShowMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ShowMe" />
-      <module name="Notes" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,9 +85,9 @@
       <list>
         <item itemvalue="Application.DecodeData" />
         <item itemvalue="Application.CreateCodeAndEncode" />
+        <item itemvalue="Application.CreateCodeAndEncode$Node" />
         <item itemvalue="Application.CardListMasterTester" />
         <item itemvalue="Application.TestTree" />
-        <item itemvalue="Application.ShowMe" />
       </list>
     </recent_temporary>
   </component>
@@ -97,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600707457981</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Updated all Critter subclasses.">
-      <created>1601671721593</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1601671721593</updated>
     </task>
     <task id="LOCAL-00011" summary="Updated all Critter subclasses.">
       <created>1601696671234</created>
@@ -441,12 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606772023804</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Added some notes on GUI.">
+      <created>1606773319998</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1606773319998</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Finished the basics of the Card and PremiumCard classes." />
     <MESSAGE value="Started the base classes for notes on LinkedLists." />
     <MESSAGE value="Added notes to all the classes for LinkedListNotes." />
     <MESSAGE value="Finished notes on the linked list notes. Also added a few methods to the card assignment." />
@@ -471,7 +472,8 @@
     <MESSAGE value="Finished all the methods for creating the huffman code in the CreateCodeAndEncode class." />
     <MESSAGE value="Finished the DecodeData class." />
     <MESSAGE value="Refactored a few things for the CODE assignment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored a few things for the CODE assignment." />
+    <MESSAGE value="Added some notes on GUI." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some notes on GUI." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
@@ -491,32 +493,32 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1606772023594">
+    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1606773319820">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="596" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925873237" />
-    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606772023594" />
+    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606773319820" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526527430" />
-    <state width="1878" height="168" key="GridCell.Tab.0.bottom" timestamp="1606771941025">
+    <state width="1877" height="174" key="GridCell.Tab.0.bottom" timestamp="1606801817115">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="168" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606771941025" />
-    <state width="1878" height="234" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="168" key="GridCell.Tab.0.center" timestamp="1606771941023">
+    <state width="1877" height="174" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606801817115" />
+    <state width="1638" height="168" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779039" />
+    <state width="1877" height="174" key="GridCell.Tab.0.center" timestamp="1606801817114">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="168" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606771941023" />
-    <state width="1878" height="234" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
-    <state width="1878" height="168" key="GridCell.Tab.0.left" timestamp="1606771941022">
+    <state width="1877" height="174" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606801817114" />
+    <state width="1638" height="168" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
+    <state width="1877" height="174" key="GridCell.Tab.0.left" timestamp="1606801817113">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="168" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606771941022" />
-    <state width="1878" height="234" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967390" />
-    <state width="1878" height="168" key="GridCell.Tab.0.right" timestamp="1606771941024">
+    <state width="1877" height="174" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606801817113" />
+    <state width="1638" height="168" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
+    <state width="1877" height="174" key="GridCell.Tab.0.right" timestamp="1606801817114">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="168" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606771941024" />
-    <state width="1878" height="234" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1604526967391" />
+    <state width="1877" height="174" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606801817114" />
+    <state width="1638" height="168" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
     <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1604898944951">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
@@ -537,11 +539,11 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2469" y="299" key="IDE.errors.dialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603823015749" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606772087648">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606773321401">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="560" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925875349" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606772087648" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606773321400" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526529886" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />

@@ -10,7 +10,6 @@ import java.util.*;
  * @version 11/24/20
  */
 public class CreateCodeAndEncode {
-    
 
     /**
      * THis is the main method.
@@ -19,52 +18,145 @@ public class CreateCodeAndEncode {
     public static void main(String[] args) {
 
         // Properties
-
-        List<Character> tempList = new ArrayList<Character>();
+        List<Character> tempList;
         String file;
-        Map<Character, Integer> tempMap = new TreeMap<>();
+        Map<Character, Integer> tempMap;
         Map<Character, String> huffmanCode;
-        PriorityQueue<Node> pq = new PriorityQueue<>();
+        PriorityQueue<Node> pq;
 
-        // Get the file name.
-        file = getFile(".txt");
+        // Call the methods to create the code.
+        file = getFile(".txt"); // Get the file name.
+        tempList = openFile(file); // Get the list from the file
+        tempMap = makeMap(tempList); // Add each element in the list to a map.
+        pq = makePQ(tempMap); // Create the priority queue
+        pq = makePQToTree(pq); // Make the priority queue hold a tree.
+        huffmanCode = generateHuffman(pq.peek()); // Get the code
+        writeCodeFile(huffmanCode); // Write the code file.
+        writeHuffFile(tempList, huffmanCode); // Write the huff file.
 
-        // Get teh list from the file
-        tempList = openFile(file);
+    }
 
+    // This is the inner Node class
+    private static class Node implements Comparable<Node> {
 
-        // Add each element in the list to a map.
-        for(int i = 0; i < tempList.size(); i++) {
+        // **************************** Fields *****************************
+        /**
+         * This is the letter of the node.
+         */
+        public Character character;
 
-            char c = tempList.get(i);
+        /**
+         * This is the frequency of the node
+         */
+        public Integer frequency;
+        /**
+         * this is the left node of teh current node
+         */
+        public Node leftNode;
+        /**
+         * This is the right node of the current node.
+         */
+        public Node rightNode;
 
-            if(!tempMap.containsKey(c)) {
+        // ************************** Constructors *************************
+
+        /**
+         * This constructor sets both the character and
+         * the frequency.
+         *
+         * @param letter letter character.
+         * @param freq the frequency.
+         */
+        public Node(char letter, int freq) {
+            character = letter;
+            frequency = freq;
+        }
+
+        /**
+         * This is the default constructor.
+         */
+        public Node() {
+            character = null;
+            frequency = null;
+        }
+
+        // **************************** Methods ****************************
+
+        /**
+         * This method will return 1 if the node is greater
+         * than the compared node, and -1 if the passed in
+         * node is greater.
+         *
+         * @param node is the node to compare against.
+         * @return the int returned determines which letter is better.
+         */
+        public int compareTo(Node node) {
+            if(frequency > node.frequency || frequency.equals(node.frequency)) {
+                return 1;
+            } else {
+                return -1;
+            }
+        }
+
+        @Override
+        public String toString() {
+            return "Character: " + character + " Frequency: " + frequency;
+        }
+
+        /**
+         * This method will determine if
+         * the current node is a leaf or
+         * not.
+         *
+         * @return returns true if the node is a leaf.
+         */
+        public Boolean isLeaf() {
+            return leftNode == null && rightNode == null;
+        }
+    } // End inner class
+
+    public static Map<Character, Integer> makeMap(List<Character> theList) {
+
+        Map<Character, Integer> theMap = new TreeMap<>();
+
+        for(int i = 0; i < theList.size(); i++) {
+
+            char c = theList.get(i);
+
+            if(!theMap.containsKey(c)) {
                 // the key doesn't exist
-                tempMap.put(c, 1);
+                theMap.put(c, 1);
             } else {
 
                 // The key exists
-                int temp = tempMap.get(c);
+                int temp = theMap.get(c);
                 temp++;
-                tempMap.put(c, temp);
-
+                theMap.put(c, temp);
             }
-
         }
+        return theMap;
+    }
 
-        // Create the priority queue
-        for(char c: tempMap.keySet()) {
+    // This method takes a Map and turns it into a priority queue
+    private static PriorityQueue<Node> makePQ(Map<Character, Integer> theMap) {
 
-            Node e = new Node(c, tempMap.get(c));
+        PriorityQueue<Node> pq = new PriorityQueue<>();
+
+        for(char c: theMap.keySet()) {
+
+            Node e = new Node(c, theMap.get(c));
             pq.add(e);
 
         }
+        return pq;
+    }
 
+    // This will turn the Priority queue into one that only holds a single Node.
+    private static PriorityQueue<Node> makePQToTree(PriorityQueue<Node> pq) {
 
-        // Make the priority queue hold a tree.
         while(pq.size() > 1) {
 
-            // Properties
+            // Temp nodes
             Node tempNodeOne = pq.remove(), tempNodeTwo = pq.remove(), newNode = new Node();
 
             // Set the frequency and left and right nodes
@@ -76,18 +168,10 @@ public class CreateCodeAndEncode {
             pq.add(newNode);
 
         }
+        return pq;
+    }
 
-        // Get the code
-        huffmanCode = generateHuffman(pq.peek());
-
-        // Write the code file.
-        writeCodeFile(huffmanCode);
-
-        // Write the huff file.
-        writeHuffFile(tempList, huffmanCode);
-
-    } //=================================== End main
-
+    // This method gets the file name
     private static String getFile(String fileFormat) {
 
         // Properties
@@ -243,5 +327,4 @@ public class CreateCodeAndEncode {
         outStream.close();
 
     }
-
 }

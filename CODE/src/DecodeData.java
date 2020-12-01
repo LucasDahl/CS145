@@ -12,7 +12,7 @@ import java.util.*;
 public class DecodeData {
 
     /**
-     * THis is the main method.
+     * This is the main method.
      * @param args the arguments to pass in.
      */
     public static void main(String[] args) {
@@ -22,7 +22,6 @@ public class DecodeData {
         Map<String, Character> codeMap = new TreeMap<>();
         File codeFile, huffFile;
         Scanner codeScanner = null, huffScanner = null;
-
 
         // Get the code file
         codeFileName = getFile(".code");
@@ -71,9 +70,7 @@ public class DecodeData {
                 System.out.print(codeMap.get(miniString));
                 miniString = "";
             }
-
         }
-
     }
 
     // Ask the user for a file.
