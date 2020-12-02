@@ -98,13 +98,6 @@
       <option name="presentableId" value="Default" />
       <updated>1600707457981</updated>
     </task>
-    <task id="LOCAL-00012" summary="Finished the short assignment and the challenge for chapter 10.">
-      <created>1601872324095</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1601872324095</updated>
-    </task>
     <task id="LOCAL-00013" summary="Added notes about sets.">
       <created>1602007282034</created>
       <option name="number" value="00013" />
@@ -441,12 +434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606802366989</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Added more notes on the GUI class.">
+      <created>1606859665748</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1606859665748</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added notes to all the classes for LinkedListNotes." />
     <MESSAGE value="Finished notes on the linked list notes. Also added a few methods to the card assignment." />
     <MESSAGE value="Finished a rough version of a merge sort for the CardArrayList class." />
     <MESSAGE value="Refactored the add(Card x) to not use a break statement." />
@@ -471,7 +470,8 @@
     <MESSAGE value="Refactored a few things for the CODE assignment." />
     <MESSAGE value="Added some notes on GUI." />
     <MESSAGE value="Refactored the CODE assignment classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored the CODE assignment classes." />
+    <MESSAGE value="Added more notes on the GUI class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more notes on the GUI class." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
@@ -491,31 +491,31 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1606802366799">
+    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1606859665524">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="596" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925873237" />
-    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606802366799" />
+    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606859665524" />
     <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526527430" />
-    <state width="1878" height="174" key="GridCell.Tab.0.bottom" timestamp="1606859087617">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1606945570441">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="174" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606859087617" />
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945570441" />
     <state width="1638" height="168" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779039" />
-    <state width="1878" height="174" key="GridCell.Tab.0.center" timestamp="1606859087615">
+    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1606945570439">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="174" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606859087615" />
+    <state width="1878" height="129" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945570439" />
     <state width="1638" height="168" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
-    <state width="1878" height="174" key="GridCell.Tab.0.left" timestamp="1606859087615">
+    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1606945570439">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="174" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606859087615" />
+    <state width="1878" height="129" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945570439" />
     <state width="1638" height="168" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
-    <state width="1878" height="174" key="GridCell.Tab.0.right" timestamp="1606859087616">
+    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1606945570440">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="174" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606859087616" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945570440" />
     <state width="1638" height="168" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
     <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1604898944951">
       <screen x="1920" y="25" width="1920" height="1055" />
@@ -537,11 +537,11 @@
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2469" y="299" key="IDE.errors.dialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603823015749" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606802373315">
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606859670750">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="560" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925875349" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606802373315" />
+    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606859670750" />
     <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526529886" />
     <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
       <screen x="1920" y="25" width="1920" height="1055" />
@@ -551,10 +551,10 @@
       <screen x="0" y="25" width="1920" height="1175" />
     </state>
     <state x="761" y="528" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604524394486" />
-    <state x="2426" y="292" width="908" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1605648785743">
+    <state x="2426" y="292" width="908" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606945185613">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
-    <state x="2426" y="292" width="908" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1605648785743" />
+    <state x="2426" y="292" width="908" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945185613" />
     <state x="2582" y="425" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600707560601">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
