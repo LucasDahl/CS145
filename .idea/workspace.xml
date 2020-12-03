@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CardAssignment/src/CardHeadGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CardAssignment/src/CardHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/SimpleFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/SimpleFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
@@ -43,9 +45,9 @@
       <recent name="$PROJECT_DIR$/DistanceAssignment/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SimpleFrame">
-    <configuration name="CardListMasterTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CardListMasterTester" />
+  <component name="RunManager" selected="Application.CardHeadGUI">
+    <configuration name="CardHeadGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CardHeadGUI" />
       <module name="CardAssignment" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,11 +83,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CardHeadGUI" />
         <item itemvalue="Application.SimpleFrame" />
         <item itemvalue="Application.DecodeData" />
         <item itemvalue="Application.CreateCodeAndEncode" />
         <item itemvalue="Application.CreateCodeAndEncode$Node" />
-        <item itemvalue="Application.CardListMasterTester" />
       </list>
     </recent_temporary>
   </component>
@@ -97,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600707457981</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added notes about sets.">
-      <created>1602007282034</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1602007282034</updated>
     </task>
     <task id="LOCAL-00014" summary="Added notes about Maps.">
       <created>1602017242224</created>
@@ -441,12 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606859665748</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Finished the GUI notes.">
+      <created>1606945809139</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1606945809140</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Finished notes on the linked list notes. Also added a few methods to the card assignment." />
     <MESSAGE value="Finished a rough version of a merge sort for the CardArrayList class." />
     <MESSAGE value="Refactored the add(Card x) to not use a break statement." />
     <MESSAGE value="Finished the method add(int l, Card x) that allows for adding a card at a specific index and sliding the cards over one." />
@@ -471,111 +472,8 @@
     <MESSAGE value="Added some notes on GUI." />
     <MESSAGE value="Refactored the CODE assignment classes." />
     <MESSAGE value="Added more notes on the GUI class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more notes on the GUI class." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602717213668">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2615" y="358" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602717213668" />
-    <state x="2623" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1606536272211">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2623" y="257" key="#com.intellij.ide.util.MemberChooser/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606536272211" />
-    <state x="703" y="283" key="#com.intellij.ide.util.MemberChooser/0.25.1920.1175@0.25.1920.1175" timestamp="1604523889560" />
-    <state x="2568" y="292" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606333547134">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2568" y="292" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606333547134" />
-    <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602604866034">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2453" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1602604866034" />
-    <state x="2232" y="143" key="CommitChangelistDialog2" timestamp="1606859665524">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="596" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925873237" />
-    <state x="2232" y="143" key="CommitChangelistDialog2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606859665524" />
-    <state x="596" y="156" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526527430" />
-    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1606945570441">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945570441" />
-    <state width="1638" height="168" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779039" />
-    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1606945570439">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945570439" />
-    <state width="1638" height="168" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
-    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1606945570439">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945570439" />
-    <state width="1638" height="168" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
-    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1606945570440">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945570440" />
-    <state width="1638" height="168" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1606774779038" />
-    <state width="1878" height="237" key="GridCell.Tab.1.bottom" timestamp="1604898944951">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="237" key="GridCell.Tab.1.bottom/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604898944951" />
-    <state width="1878" height="237" key="GridCell.Tab.1.center" timestamp="1604898944950">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="237" key="GridCell.Tab.1.center/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604898944950" />
-    <state width="1878" height="237" key="GridCell.Tab.1.left" timestamp="1604898944950">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="237" key="GridCell.Tab.1.left/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604898944950" />
-    <state width="1878" height="237" key="GridCell.Tab.1.right" timestamp="1604898944950">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="237" key="GridCell.Tab.1.right/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1604898944950" />
-    <state x="2469" y="299" key="IDE.errors.dialog" timestamp="1603823015749">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2469" y="299" key="IDE.errors.dialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1603823015749" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606859670750">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="560" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@0.25.1920.1055" timestamp="1603925875349" />
-    <state x="2480" y="289" key="Vcs.Push.Dialog.v2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606859670750" />
-    <state x="560" y="319" key="Vcs.Push.Dialog.v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604526529886" />
-    <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600707705164">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2608" y="290" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707705164" />
-    <state x="761" y="528" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604524394486">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state x="761" y="528" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.1175@0.25.1920.1175" timestamp="1604524394486" />
-    <state x="2426" y="292" width="908" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606945185613">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2426" y="292" width="908" height="623" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606945185613" />
-    <state x="2582" y="425" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600707560601">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2582" y="425" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600707560601" />
-    <state x="2264" y="172" key="new project wizard" timestamp="1606771668667">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2264" y="172" key="new project wizard/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1606771668667" />
-    <state x="344" y="189" key="new project wizard/0.25.1920.1175@0.25.1920.1175" timestamp="1604523745110" />
-    <state x="2727" y="332" key="refactoring.ChangeSignatureDialog" timestamp="1601421002113">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2727" y="332" key="refactoring.ChangeSignatureDialog/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1601421002113" />
-    <state x="2546" y="255" key="run.anything.popup" timestamp="1600966533745">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2546" y="255" key="run.anything.popup/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1600966533745" />
-    <state x="2545" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1605646884803">
-      <screen x="1920" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2545" y="259" width="670" height="676" key="search.everywhere.popup/0.25.1920.1055/1920.25.1920.1055@1920.25.1920.1055" timestamp="1605646884803" />
+    <MESSAGE value="Finished the GUI notes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the GUI notes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
