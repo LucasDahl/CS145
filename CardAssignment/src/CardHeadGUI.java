@@ -10,7 +10,9 @@ import java.util.*;
  */
 public class CardHeadGUI implements ActionListener {
 
+    // **************************** Fields ****************************
 
+    // GUI elements
     private JFrame cardGUIFrame;
     private JButton addButton;
     private JButton popButton;
@@ -18,6 +20,9 @@ public class CardHeadGUI implements ActionListener {
     private JLabel cardLabel;
     private JLabel lastRemovedLabel;
     private JLabel removedCardLabel;
+
+    // Properties
+    private CardHeap cards;
 
 
     /**
@@ -29,14 +34,17 @@ public class CardHeadGUI implements ActionListener {
     }
 
 
-    // Constructor
+    // ************************** Constructors ************************
 
     /**
      * This is the default constructor.
      */
     public CardHeadGUI() {
         setUpGUI();
+        cards = new CardHeap();
     }
+
+    // **************************** Methods ***************************
 
     // Sets up the the GUI
     private void setUpGUI() {
@@ -55,24 +63,27 @@ public class CardHeadGUI implements ActionListener {
         addButton.setText("Add");
         addButton.setBounds(10,100,150, 25);
         addButton.addActionListener(this);
+        addButton.setActionCommand("add");
 
         // Pop button
         popButton = new JButton();
         popButton.setText("Pop");
         popButton.setBounds(165,100,150, 25);
         popButton.addActionListener(this);
+        popButton.setActionCommand("pop");
 
         // Clear button
         clearButton = new JButton();
         clearButton.setText("Clear");
         clearButton.setBounds(310,100,150, 25);
         clearButton.addActionListener(this);
+        clearButton.setActionCommand("clear");
 
         // Setup the labels
 
         cardLabel = new JLabel();
         cardLabel.setText("[]");
-        cardLabel.setBounds(75, 30, 100, 25);
+        cardLabel.setBounds(75, 30, 1000, 25);
 
         lastRemovedLabel = new JLabel();
         lastRemovedLabel.setText("Last Removed: ");
@@ -99,7 +110,33 @@ public class CardHeadGUI implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) { // Needed for interface
-        //
+        if(e.getActionCommand().equals("add")) addPressed();
+        else if(e.getActionCommand().equals("pop")) popPressed();
+        else if(e.getActionCommand().equals("clear")) clearPressed();
+    }
+
+    // Actions
+
+    // Adding a card
+    private void addPressed() {
+
+        cards.add(new Card());
+        cardLabel.setText(cardLabel.getText() + cards.toString());
+
+    }
+
+    // Popping a card
+    private void popPressed() {
+
+    }
+
+    // Clearing the cards
+    private void clearPressed() {
+
+        cards = new CardHeap();
+        cardLabel.setText("[]");
+        removedCardLabel.setText("cleared");
+
     }
 
 }

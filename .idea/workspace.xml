@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eabf4cd-966e-45ff-be96-1c00c7d2e1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CardAssignment/src/CardHeadGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CardAssignment/src/CardHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CardAssignment/src/CardHeadGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/CardAssignment/src/CardHeadGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CardAssignment/src/CardHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/CardAssignment/src/CardHeap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600707457981</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Added notes about Maps.">
-      <created>1602017242224</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1602017242224</updated>
     </task>
     <task id="LOCAL-00015" summary="Added notes about Maps and sets.">
       <created>1602104003988</created>
@@ -443,12 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606945809140</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Built teh GUI and started the cardHeap class.">
+      <created>1607038486973</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1607038486974</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Finished a rough version of a merge sort for the CardArrayList class." />
     <MESSAGE value="Refactored the add(Card x) to not use a break statement." />
     <MESSAGE value="Finished the method add(int l, Card x) that allows for adding a card at a specific index and sliding the cards over one." />
     <MESSAGE value="Fixed various methods that were slightly off on their specific index it would return." />
@@ -473,7 +472,8 @@
     <MESSAGE value="Refactored the CODE assignment classes." />
     <MESSAGE value="Added more notes on the GUI class." />
     <MESSAGE value="Finished the GUI notes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the GUI notes." />
+    <MESSAGE value="Built teh GUI and started the cardHeap class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Built teh GUI and started the cardHeap class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
