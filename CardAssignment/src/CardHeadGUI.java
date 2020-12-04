@@ -23,6 +23,7 @@ public class CardHeadGUI implements ActionListener {
 
     // Properties
     private CardHeap cards;
+    private boolean flag = true;
 
 
     /**
@@ -40,8 +41,8 @@ public class CardHeadGUI implements ActionListener {
      * This is the default constructor.
      */
     public CardHeadGUI() {
-        setUpGUI();
         cards = new CardHeap();
+        setUpGUI();
     }
 
     // **************************** Methods ***************************
@@ -52,7 +53,7 @@ public class CardHeadGUI implements ActionListener {
         // Setup the frame.
         cardGUIFrame = new JFrame();
         cardGUIFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        cardGUIFrame.setTitle("CardHeap GUI");
+        cardGUIFrame.setTitle("CS 145 GUI Assignment Lucas Dahl");
         cardGUIFrame.setSize(new Dimension(1000, 225));
         cardGUIFrame.setLocation(new Point(700, 350));
 
@@ -82,7 +83,7 @@ public class CardHeadGUI implements ActionListener {
         // Setup the labels
 
         cardLabel = new JLabel();
-        cardLabel.setText("[]");
+        cardLabel.setText(cards.toString());
         cardLabel.setBounds(75, 30, 1000, 25);
 
         lastRemovedLabel = new JLabel();
@@ -120,8 +121,9 @@ public class CardHeadGUI implements ActionListener {
     // Adding a card
     private void addPressed() {
 
-        cards.add(new Card());
-        cardLabel.setText(cardLabel.getText() + cards.toString());
+        Card temp = new Card();
+        cards.add(temp);
+        cardLabel.setText(cards.toString());
 
     }
 

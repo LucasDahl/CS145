@@ -39,9 +39,11 @@ public class CardHeap {
         } else {
 
             // Add the card(hash value) and increase the size.
-            cards[cards.length - 1] = card;
+            cards[hash(card.getCost())] = card;
             size++;
         }
+
+
     }
 
     /**
@@ -68,14 +70,22 @@ public class CardHeap {
         // Properties
         String cardString = "";
 
-        for(int i = 0; i < cards.length; i++) {
+        if(size > 0) {
+            for(int i = 0; i < cards.length; i++) {
 
-            if(cards[i] != null) {
-                cardString = cardString + cards[i].toString();
+                if(cards[i] != null) {
+                    cardString = cardString  + "," + cards[i].toString();
+                }
+
             }
 
+            cardString = "[" + cardString.substring(1) + "]";
+
+        } else {
+            cardString = "[]";
         }
 
+        System.out.println(cardString);
         return cardString;
     }
 
@@ -91,6 +101,10 @@ public class CardHeap {
         for(Card card: tempCards) {
 
         }
+    }
+
+    private int hash(int i) {
+        return Math.abs(i) % cards.length;
     }
 
 }

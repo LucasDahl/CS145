@@ -100,13 +100,6 @@
       <option name="presentableId" value="Default" />
       <updated>1600707457981</updated>
     </task>
-    <task id="LOCAL-00015" summary="Added notes about Maps and sets.">
-      <created>1602104003988</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1602104003988</updated>
-    </task>
     <task id="LOCAL-00016" summary="Started the class for assignment number 3(Distance assignment).">
       <created>1602112645735</created>
       <option name="number" value="00016" />
@@ -443,12 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607038486974</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Added actions to the add and clear button, along with completing the  methods to allow them to function.">
+      <created>1607042206176</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1607042206176</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Refactored the add(Card x) to not use a break statement." />
     <MESSAGE value="Finished the method add(int l, Card x) that allows for adding a card at a specific index and sliding the cards over one." />
     <MESSAGE value="Fixed various methods that were slightly off on their specific index it would return." />
     <MESSAGE value="Fixed a few more bugs in CardArrayList, and took out a useless variable in Card compareTo class." />
@@ -473,7 +472,8 @@
     <MESSAGE value="Added more notes on the GUI class." />
     <MESSAGE value="Finished the GUI notes." />
     <MESSAGE value="Built teh GUI and started the cardHeap class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Built teh GUI and started the cardHeap class." />
+    <MESSAGE value="Added actions to the add and clear button, along with completing the  methods to allow them to function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added actions to the add and clear button, along with completing the  methods to allow them to function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
