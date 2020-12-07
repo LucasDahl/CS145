@@ -84,8 +84,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CardHeadGUI" />
-        <item itemvalue="Application.SimpleFrame" />
         <item itemvalue="Application.DecodeData" />
+        <item itemvalue="Application.SimpleFrame" />
         <item itemvalue="Application.CreateCodeAndEncode" />
         <item itemvalue="Application.CreateCodeAndEncode$Node" />
       </list>
@@ -99,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600707457981</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Started the class for assignment number 3(Distance assignment).">
-      <created>1602112645735</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1602112645735</updated>
     </task>
     <task id="LOCAL-00017" summary="Updated the distance assignment and finished the short Occurrences assignment.">
       <created>1602276073257</created>
@@ -443,12 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607042206176</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Fixed the output for the add button in the GUI, and fixed an issue in CardHeap were it wouldn't add multiple cards.">
+      <created>1607113457225</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1607113457225</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Finished the method add(int l, Card x) that allows for adding a card at a specific index and sliding the cards over one." />
     <MESSAGE value="Fixed various methods that were slightly off on their specific index it would return." />
     <MESSAGE value="Fixed a few more bugs in CardArrayList, and took out a useless variable in Card compareTo class." />
     <MESSAGE value="Added more java doc and took out old code that was not being used in both the CardArrayList and Card classes." />
@@ -473,7 +472,8 @@
     <MESSAGE value="Finished the GUI notes." />
     <MESSAGE value="Built teh GUI and started the cardHeap class." />
     <MESSAGE value="Added actions to the add and clear button, along with completing the  methods to allow them to function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added actions to the add and clear button, along with completing the  methods to allow them to function." />
+    <MESSAGE value="Fixed the output for the add button in the GUI, and fixed an issue in CardHeap were it wouldn't add multiple cards." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the output for the add button in the GUI, and fixed an issue in CardHeap were it wouldn't add multiple cards." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

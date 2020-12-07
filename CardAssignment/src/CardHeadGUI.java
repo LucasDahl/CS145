@@ -121,24 +121,34 @@ public class CardHeadGUI implements ActionListener {
     // Adding a card
     private void addPressed() {
 
-        Card temp = new Card();
-        cards.add(temp);
-        cardLabel.setText(cards.toString());
+        cards.add(new Card());
+        setCardLabel();
 
     }
 
     // Popping a card
     private void popPressed() {
+        // only pop is size is greater than zero. return null or something and use if statement
+
+        if(cards.size() > 0) {
+            Card tempCard = cards.remove();
+            removedCardLabel.setText(tempCard.toString());
+            setCardLabel();
+        }
 
     }
 
     // Clearing the cards
     private void clearPressed() {
 
-        cards = new CardHeap();
-        cardLabel.setText("[]");
-        removedCardLabel.setText("cleared");
+        cards.clear();
+        cardLabel.setText(cards.toString());
+        removedCardLabel.setText("CLEARED");
 
+    }
+
+    private void setCardLabel() {
+        cardLabel.setText(cards.toString());
     }
 
 }
