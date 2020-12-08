@@ -133,7 +133,7 @@ public class CardHeap {
         // Properties
         Card[] tempCards = cards;
 
-        // Double the size of teh array and set the size to zero.
+        // Double the size of the array and set the size to zero.
         cards = new Card[2 * tempCards.length];
         size = 0;
 
